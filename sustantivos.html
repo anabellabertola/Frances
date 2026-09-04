@@ -1,0 +1,660 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aprende Francés - Les Noms (Sustantivos)</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      background-color: #f9f8fc;
+      color: #333;
+    }
+
+    nav {
+      background-color: #e6e6fa;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    ul.menu {
+      display: flex;
+      flex-wrap: wrap;
+      list-style: none;
+      padding: 0 10px;
+    }
+
+    ul.menu > li {
+      position: relative;
+    }
+
+    ul.menu a {
+      display: block;
+      padding: 14px 18px;
+      color: #4a3b52;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 14px;
+    }
+
+    ul.menu a:hover {
+      background-color: #d8cdfa;
+    }
+
+    ul.submenu {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background-color: #efe8ff;
+      min-width: 160px;
+      list-style: none;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+      z-index: 1000;
+    }
+
+    ul.menu > li:hover ul.submenu {
+      display: block;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: 30px auto;
+      padding: 25px;
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    }
+
+    h1 {
+      color: #5c4b6e;
+      margin-bottom: 10px;
+    }
+
+    p.intro {
+      color: #555;
+      margin-bottom: 15px;
+      line-height: 1.5;
+    }
+
+    .filter-bar {
+      margin-bottom: 20px;
+      display: flex;
+      gap: 10px;
+    }
+
+    .filter-bar input {
+      flex: 1;
+      padding: 10px;
+      border: 1px solid #d8cdfa;
+      border-radius: 6px;
+      font-size: 14px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 10px;
+    }
+
+    th, td {
+      padding: 10px 12px;
+      border-bottom: 1px solid #eee;
+      text-align: left;
+    }
+
+    th {
+      background-color: #f2edfe;
+      color: #4a3b52;
+    }
+
+    .french-text, .spanish-text {
+      cursor: pointer;
+    }
+
+    .french-text {
+      color: #5c4b6e;
+      font-weight: 600;
+    }
+
+    .spanish-text {
+      color: #555;
+    }
+
+    .french-text:hover, .spanish-text:hover {
+      color: #9575cd;
+      text-decoration: underline;
+    }
+
+    .badge {
+      display: inline-block;
+      padding: 3px 8px;
+      border-radius: 12px;
+      font-size: 11px;
+      font-weight: bold;
+    }
+
+    .badge-masculine { background-color: #e3f2fd; color: #1976d2; }
+    .badge-feminine { background-color: #fce4ec; color: #c2185b; }
+    .badge-plural { background-color: #e8f5e9; color: #388e3c; }
+
+    .btn-audio {
+      background-color: #b39ddb;
+      border: none;
+      color: white;
+      padding: 5px 9px;
+      border-radius: 50%;
+      cursor: pointer;
+      font-size: 12px;
+      font-weight: bold;
+      margin-left: 6px;
+      transition: background 0.3s;
+    }
+
+    .btn-audio:hover {
+      background-color: #9575cd;
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <ul class="menu">
+      <li>
+        <a href="#">Artículos ▼</a>
+        <ul class="submenu">
+          <li><a href="definidos.html">Definidos</a></li>
+          <li><a href="#">Indefinidos</a></li>
+          <li><a href="#">Partitivos</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#">Adjetivos ▼</a>
+        <ul class="submenu">
+          <li><a href="#">Demostrativos</a></li>
+          <li><a href="#">Posesivos</a></li>
+        </ul>
+      </li>
+      <li><a href="negacion.html">Negación Básica</a></li>
+      <li><a href="#">Interrogativa</a></li>
+      <li><a href="sustantivos.html">Sustantivos</a></li>
+      <li><a href="#">Conectores</a></li>
+      <li><a href="#">Preposiciones</a></li>
+      <li><a href="nacionalidades.html">Nacionalidades</a></li>
+      <li><a href="#">Verbos</a></li>
+      <li><a href="numeros.html">Números</a></li>
+      <li><a href="tiempo.html">Tiempo y Clima</a></li>
+      <li><a href="saludos.html">Saludos</a></li>
+    </ul>
+  </nav>
+
+  <div class="container">
+    <h1>Les Noms Communs (Los Sustantivos)</h1>
+    <p class="intro">Haz clic sobre cualquier palabra o en el botón 🔊 para escuchar su pronunciación en francés con su artículo, seguida de la traducción en español por **Microsoft Elena**.</p>
+
+    <div class="filter-bar">
+      <input type="text" id="searchInput" placeholder="Buscar por francés, español o inglés..." onkeyup="filterTable()">
+    </div>
+
+    <table>
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Francés</th>
+          <th>Género</th>
+          <th>Español</th>
+          <th>Inglés</th>
+        </tr>
+      </thead>
+      <tbody id="tableBody"></tbody>
+    </table>
+  </div>
+
+  <script>
+    const nounsData = [
+      { id: 1, en: "time", fr: "le temps", es: "el tiempo", gender: "masculine" },
+      { id: 2, en: "man", fr: "l'homme", es: "el hombre", gender: "masculine" },
+      { id: 3, en: "way", fr: "la façon", es: "la forma / manera", gender: "feminine" },
+      { id: 4, en: "people", fr: "les gens", es: "la gente", gender: "masculine plural" },
+      { id: 5, en: "life", fr: "la vie", es: "la vida", gender: "feminine" },
+      { id: 6, en: "day", fr: "le jour", es: "el día", gender: "masculine" },
+      { id: 7, en: "work", fr: "le travail", es: "el trabajo", gender: "masculine" },
+      { id: 8, en: "call", fr: "l'appel", es: "la llamada", gender: "masculine" },
+      { id: 9, en: "night", fr: "la nuit", es: "la noche", gender: "feminine" },
+      { id: 10, en: "home", fr: "la maison", es: "el hogar / la casa", gender: "feminine" },
+      { id: 11, en: "thought", fr: "la pensée", es: "el pensamiento", gender: "feminine" },
+      { id: 12, en: "money", fr: "l'argent", es: "el dinero", gender: "masculine" },
+      { id: 13, en: "name", fr: "le nom", es: "el nombre", gender: "masculine" },
+      { id: 14, en: "father", fr: "le père", es: "el padre", gender: "masculine" },
+      { id: 15, en: "guy", fr: "le mec", es: "el chico / el tipo", gender: "masculine" },
+      { id: 16, en: "place", fr: "la place", es: "el lugar / la plaza", gender: "feminine" },
+      { id: 17, en: "feel", fr: "le sentiment", es: "el sentimiento", gender: "masculine" },
+      { id: 18, en: "girl", fr: "la fille", es: "la chica / la niña", gender: "feminine" },
+      { id: 19, en: "house", fr: "la maison", es: "la casa", gender: "feminine" },
+      { id: 20, en: "left", fr: "la gauche", es: "la izquierda", gender: "feminine" },
+      { id: 21, en: "right", fr: "le droit", es: "el derecho / la derecha", gender: "masculine" },
+      { id: 22, en: "mother", fr: "la mère", es: "la madre", gender: "feminine" },
+      { id: 23, en: "course", fr: "le cours", es: "el curso / la clase", gender: "masculine" },
+      { id: 24, en: "dad", fr: "le papa", es: "el papá", gender: "masculine" },
+      { id: 25, en: "world", fr: "le monde", es: "el mundo", gender: "masculine" },
+      { id: 26, en: "son", fr: "le fils", es: "el hijo", gender: "masculine" },
+      { id: 27, en: "car", fr: "la voiture", es: "el auto / coche", gender: "feminine" },
+      { id: 28, en: "woman", fr: "la femme", es: "la mujer", gender: "feminine" },
+      { id: 29, en: "friend", fr: "l'ami / l'amie", es: "el amigo / la amiga", gender: "masculine / feminine" },
+      { id: 30, en: "mind", fr: "l'esprit", es: "la mente / la espíritu", gender: "masculine" },
+      { id: 31, en: "head", fr: "la tête", es: "la cabeza", gender: "feminine" },
+      { id: 32, en: "mom", fr: "la maman", es: "la mamá", gender: "feminine" },
+      { id: 33, en: "boy", fr: "le garçon", es: "el niño / chico", gender: "masculine" },
+      { id: 34, en: "job", fr: "l'emploi", es: "el empleo", gender: "masculine" },
+      { id: 35, en: "baby", fr: "le bébé", es: "el bebé", gender: "masculine" },
+      { id: 36, en: "family", fr: "la famille", es: "la familia", gender: "feminine" },
+      { id: 37, en: "room", fr: "la chambre", es: "la habitación", gender: "feminine" },
+      { id: 38, en: "brother", fr: "le frère", es: "el hermano", gender: "masculine" },
+      { id: 39, en: "head", fr: "la tête", es: "la cabeza", gender: "feminine" },
+      { id: 40, en: "idea", fr: "l'idée", es: "la idea", gender: "feminine" },
+      { id: 41, en: "wife", fr: "l'épouse", es: "la esposa", gender: "feminine" },
+      { id: 42, en: "start", fr: "le début", es: "el comienzo / inicio", gender: "masculine" },
+      { id: 43, en: "door", fr: "la porte", es: "la puerta", gender: "feminine" },
+      { id: 44, en: "bit", fr: "le morceau", es: "el trozo / pedazo", gender: "masculine" },
+      { id: 45, en: "matter", fr: "l'affaire", es: "el asunto / la cuestión", gender: "feminine" },
+      { id: 46, en: "run", fr: "la course", es: "la carrera", gender: "feminine" },
+      { id: 47, en: "school", fr: "l'école", es: "la escuela", gender: "feminine" },
+      { id: 48, en: "play", fr: "le jeu", es: "el juego", gender: "masculine" },
+      { id: 49, en: "problem", fr: "le problème", es: "el problema", gender: "masculine" },
+      { id: 50, en: "end", fr: "la fin", es: "el fin / la final", gender: "feminine" },
+      { id: 51, en: "phone", fr: "le téléphone", es: "el teléfono", gender: "masculine" },
+      { id: 52, en: "hope", fr: "l'espoir", es: "la esperanza", gender: "masculine" },
+      { id: 53, en: "excuse", fr: "l'excuse", es: "la excusa", gender: "feminine" },
+      { id: 54, en: "face", fr: "le visage", es: "la cara / el rostro", gender: "masculine" },
+      { id: 55, en: "turn", fr: "le tour", es: "el turno / la vuelta", gender: "masculine" },
+      { id: 56, en: "police", fr: "la police", es: "la policía", gender: "feminine" },
+      { id: 57, en: "heart", fr: "le cœur", es: "el corazón", gender: "masculine" },
+      { id: 58, en: "worry", fr: "l'inquiétude", es: "la preocupación", gender: "feminine" },
+      { id: 59, en: "business", fr: "les affaires", es: "los negocios", gender: "feminine plural" },
+      { id: 60, en: "watch", fr: "la montre", es: "el reloj", gender: "feminine" },
+      { id: 61, en: "year", fr: "l'an / l'année", es: "el año", gender: "masculine / feminine" },
+      { id: 62, en: "hand", fr: "la main", es: "la mano", gender: "feminine" },
+      { id: 63, en: "doctor", fr: "le médecin", es: "el médico / doctor", gender: "masculine" },
+      { id: 64, en: "sit", fr: "l'assise", es: "el asiento / base", gender: "feminine" },
+      { id: 65, en: "second", fr: "la seconde", es: "el segundo", gender: "feminine" },
+      { id: 66, en: "kid", fr: "l'enfant", es: "el niño / la niña", gender: "masculine" },
+      { id: 67, en: "pay", fr: "le paiement", es: "el pago", gender: "masculine" },
+      { id: 68, en: "water", fr: "l'eau", es: "el agua", gender: "feminine" },
+      { id: 69, en: "death", fr: "la mort", es: "la muerte", gender: "feminine" },
+      { id: 70, en: "stuff", fr: "les choses", es: "las cosas", gender: "feminine plural" },
+      { id: 71, en: "minute", fr: "la minute", es: "el minuto", gender: "feminine" },
+      { id: 72, en: "part", fr: "la partie", es: "la parte", gender: "feminine" },
+      { id: 73, en: "person", fr: "la personne", es: "la persona", gender: "feminine" },
+      { id: 74, en: "drink", fr: "la boisson", es: "la bebida", gender: "feminine" },
+      { id: 75, en: "change", fr: "le changement", es: "el cambio", gender: "masculine" },
+      { id: 76, en: "hit", fr: "le coup", es: "el golpe", gender: "masculine" },
+      { id: 77, en: "check", fr: "le chèque", es: "el cheque", gender: "masculine" },
+      { id: 78, en: "music", fr: "la musique", es: "la música", gender: "feminine" },
+      { id: 79, en: "inside", fr: "l'intérieur", es: "el interior", gender: "masculine" },
+      { id: 80, en: "sleep", fr: "le sommeil", es: "el sueño", gender: "masculine" },
+      { id: 81, en: "mine", fr: "le mien / la mienne", es: "el mío / la mía", gender: "masculine / feminine" },
+      { id: 82, en: "deal", fr: "l'accord", es: "el trato / acuerdo", gender: "masculine" },
+      { id: 83, en: "point", fr: "le point", es: "el punto", gender: "masculine" },
+      { id: 84, en: "body", fr: "le corps", es: "el cuerpo", gender: "masculine" },
+      { id: 85, en: "dear", fr: "le cher", es: "el querido", gender: "masculine" },
+      { id: 86, en: "chance", fr: "la chance", es: "la suerte / oportunidad", gender: "feminine" },
+      { id: 87, en: "close", fr: "la fermeture", es: "el cierre", gender: "feminine" },
+      { id: 88, en: "party", fr: "la fête", es: "la fiesta", gender: "feminine" },
+      { id: 89, en: "daughter", fr: "la fille", es: "la hija", gender: "feminine" },
+      { id: 90, en: "word", fr: "le mot", es: "la palabra", gender: "masculine" },
+      { id: 91, en: "fun", fr: "l'amusement", es: "la diversión", gender: "masculine" },
+      { id: 92, en: "number", fr: "le numéro", es: "el número", gender: "masculine" },
+      { id: 93, en: "story", fr: "l'histoire", es: "la historia", gender: "feminine" },
+      { id: 94, en: "set", fr: "l'ensemble", es: "el conjunto", gender: "masculine" },
+      { id: 95, en: "wish", fr: "le souhait", es: "el deseo", gender: "masculine" },
+      { id: 96, en: "husband", fr: "le mari", es: "el marido / esposo", gender: "masculine" },
+      { id: 97, en: "fire", fr: "le feu", es: "el fuego", gender: "masculine" },
+      { id: 98, en: "fight", fr: "le combat", es: "el combate / la lucha", gender: "masculine" },
+      { id: 99, en: "rest", fr: "le repos", es: "el descanso", gender: "masculine" },
+      { id: 100, en: "moment", fr: "le moment", es: "el momento", gender: "masculine" },
+      { id: 101, en: "week", fr: "la semaine", es: "la semana", gender: "feminine" },
+      { id: 102, en: "stand", fr: "le stand", es: "el puesto / estand", gender: "masculine" },
+      { id: 103, en: "game", fr: "le jeu", es: "el juego", gender: "masculine" },
+      { id: 104, en: "cut", fr: "la coupure", es: "el corte / la cortadura", gender: "feminine" },
+      { id: 105, en: "sister", fr: "la sœur", es: "la hermana", gender: "feminine" },
+      { id: 106, en: "child", fr: "l'enfant", es: "el niño", gender: "masculine" },
+      { id: 107, en: "side", fr: "le côté", es: "el lado", gender: "masculine" },
+      { id: 108, en: "blood", fr: "le sang", es: "la sangre", gender: "masculine" },
+      { id: 109, en: "truth", fr: "la vérité", es: "la verdad", gender: "feminine" },
+      { id: 110, en: "lady", fr: "la dame", es: "la dama / señora", gender: "feminine" },
+      { id: 111, en: "shot", fr: "le coup", es: "el disparo / tiro", gender: "masculine" },
+      { id: 112, en: "war", fr: "la guerre", es: "la guerra", gender: "feminine" },
+      { id: 113, en: "break", fr: "la pause", es: "la pausa / descanso", gender: "feminine" },
+      { id: 114, en: "walk", fr: "la promenade", es: "el paseo / caminata", gender: "feminine" },
+      { id: 115, en: "reason", fr: "la raison", es: "la razón", gender: "feminine" },
+      { id: 116, en: "trouble", fr: "les problèmes", es: "los problemas", gender: "masculine plural" },
+      { id: 117, en: "city", fr: "la ville", es: "la ciudad", gender: "feminine" },
+      { id: 118, en: "town", fr: "la ville", es: "el pueblo / la ciudad", gender: "feminine" },
+      { id: 119, en: "trust", fr: "la confiance", es: "la confianza", gender: "feminine" },
+      { id: 120, en: "question", fr: "la question", es: "la pregunta / cuestión", gender: "feminine" },
+      { id: 121, en: "office", fr: "le bureau", es: "la oficina / escritorio", gender: "masculine" },
+      { id: 122, en: "half", fr: "la moitié", es: "la mitad", gender: "feminine" },
+      { id: 123, en: "welcome", fr: "la bienvenue", es: "la bienvenida", gender: "feminine" },
+      { id: 124, en: "couple", fr: "le couple", es: "la pareja", gender: "masculine" },
+      { id: 125, en: "hurry", fr: "la hâte", es: "la prisa", gender: "feminine" },
+      { id: 126, en: "honey", fr: "le chéri", es: "el cariño / cariñito", gender: "masculine" },
+      { id: 127, en: "power", fr: "le pouvoir", es: "el poder", gender: "masculine" },
+      { id: 128, en: "bed", fr: "le lit", es: "la cama", gender: "masculine" },
+      { id: 129, en: "front", fr: "le devant", es: "el frente", gender: "masculine" },
+      { id: 130, en: "answer", fr: "la réponse", es: "la respuesta", gender: "feminine" },
+      { id: 131, en: "gun", fr: "le fusil", es: "el rifle / arma", gender: "masculine" },
+      { id: 132, en: "line", fr: "la ligne", es: "la línea", gender: "feminine" },
+      { id: 133, en: "team", fr: "l'équipe", es: "el equipo", gender: "feminine" },
+      { id: 134, en: "news", fr: "les nouvelles", es: "las noticias", gender: "feminine plural" },
+      { id: 135, en: "captain", fr: "le capitaine", es: "el capitán", gender: "masculine" },
+      { id: 136, en: "hate", fr: "la haine", es: "el odio", gender: "feminine" },
+      { id: 137, en: "dog", fr: "le chien", es: "el perro", gender: "masculine" },
+      { id: 138, en: "food", fr: "la nourriture", es: "la comida / alimento", gender: "feminine" },
+      { id: 139, en: "light", fr: "la lumière", es: "la luz", gender: "feminine" },
+      { id: 140, en: "order", fr: "l'ordre", es: "el orden", gender: "masculine" },
+      { id: 141, en: "country", fr: "le pays", es: "el país", gender: "masculine" },
+      { id: 142, en: "pick", fr: "le choix", es: "la elección / opción", gender: "masculine" },
+      { id: 143, en: "fact", fr: "le fait", es: "el hecho", gender: "masculine" },
+      { id: 144, en: "black", fr: "le noir", es: "el negro", gender: "masculine" },
+      { id: 145, en: "boss", fr: "le chef", es: "el jefe", gender: "masculine" },
+      { id: 146, en: "cause", fr: "la cause", es: "la causa", gender: "feminine" },
+      { id: 147, en: "dinner", fr: "le dîner", es: "la cena", gender: "masculine" },
+      { id: 148, en: "promise", fr: "la promesse", es: "la promesa", gender: "feminine" },
+      { id: 149, en: "plan", fr: "le plan", es: "el plan", gender: "masculine" },
+      { id: 150, en: "sort", fr: "la sorte", es: "el tipo / la clase", gender: "feminine" },
+      { id: 151, en: "book", fr: "le livre", es: "el libro", gender: "masculine" },
+      { id: 152, en: "hour", fr: "l'heure", es: "la hora", gender: "feminine" },
+      { id: 153, en: "uncle", fr: "l'oncle", es: "el tío", gender: "masculine" },
+      { id: 154, en: "safe", fr: "le coffre-fort", es: "la caja fuerte", gender: "masculine" },
+      { id: 155, en: "shoot", fr: "le tir", es: "el tiro / disparo", gender: "masculine" },
+      { id: 156, en: "touch", fr: "le toucher", es: "el tacto / toque", gender: "masculine" },
+      { id: 157, en: "company", fr: "l'entreprise", es: "la empresa / compañía", gender: "feminine" },
+      { id: 158, en: "past", fr: "le passé", es: "el pasado", gender: "masculine" },
+      { id: 159, en: "bitch", fr: "la salope", es: "la perra / zorra", gender: "feminine" },
+      { id: 160, en: "sound", fr: "le son", es: "el sonido", gender: "masculine" },
+      { id: 161, en: "hair", fr: "les cheveux", es: "el cabello / pelo", gender: "masculine plural" },
+      { id: 162, en: "human", fr: "l'humain", es: "el humano", gender: "masculine" },
+      { id: 163, en: "drive", fr: "la conduite", es: "la conducción / manejo", gender: "feminine" },
+      { id: 164, en: "luck", fr: "la chance", es: "la suerte", gender: "feminine" },
+      { id: 165, en: "top", fr: "le sommet", es: "la cima / cumbre", gender: "masculine" },
+      { id: 166, en: "win", fr: "la victoire", es: "la victoria", gender: "feminine" },
+      { id: 167, en: "control", fr: "le contrôle", es: "el control", gender: "masculine" },
+      { id: 168, en: "cold", fr: "le froid", es: "el frío", gender: "masculine" },
+      { id: 169, en: "air", fr: "l'air", es: "el aire", gender: "masculine" },
+      { id: 170, en: "master", fr: "le maître", es: "el amo / maestro", gender: "masculine" },
+      { id: 171, en: "dance", fr: "la danse", es: "la danza / baile", gender: "feminine" },
+      { id: 172, en: "sex", fr: "le sexe", es: "el sexo", gender: "masculine" },
+      { id: 173, en: "others", fr: "les autres", es: "los otros / las otras", gender: "masculine plural" },
+      { id: 174, en: "hospital", fr: "l'hôpital", es: "el hospital", gender: "masculine" },
+      { id: 175, en: "street", fr: "la rue", es: "la calle", gender: "feminine" },
+      { id: 176, en: "murder", fr: "le meurtre", es: "el asesinato", gender: "masculine" },
+      { id: 177, en: "lie", fr: "le mensonge", es: "la mentira", gender: "masculine" },
+      { id: 178, en: "dream", fr: "le rêve", es: "el sueño", gender: "masculine" },
+      { id: 179, en: "catch", fr: "la capture", es: "la captura", gender: "feminine" },
+      { id: 180, en: "sweet", fr: "la douceur", es: "la dulzura", gender: "feminine" },
+      { id: 181, en: "sense", fr: "le sens", es: "el sentido", gender: "masculine" },
+      { id: 182, en: "bet", fr: "le pari", es: "la apuesta", gender: "masculine" },
+      { id: 183, en: "voice", fr: "la voix", es: "la voz", gender: "feminine" },
+      { id: 184, en: "sign", fr: "le signe", es: "el signo / la señal", gender: "masculine" },
+      { id: 185, en: "quiet", fr: "la tranquillité", es: "la tranquilidad", gender: "feminine" },
+      { id: 186, en: "felt", fr: "le ressenti", es: "la sensación / percepción", gender: "masculine" },
+      { id: 187, en: "beat", fr: "le rythme", es: "el ritmo / latido", gender: "masculine" },
+      { id: 188, en: "return", fr: "le retour", es: "el regreso / retorno", gender: "masculine" },
+      { id: 189, en: "coffee", fr: "le café", es: "el café", gender: "masculine" },
+      { id: 190, en: "date", fr: "le rendez-vous", es: "la cita", gender: "masculine" },
+      { id: 191, en: "pull", fr: "la traction", es: "la tracción / jalón", gender: "feminine" },
+      { id: 192, en: "secret", fr: "le secret", es: "el secreto", gender: "masculine" },
+      { id: 193, en: "fault", fr: "la faute", es: "la falta / culpa", gender: "feminine" },
+      { id: 194, en: "fall", fr: "la chute", es: "la caída", gender: "feminine" },
+      { id: 195, en: "song", fr: "la chanson", es: "la canción", gender: "feminine" },
+      { id: 196, en: "calm", fr: "le calme", es: "la calma", gender: "masculine" },
+      { id: 197, en: "road", fr: "la route", es: "la carretera / ruta", gender: "feminine" },
+      { id: 198, en: "drop", fr: "la goutte", es: "la gota", gender: "feminine" },
+      { id: 199, en: "future", fr: "l'avenir", es: "el futuro / porvenir", gender: "masculine" },
+      { id: 200, en: "throw", fr: "le lancer", es: "el lanzamiento", gender: "masculine" },
+      { id: 201, en: "step", fr: "le pas", es: "el paso", gender: "masculine" },
+      { id: 202, en: "piece", fr: "la pièce", es: "la pieza / cuarto", gender: "feminine" },
+      { id: 203, en: "picture", fr: "l'image", es: "la imagen / foto", gender: "feminine" },
+      { id: 204, en: "land", fr: "la terre", es: "la tierra", gender: "feminine" },
+      { id: 205, en: "wonder", fr: "la merveille", es: "la maravilla", gender: "feminine" },
+      { id: 206, en: "worth", fr: "la valeur", es: "el valor", gender: "feminine" },
+      { id: 207, en: "president", fr: "le président", es: "el presidente", gender: "masculine" },
+      { id: 208, en: "eye", fr: "l'œil", es: "el ojo", gender: "masculine" },
+      { id: 209, en: "dude", fr: "le type", es: "el tipo / sujeto", gender: "masculine" },
+      { id: 210, en: "state", fr: "l'état", es: "el estado", gender: "masculine" },
+      { id: 211, en: "figure", fr: "la figure", es: "la figura / cara", gender: "feminine" },
+      { id: 212, en: "act", fr: "l'acte", es: "el acto", gender: "masculine" },
+      { id: 213, en: "law", fr: "la loi", es: "la ley", gender: "feminine" },
+      { id: 214, en: "kiss", fr: "le baiser", es: "el beso", gender: "masculine" },
+      { id: 215, en: "works", fr: "les travaux", es: "las obras / trabajos", gender: "masculine plural" },
+      { id: 216, en: "report", fr: "le rapport", es: "el informe / reporte", gender: "masculine" },
+      { id: 217, en: "pain", fr: "la douleur", es: "el dolor", gender: "feminine" },
+      { id: 218, en: "pass", fr: "la passe", es: "el pase", gender: "feminine" },
+      { id: 219, en: "wake", fr: "le réveil", es: "el despertar / despertador", gender: "masculine" },
+      { id: 220, en: "general", fr: "le général", es: "el general", gender: "masculine" },
+      { id: 221, en: "ship", fr: "le navire", es: "el barco / buque", gender: "masculine" },
+      { id: 222, en: "choice", fr: "le choix", es: "la elección", gender: "masculine" },
+      { id: 223, en: "class", fr: "la classe", es: "la clase", gender: "feminine" },
+      { id: 224, en: "officer", fr: "l'officier", es: "el oficial", gender: "masculine" },
+      { id: 225, en: "mistake", fr: "l'erreur", es: "el error", gender: "feminine" },
+      { id: 226, en: "chief", fr: "le chef", es: "el jefe / comandante", gender: "masculine" },
+      { id: 227, en: "age", fr: "l me âge", es: "la edad", gender: "masculine" },
+      { id: 228, en: "mouth", fr: "la bouche", es: "la boca", gender: "feminine" },
+      { id: 229, en: "finish", fr: "la fin", es: "el final / la meta", gender: "feminine" },
+      { id: 230, en: "clothes", fr: "les vêtements", es: "la ropa / prendas", gender: "masculine plural" },
+      { id: 231, en: "ride", fr: "le trajet", es: "el trayecto / viaje", gender: "masculine" },
+      { id: 232, en: "birthday", fr: "l'anniversaire", es: "el cumpleaños", gender: "masculine" },
+      { id: 233, en: "dark", fr: "l'obscurité", es: "la oscuridad", gender: "feminine" },
+      { id: 234, en: "system", fr: "le système", es: "el sistema", gender: "masculine" },
+      { id: 235, en: "film", fr: "le film", es: "la película", gender: "masculine" },
+      { id: 236, en: "court", fr: "la cour", es: "la corte / patio", gender: "feminine" },
+      { id: 237, en: "movie", fr: "le film", es: "el filme / película", gender: "masculine" },
+      { id: 238, en: "month", fr: "le mois", es: "el mes", gender: "masculine" },
+      { id: 239, en: "wear", fr: "l'usure", es: "el desgaste / usura", gender: "feminine" },
+      { id: 240, en: "train", fr: "le train", es: "el tren", gender: "masculine" },
+      { id: 241, en: "hotel", fr: "l'hôtel", es: "el hotel", gender: "masculine" },
+      { id: 242, en: "evidence", fr: "la preuve", es: "la prueba / evidencia", gender: "feminine" },
+      { id: 243, en: "security", fr: "la sécurité", es: "la seguridad", gender: "feminine" },
+      { id: 244, en: "information", fr: "l'information", es: "la información", gender: "feminine" },
+      { id: 245, en: "bag", fr: "le sac", es: "la bolsa / bolso", gender: "masculine" },
+      { id: 246, en: "attack", fr: "l'attaque", es: "el ataque", gender: "feminine" },
+      { id: 247, en: "round", fr: "le tour", es: "la ronda / vuelta", gender: "masculine" },
+      { id: 248, en: "blue", fr: "le bleu", es: "el azul", gender: "masculine" },
+      { id: 249, en: "station", fr: "la gare", es: "la estación", gender: "feminine" },
+      { id: 250, en: "table", fr: "la table", es: "la mesa", gender: "feminine" },
+      { id: 251, en: "message", fr: "le message", es: "el mensaje", gender: "masculine" },
+      { id: 252, en: "history", fr: "l'histoire", es: "la historia", gender: "feminine" },
+      { id: 253, en: "fool", fr: "l'imbécile", es: "el imbécil", gender: "masculine" },
+      { id: 254, en: "buddy", fr: "le copain / la copine", es: "el compañero / la compañera", gender: "masculine / feminine" },
+      { id: 255, en: "floor", fr: "le sol", es: "el suelo / piso", gender: "masculine" },
+      { id: 256, en: "sun", fr: "le soleil", es: "el sol", gender: "masculine" },
+      { id: 257, en: "handle", fr: "la poignée", es: "la manija / mango", gender: "feminine" },
+      { id: 258, en: "army", fr: "l'armée", es: "el ejército", gender: "feminine" },
+      { id: 259, en: "marriage", fr: "le mariage", es: "el matrimonio / boda", gender: "masculine" },
+      { id: 260, en: "letter", fr: "la lettre", es: "la carta / letra", gender: "feminine" },
+      { id: 261, en: "attention", fr: "l'attention", es: "la atención", gender: "feminine" },
+      { id: 262, en: "peace", fr: "la paix", es: "la paz", gender: "feminine" },
+      { id: 263, en: "situation", fr: "la situation", es: "la situación", gender: "feminine" },
+      { id: 264, en: "middle", fr: "le milieu", es: "el medio / centro", gender: "masculine" },
+      { id: 265, en: "rock", fr: "le rocher", es: "la roca / peñasco", gender: "masculine" },
+      { id: 266, en: "test", fr: "le test", es: "la prueba / test", gender: "masculine" },
+      { id: 267, en: "lead", fr: "le plomb", es: "el plomo", gender: "masculine" },
+      { id: 268, en: "club", fr: "le club", es: "el club", gender: "masculine" },
+      { id: 269, en: "fear", fr: "la peur", es: "el miedo", gender: "feminine" },
+      { id: 270, en: "present", fr: "le présent", es: "el presente", gender: "masculine" },
+      { id: 271, en: "idiot", fr: "l'idiot", es: "el idiota", gender: "masculine" },
+      { id: 272, en: "box", fr: "la boîte", es: "la caja", gender: "feminine" },
+      { id: 273, en: "ball", fr: "la balle", es: "la pelota / bala", gender: "feminine" },
+      { id: 274, en: "group", fr: "le groupe", es: "el grupo", gender: "masculine" },
+      { id: 275, en: "boat", fr: "le bateau", es: "el barco / bote", gender: "masculine" },
+      { id: 276, en: "count", fr: "le compte", es: "la cuenta", gender: "masculine" },
+      { id: 277, en: "bastard", fr: "le bâtard", es: "el bastardo", gender: "masculine" },
+      { id: 278, en: "crime", fr: "le crime", es: "el crimen", gender: "masculine" },
+      { id: 279, en: "key", fr: "la clé", es: "la llave", gender: "feminine" },
+      { id: 280, en: "force", fr: "la force", es: "la fuerza", gender: "feminine" },
+      { id: 281, en: "horse", fr: "le cheval", es: "el caballo", gender: "masculine" },
+      { id: 282, en: "lunch", fr: "le déjeuner", es: "el almuerzo", gender: "masculine" },
+      { id: 283, en: "american", fr: "l'américain", es: "el americano", gender: "masculine" },
+      { id: 284, en: "paper", fr: "le papier", es: "el papel", gender: "masculine" },
+      { id: 285, en: "charge", fr: "la charge", es: "la carga / cargo", gender: "feminine" },
+      { id: 286, en: "surprise", fr: "la surprise", es: "la sorpresa", gender: "feminine" },
+      { id: 287, en: "space", fr: "l'espace", es: "el espacio", gender: "masculine" },
+      { id: 288, en: "fell", fr: "la chute", es: "la caída", gender: "feminine" },
+      { id: 289, en: "honor", fr: "l'honneur", es: "el honor", gender: "masculine" },
+      { id: 290, en: "accident", fr: "l'accident", es: "el accidente", gender: "masculine" },
+      { id: 291, en: "fish", fr: "le poisson", es: "el pez / pescado", gender: "masculine" },
+      { id: 292, en: "bar", fr: "le bar", es: "el bar / barra", gender: "masculine" },
+      { id: 293, en: "ground", fr: "le sol", es: "el terreno / suelo", gender: "masculine" },
+      { id: 294, en: "government", fr: "le gouvernement", es: "el gobierno", gender: "masculine" },
+      { id: 295, en: "bank", fr: "la banque", es: "el banco", gender: "feminine" },
+      { id: 296, en: "cover", fr: "la couverture", es: "la cubierta / cobija", gender: "feminine" },
+      { id: 297, en: "major", fr: "le major", es: "el mayor / comandante", gender: "masculine" },
+      { id: 298, en: "hide", fr: "la cachette", es: "el escondite", gender: "feminine" },
+      { id: 299, en: "stick", fr: "le bâton", es: "el palo / bastón", gender: "masculine" },
+      { id: 300, en: "sea", fr: "la mer", es: "el mar", gender: "feminine" },
+      { id: 301, en: "tea", fr: "le thé", es: "el té", gender: "masculine" },
+      { id: 302, en: "area", fr: "la région", es: "la región / área", gender: "feminine" },
+      { id: 303, en: "dress", fr: "la robe", es: "el vestido", gender: "feminine" },
+      { id: 304, en: "service", fr: "le service", es: "el servicio", gender: "masculine" },
+      { id: 305, en: "trip", fr: "le voyage", es: "el viaje", gender: "masculine" },
+      { id: 306, en: "radio", fr: "la radio", es: "la radio", gender: "feminine" },
+      { id: 307, en: "blow", fr: "le coup", es: "el golpe / soplo", gender: "masculine" },
+      { id: 308, en: "star", fr: "l'étoile", es: "la estrella", gender: "feminine" },
+      { id: 309, en: "record", fr: "le disque", es: "el disco / récord", gender: "masculine" },
+      { id: 310, en: "offer", fr: "l'offre", es: "la oferta", gender: "feminine" },
+      { id: 311, en: "prison", fr: "la prison", es: "la prisión / cárcel", gender: "feminine" }
+    ];
+
+    function renderTable(data) {
+      const tbody = document.getElementById("tableBody");
+      tbody.innerHTML = "";
+
+      data.forEach(item => {
+        let badgeClass = "badge-masculine";
+        let genderLabel = "MASCULINO";
+
+        if (item.gender.includes("feminine")) {
+          badgeClass = "badge-feminine";
+          genderLabel = "FEMENINO";
+        }
+        if (item.gender.includes("plural")) {
+          badgeClass = "badge-plural";
+          genderLabel += " PLURAL";
+        }
+
+        const tr = document.createElement("tr");
+        tr.innerHTML = `
+          <td>${item.id}</td>
+          <td>
+            <span class="french-text" data-fr="${encodeURIComponent(item.fr)}" data-es="${encodeURIComponent(item.es)}">${item.fr}</span>
+            <button class="btn-audio" data-fr="${encodeURIComponent(item.fr)}" data-es="${encodeURIComponent(item.es)}">🔊</button>
+          </td>
+          <td><span class="badge ${badgeClass}">${genderLabel}</span></td>
+          <td><span class="spanish-text" data-fr="${encodeURIComponent(item.fr)}" data-es="${encodeURIComponent(item.es)}">${item.es}</span></td>
+          <td style="color: #888;">${item.en}</td>
+        `;
+        tbody.appendChild(tr);
+      });
+    }
+
+    function filterTable() {
+      const query = document.getElementById("searchInput").value.toLowerCase();
+      const filtered = nounsData.filter(item => 
+        item.fr.toLowerCase().includes(query) ||
+        item.es.toLowerCase().includes(query) ||
+        item.en.toLowerCase().includes(query)
+      );
+      renderTable(filtered);
+    }
+
+    let voices = [];
+
+    function loadVoices() {
+      if ('speechSynthesis' in window) {
+        voices = window.speechSynthesis.getVoices();
+      }
+    }
+
+    if ('speechSynthesis' in window) {
+      loadVoices();
+      if (speechSynthesis.onvoiceschanged !== undefined) {
+        speechSynthesis.onvoiceschanged = loadVoices;
+      }
+    }
+
+    function getElenaSpanishVoice() {
+      let elena = voices.find(v => 
+        v.name.includes("Elena") || 
+        (v.lang.toLowerCase().includes("es-ar") && v.name.toLowerCase().includes("microsoft"))
+      );
+
+      if (!elena) {
+        elena = voices.find(v => v.lang.toLowerCase().includes("es-ar")) || 
+                voices.find(v => v.lang.toLowerCase().startsWith("es"));
+      }
+
+      return elena;
+    }
+
+    function getFrenchVoice() {
+      const frVoices = voices.filter(v => v.lang.toLowerCase().startsWith("fr"));
+      const femaleFrench = frVoices.find(v => 
+        v.name.toLowerCase().includes("hortense") || 
+        v.name.toLowerCase().includes("celeste") || 
+        v.name.toLowerCase().includes("julie") ||
+        v.name.toLowerCase().includes("google")
+      );
+
+      return femaleFrench || frVoices[0] || null;
+    }
+
+    function playAudio(frenchText, spanishText) {
+      if (!('speechSynthesis' in window)) {
+        alert("Tu navegador no soporta síntesis de voz.");
+        return;
+      }
+
+      window.speechSynthesis.cancel();
+
+      const frenchUtterance = new SpeechSynthesisUtterance(frenchText);
+      frenchUtterance.lang = 'fr-FR';
+      frenchUtterance.pitch = 1.25;
+      frenchUtterance.rate = 0.95;
+
+      const frVoice = getFrenchVoice();
+      if (frVoice) frenchUtterance.voice = frVoice;
+
+      const spanishUtterance = new SpeechSynthesisUtterance(spanishText);
+      spanishUtterance.lang = 'es-AR';
+      spanishUtterance.pitch = 1.25;
+      spanishUtterance.rate = 1.0;
+
+      const esVoice = getElenaSpanishVoice();
+      if (esVoice) spanishUtterance.voice = esVoice;
+
+      frenchUtterance.onend = function() {
+        window.speechSynthesis.speak(spanishUtterance);
+      };
+
+      window.speechSynthesis.speak(frenchUtterance);
+    }
+
+    document.addEventListener("click", function(e) {
+      const target = e.target.closest("[data-fr]");
+      if (target) {
+        const fr = decodeURIComponent(target.getAttribute("data-fr"));
+        const es = decodeURIComponent(target.getAttribute("data-es"));
+        playAudio(fr, es);
+      }
+    });
+
+    document.addEventListener("DOMContentLoaded", () => renderTable(nounsData));
+  </script>
+
+</body>
+</html>

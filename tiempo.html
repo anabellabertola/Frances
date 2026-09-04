@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aprende Francés - Le Temps et la Météo</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      background-color: #f9f8fc;
+      color: #333;
+    }
+
+    nav {
+      background-color: #e6e6fa;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    ul.menu {
+      display: flex;
+      flex-wrap: wrap;
+      list-style: none;
+      padding: 0 10px;
+    }
+
+    ul.menu > li {
+      position: relative;
+    }
+
+    ul.menu a {
+      display: block;
+      padding: 14px 18px;
+      color: #4a3b52;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 14px;
+    }
+
+    ul.menu a:hover {
+      background-color: #d8cdfa;
+    }
+
+    ul.submenu {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background-color: #efe8ff;
+      min-width: 160px;
+      list-style: none;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+      z-index: 1000;
+    }
+
+    ul.menu > li:hover ul.submenu {
+      display: block;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: 30px auto;
+      padding: 25px;
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    }
+
+    h1 {
+      color: #5c4b6e;
+      margin-bottom: 10px;
+    }
+
+    h2 {
+      color: #7b6298;
+      margin-top: 30px;
+      margin-bottom: 10px;
+      border-bottom: 2px solid #e6e6fa;
+      padding-bottom: 5px;
+    }
+
+    p.intro {
+      color: #555;
+      margin-bottom: 15px;
+      line-height: 1.5;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 10px;
+      margin-bottom: 20px;
+    }
+
+    th, td {
+      padding: 12px;
+      border-bottom: 1px solid #eee;
+      text-align: left;
+    }
+
+    th {
+      background-color: #f2edfe;
+      color: #4a3b52;
+    }
+
+    .french-text, .spanish-text {
+      cursor: pointer;
+    }
+
+    .french-text {
+      color: #5c4b6e;
+      font-weight: 600;
+    }
+
+    .spanish-text {
+      color: #555;
+    }
+
+    .french-text:hover, .spanish-text:hover {
+      color: #9575cd;
+      text-decoration: underline;
+    }
+
+    .btn-audio {
+      background-color: #b39ddb;
+      border: none;
+      color: white;
+      padding: 5px 10px;
+      border-radius: 20px;
+      cursor: pointer;
+      font-size: 12px;
+      font-weight: bold;
+      margin-left: 6px;
+      transition: background 0.3s;
+    }
+
+    .btn-audio:hover {
+      background-color: #9575cd;
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <ul class="menu">
+      <li>
+        <a href="#">Artículos ▼</a>
+        <ul class="submenu">
+          <li><a href="definidos.html">Definidos</a></li>
+          <li><a href="#">Indefinidos</a></li>
+          <li><a href="#">Partitivos</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#">Adjetivos ▼</a>
+        <ul class="submenu">
+          <li><a href="#">Demostrativos</a></li>
+          <li><a href="#">Posesivos</a></li>
+        </ul>
+      </li>
+      <li><a href="negacion.html">Negación Básica</a></li>
+      <li><a href="#">Interrogativa</a></li>
+      <li><a href="#">Sustantivos</a></li>
+      <li><a href="#">Conectores</a></li>
+      <li><a href="#">Preposiciones</a></li>
+      <li><a href="nacionalidades.html">Nacionalidades</a></li>
+      <li><a href="#">Verbos</a></li>
+      <li><a href="numeros.html">Números</a></li>
+      <li><a href="tiempo.html">Tiempo y Clima</a></li>
+      <li><a href="saludos.html">Saludos</a></li>
+    </ul>
+  </nav>
+
+  <div class="container">
+    <h1>Le Temps et la Météo (El Tiempo y el Clima)</h1>
+    <p class="intro">Haz clic en cualquier texto o botón 🔊 para escuchar la pronunciación en francés y luego su traducción en español por **Microsoft Elena**.</p>
+
+    <!-- SECCIÓN 1: DÍAS DE LA SEMANA -->
+    <h2>1. Les Jours de la Semaine (Los Días de la Semana)</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Francés</th>
+          <th>Español</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>
+            <span class="french-text" onclick="playAudio('Lundi', 'Lunes')">Lundi</span>
+            <button class="btn-audio" onclick="playAudio('Lundi', 'Lunes')">🔊</button>
+          </td>
+          <td><span class="spanish-text" onclick="playAudio('Lundi', 'Lunes')">Lunes</span></td>
+        </tr>
+        <tr>
+          <td>
+            <span class="french-text" onclick="playAudio('Mardi', 'Martes')">Mardi</span>
+            <button class="btn-audio" onclick="playAudio('Mardi', 'Martes')">🔊</button>
+          </td>
+          <td><span class="spanish-text" onclick="playAudio('Mardi', 'Martes')">Martes</span></td>
+        </tr>
+        <tr>
+          <td>
+            <span class="french-text" onclick="playAudio('Mercredi', 'Miércoles')">Mercredi</span>
+            <button class="btn-audio" onclick="playAudio('Mercredi', 'Miércoles')">🔊</button>
+          </td>
+          <td><span class="spanish-text" onclick="playAudio('Mercredi', 'Miércoles')">Miércoles</span></td>
+        </tr>
+        <tr>
+          <td>
+            <span class="french-text" onclick="playAudio('Jeudi', 'Jueves')">Jeudi</span>
+            <button class="btn-audio" onclick="playAudio('Jeudi', 'Jueves')">🔊</button>
+          </td>
+          <td><span class="spanish-text" onclick="playAudio('Jeudi', 'Jueves')">Jueves</span></td>
+        </tr>
+        <tr>
+          <td>
+            <span class="french-text" onclick="playAudio('Vendredi', 'Viernes')">Vendredi</span>
+            <button class="btn-audio" onclick="playAudio('Vendredi', 'Viernes')">🔊</button>
+          </td>
+          <td><span class="spanish-text" onclick="playAudio('Vendredi', 'Viernes')">Viernes</span></td>
+        </tr>
+        <tr>
+          <td>
+            <span class="french-text" onclick="playAudio('Samedi', 'Sábado')">Samedi</span>
+            <button class="btn-audio" onclick="playAudio('Samedi', 'Sábado')">🔊</button>
+          </td>
+          <td><span class="spanish-text" onclick="playAudio('Samedi', 'Sábado')">Sábado</span></td>
+        </tr>
+        <tr>
+          <td>
+            <span class="french-text" onclick="playAudio('Dimanche', 'Domingo')">Dimanche</span>
+            <button class="btn-audio" onclick="playAudio('Dimanche', 'Domingo')">🔊</button>
+          </td>
+          <td><span class="spanish-text" onclick="playAudio('Dimanche', 'Domingo')">Domingo</span></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <!-- SECCIÓN 2: MESES DEL AÑO -->
+    <h2>2. Les Mois de l'Année (Los Meses del Año)</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Francés</th>
+          <th>Español</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>
+            <span class="french-text" onclick="playAudio('Janvier', 'Enero')">Janvier</span>
+            <button class="btn-audio" onclick="playAudio('Janvier', 'Enero')">🔊</button>
+          </td>
+          <td><span class="spanish-text" onclick="playAudio('Janvier', 'Enero')">Enero</span></td>
+        </tr>
+        <tr>
+          <td>
+            <span class="french-text" onclick="playAudio('Février', 'Febrero')">Février</span>
+            <button class="btn-audio" onclick="playAudio('Février', 'Febrero')">🔊</button>
+          </td>
+          <td><span class="spanish-text" onclick="playAudio('Février', 'Febrero')">Febrero</span></td>
+        </tr>
+        <tr>
+          <td>
+            <span class="french-text" onclick="playAudio('Mars', 'Marzo')">Mars</span>
+            <button class="btn-audio" onclick="playAudio('Mars', 'Marzo')">🔊</button>
+          </td>
+          <td><span class="spanish-text" onclick="playAudio('Mars', 'Marzo')">Marzo</span></td>
+        </tr>
+        <tr>
+          <td>
+            <span class="french-text" onclick="playAudio('Avril', 'Abril')">Avril</span>
+            <button class="btn-audio" onclick="playAudio('Avril', 'Abril')">🔊</button>
+          </td>
+          <td><span class="spanish-text" onclick="playAudio('Avril', 'Abril')">Abril</span></td>
+        </tr>
+        <tr>
+          <td>
+            <span class="french-text" onclick="playAudio('Mai', 'Mayo')">Mai</span>
+            <button class="btn-audio" onclick="playAudio('Mai', 'Mayo')">🔊</button>
+          </td>
+          <td><span class="spanish-text" onclick="playAudio('Mai', 'Mayo')">Mayo</span></td>
+        </tr>
+        <tr>
+          <td>
+            <span class="french-text" onclick="playAudio('Juin', 'Junio')">Juin</span>
+            <button class="btn-audio" onclick="playAudio('Juin', 'Junio')">🔊</button>
+          </td>
+          <td><span class="spanish-text" onclick="playAudio('Juin', 'Junio')">Junio</span></td>
+        </tr>
+        <tr>
+          <td>
+            <span class="french-text" onclick="playAudio('Juillet', 'Julio')">Juillet</span>
+            <button class="btn-audio" onclick="playAudio('Juillet', 'Julio')">🔊</button>
+          </td>
+          <td><span class="spanish-text" onclick="playAudio('Juillet', 'Julio')">Julio</span></td>
+        </tr>
+        <tr>
+          <td>
+            <span class="french-text" onclick="playAudio('Août', 'Agosto')">Août</span>
+            <button class="btn-audio" onclick="playAudio('Août', 'Agosto')">🔊</button>
+          </td>
+          <td><span class="spanish-text" onclick="playAudio('Août', 'Agosto')">Agosto</span></td>
+        </tr>
+        <tr>
+          <td>
+            <span class="french-text" onclick="playAudio('Septembre', 'Septiembre')">Septembre</span>
+            <button class="btn-audio" onclick="playAudio('Septembre', 'Septiembre')">🔊</button>
+          </td>
+          <td><span class="spanish-text" onclick="playAudio('Septembre', 'Septiembre')">Septiembre</span></td>
+        </tr>
+        <tr>
+          <td>
+            <span class="french-text" onclick="playAudio('Octobre', 'Octubre')">Octobre</span>
+            <button class="btn-audio" onclick="playAudio('Octobre', 'Octubre')">🔊</button>
+          </td>
+          <td><span class="spanish-text" onclick="playAudio('Octobre', 'Octubre')">Octubre</span></td>
+        </tr>
+        <tr>
+          <td>
+            <span class="french-text" onclick="playAudio('Novembre', 'Noviembre')">Novembre</span>
+            <button class="btn-audio" onclick="playAudio('Novembre', 'Noviembre')">🔊</button>
+          </td>
+          <td><span class="spanish-text" onclick="playAudio('Novembre', 'Noviembre')">Noviembre</span></td>
+        </tr>
+        <tr>
+          <td>
+            <span class="french-text" onclick="playAudio('Décembre', 'Diciembre')">Décembre</span>
+            <button class="btn-audio" onclick="playAudio('Décembre', 'Diciembre')">🔊</button>
+          </td>
+          <td><span class="spanish-text" onclick="playAudio('Décembre', 'Diciembre')">Diciembre</span></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <!-- SECCIÓN 3: LAS ESTACIONES -->
+    <h2>3. Les Saisons (Las Estaciones)</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Francés</th>
+          <th>Español</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>
+            <span class="french-text" onclick="playAudio('Le printemps', 'La primavera')">Le printemps</span>
+            <button class="btn-audio" onclick="playAudio('Le printemps', 'La primavera')">🔊</button>
+          </td>
+          <td><span class="spanish-text" onclick="playAudio('Le printemps', 'La primavera')">La primavera</span></td>
+        </tr>
+        <tr>
+          <td>
+            <span class="french-text" onclick="playAudio('L\'été', 'El verano')">L'été</span>
+            <button class="btn-audio" onclick="playAudio('L\'été', 'El verano')">🔊</button>
+          </td>
+          <td><span class="spanish-text" onclick="playAudio('L\'été', 'El verano')">El verano</span></td>
+        </tr>
+        <tr>
+          <td>
+            <span class="french-text" onclick="playAudio('L\'automne', 'El otoño')">L'automne</span>
+            <button class="btn-audio" onclick="playAudio('L\'automne', 'El otoño')">🔊</button>
+          </td>
+          <td><span class="spanish-text" onclick="playAudio('L\'automne', 'El otoño')">El otoño</span></td>
+        </tr>
+        <tr>
+          <td>
+            <span class="french-text" onclick="playAudio('L\'hiver', 'El invierno')">L'hiver</span>
+            <button class="btn-audio" onclick="playAudio('L\'hiver', 'El invierno')">🔊</button>
+          </td>
+          <td><span class="spanish-text" onclick="playAudio('L\'hiver', 'El invierno')">El invierno</span></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <!-- SECCIÓN 4: LA HORA -->
+    <h2>4. L'Heure (La Hora)</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Francés</th>
+          <th>Español</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>
+            <span class="french-text" onclick="playAudio('Quelle heure est-il ?', '¿Qué hora es?')">Quelle heure est-il ?</span>
+            <button class="btn-audio" onclick="playAudio('Quelle heure est-il ?', '¿Qué hora es?')">🔊</button>
+          </td>
+          <td><span class="spanish-text" onclick="playAudio('Quelle heure est-il ?', '¿Qué hora es?')">¿Qué hora es?</span></td>
+        </tr>
+        <tr>
+          <td>
+            <span class="french-text" onclick="playAudio('Il est une heure', 'Es la una')">Il est une heure</span>
+            <button class="btn-audio" onclick="playAudio('Il est une heure', 'Es la una')">🔊</button>
+          </td>
+          <td><span class="spanish-text" onclick="playAudio('Il est une heure', 'Es la una')">Es la una</span></td>
+        </tr>
+        <tr>
+          <td>
+            <span class="french-text" onclick="playAudio('Il est deux heures', 'Son las dos')">Il est deux heures</span>
+            <button class="btn-audio" onclick="playAudio('Il est deux heures', 'Son las dos')">🔊</button>
+          </td>
+          <td><span class="spanish-text" onclick="playAudio('Il est deux heures', 'Son las dos')">Son las dos</span></td>
+        </tr>
+        <tr>
+          <td>
+            <span class="french-text" onclick="playAudio('Il est midi', 'Es mediodía')">Il est midi</span>
+            <button class="btn-audio" onclick="playAudio('Il est midi', 'Es mediodía')">🔊</button>
+          </td>
+          <td><span class="spanish-text" onclick="playAudio('Il est midi', 'Es mediodía')">Es mediodía</span></td>
+        </tr>
+        <tr>
+          <td>
+            <span class="french-text" onclick="playAudio('Il est minuit', 'Es medianoche')">Il est minuit</span>
+            <button class="btn-audio" onclick="playAudio('Il est minuit', 'Es medianoche')">🔊</button>
+          </td>
+          <td><span class="spanish-text" onclick="playAudio('Il est minuit', 'Es medianoche')">Es medianoche</span></td>
+        </tr>
+        <tr>
+          <td>
+            <span class="french-text" onclick="playAudio('Il est trois heures et quart', 'Son las tres y cuarto')">Il est trois heures et quart</span>
+            <button class="btn-audio" onclick="playAudio('Il est trois heures et quart', 'Son las tres y cuarto')">🔊</button>
+          </td>
+          <td><span class="spanish-text" onclick="playAudio('Il est trois heures et quart', 'Son las tres y cuarto')">Son las tres y cuarto</span></td>
+        </tr>
+        <tr>
+          <td>
+            <span class="french-text" onclick="playAudio('Il est cinq heures et demie', 'Son las cinco y media')">Il est cinq heures et demie</span>
+            <button class="btn-audio" onclick="playAudio('Il est cinq heures et demie', 'Son las cinco y media')">🔊</button>
+          </td>
+          <td><span class="spanish-text" onclick="playAudio('Il est cinq heures et demie', 'Son las cinco y media')">Son las cinco y media</span></td>
+        </tr>
+        <tr>
+          <td>
+            <span class="french-text" onclick="playAudio('Il est six heures moins le quart', 'Son las seis menos cuarto')">Il est six heures moins le quart</span>
+            <button class="btn-audio" onclick="playAudio('Il est six heures moins le quart', 'Son las seis menos cuarto')">🔊</button>
+          </td>
+          <td><span class="spanish-text" onclick="playAudio('Il est six heures moins le quart', 'Son las seis menos cuarto')">Son las seis menos cuarto</span></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <!-- SECCIÓN 5: EL CLIMA / TIEMPO METEOROLÓGICO -->
+    <h2>5. La Météo (El Clima y la Meteorología)</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Francés</th>
+          <th>Español</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>
+            <span class="french-text" onclick="playAudio('Quel temps fait-il ?', '¿Qué tiempo hace?')">Quel temps fait-il ?</span>
+            <button class="btn-audio" onclick="playAudio('Quel temps fait-il ?', '¿Qué tiempo hace?')">🔊</button>
+          </td>
+          <td><span class="spanish-text" onclick="playAudio('Quel temps fait-il ?', '¿Qué tiempo hace?')">¿Qué tiempo hace?</span></td>
+        </tr>
+        <tr>
+          <td>
+            <span class="french-text" onclick="playAudio('Il fait beau', 'Hace buen tiempo')">Il fait beau</span>
+            <button class="btn-audio" onclick="playAudio('Il fait beau', 'Hace buen tiempo')">🔊</button>
+          </td>
+          <td><span class="spanish-text" onclick="playAudio('Il fait beau', 'Hace buen tiempo')">Hace buen tiempo</span></td>
+        </tr>
+        <tr>
+          <td>
+            <span class="french-text" onclick="playAudio('Il fait mauvais', 'Hace mal tiempo')">Il fait mauvais</span>
+            <button class="btn-audio" onclick="playAudio('Il fait mauvais', 'Hace mal tiempo')">🔊</button>
+          </td>
+          <td><span class="spanish-text" onclick="playAudio('Il fait mauvais', 'Hace mal tiempo')">Hace mal tiempo</span></td>
+        </tr>
+        <tr>
+          <td>
+            <span class="french-text" onclick="playAudio('Il fait chaud', 'Hace calor')">Il fait chaud</span>
+            <button class="btn-audio" onclick="playAudio('Il fait chaud', 'Hace calor')">🔊</button>
+          </td>
+          <td><span class="spanish-text" onclick="playAudio('Il fait chaud', 'Hace calor')">Hace calor</span></td>
+        </tr>
+        <tr>
+          <td>
+            <span class="french-text" onclick="playAudio('Il fait froid', 'Hace frío')">Il fait froid</span>
+            <button class="btn-audio" onclick="playAudio('Il fait froid', 'Hace frío')">🔊</button>
+          </td>
+          <td><span class="spanish-text" onclick="playAudio('Il fait froid', 'Hace frío')">Hace frío</span></td>
+        </tr>
+        <tr>
+          <td>
+            <span class="french-text" onclick="playAudio('Il y a du soleil', 'Hay sol')">Il y a du soleil</span>
+            <button class="btn-audio" onclick="playAudio('Il y a du soleil', 'Hay sol')">🔊</button>
+          </td>
+          <td><span class="spanish-text" onclick="playAudio('Il y a du soleil', 'Hay sol')">Está soleado / Hay sol</span></td>
+        </tr>
+        <tr>
+          <td>
+            <span class="french-text" onclick="playAudio('C\'est nuageux', 'Está nublado')">C'est nuageux</span>
+            <button class="btn-audio" onclick="playAudio('C\'est nuageux', 'Está nublado')">🔊</button>
+          </td>
+          <td><span class="spanish-text" onclick="playAudio('C\'est nuageux', 'Está nublado')">Está nublado</span></td>
+        </tr>
+        <tr>
+          <td>
+            <span class="french-text" onclick="playAudio('Il pleut', 'Llueve')">Il pleut</span>
+            <button class="btn-audio" onclick="playAudio('Il pleut', 'Llueve')">🔊</button>
+          </td>
+          <td><span class="spanish-text" onclick="playAudio('Il pleut', 'Llueve')">Llueve / Está lloviendo</span></td>
+        </tr>
+        <tr>
+          <td>
+            <span class="french-text" onclick="playAudio('Il neige', 'Nieva')">Il neige</span>
+            <button class="btn-audio" onclick="playAudio('Il neige', 'Nieva')">🔊</button>
+          </td>
+          <td><span class="spanish-text" onclick="playAudio('Il neige', 'Nieva')">Nieva / Está nevando</span></td>
+        </tr>
+        <tr>
+          <td>
+            <span class="french-text" onclick="playAudio('Il y a du vent', 'Hace viento')">Il y a du vent</span>
+            <button class="btn-audio" onclick="playAudio('Il y a du vent', 'Hace viento')">🔊</button>
+          </td>
+          <td><span class="spanish-text" onclick="playAudio('Il y a du vent', 'Hace viento')">Hace viento</span></td>
+        </tr>
+        <tr>
+          <td>
+            <span class="french-text" onclick="playAudio('Il y a du brouillard', 'Hay niebla')">Il y a du brouillard</span>
+            <button class="btn-audio" onclick="playAudio('Il y a du brouillard', 'Hay niebla')">🔊</button>
+          </td>
+          <td><span class="spanish-text" onclick="playAudio('Il y a du brouillard', 'Hay niebla')">Hay niebla</span></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <script>
+    let voices = [];
+
+    function loadVoices() {
+      if ('speechSynthesis' in window) {
+        voices = window.speechSynthesis.getVoices();
+      }
+    }
+
+    if ('speechSynthesis' in window) {
+      loadVoices();
+      if (speechSynthesis.onvoiceschanged !== undefined) {
+        speechSynthesis.onvoiceschanged = loadVoices;
+      }
+    }
+
+    function getElenaSpanishVoice() {
+      let elena = voices.find(v => 
+        v.name.includes("Elena") || 
+        (v.lang.toLowerCase().includes("es-ar") && v.name.toLowerCase().includes("microsoft"))
+      );
+
+      if (!elena) {
+        elena = voices.find(v => v.lang.toLowerCase().includes("es-ar")) || 
+                voices.find(v => v.lang.toLowerCase().startsWith("es"));
+      }
+
+      return elena;
+    }
+
+    function getFrenchVoice() {
+      const frVoices = voices.filter(v => v.lang.toLowerCase().startsWith("fr"));
+      const femaleFrench = frVoices.find(v => 
+        v.name.toLowerCase().includes("hortense") || 
+        v.name.toLowerCase().includes("celeste") || 
+        v.name.toLowerCase().includes("julie") ||
+        v.name.toLowerCase().includes("google")
+      );
+
+      return femaleFrench || frVoices[0] || null;
+    }
+
+    function playAudio(frenchText, spanishText) {
+      if (!('speechSynthesis' in window)) {
+        alert("Tu navegador no soporta síntesis de voz.");
+        return;
+      }
+
+      window.speechSynthesis.cancel();
+
+      const frenchUtterance = new SpeechSynthesisUtterance(frenchText);
+      frenchUtterance.lang = 'fr-FR';
+      frenchUtterance.pitch = 1.25;
+      frenchUtterance.rate = 0.95;
+
+      const frVoice = getFrenchVoice();
+      if (frVoice) frenchUtterance.voice = frVoice;
+
+      const spanishUtterance = new SpeechSynthesisUtterance(spanishText);
+      spanishUtterance.lang = 'es-AR';
+      spanishUtterance.pitch = 1.25;
+      spanishUtterance.rate = 1.0;
+
+      const esVoice = getElenaSpanishVoice();
+      if (esVoice) spanishUtterance.voice = esVoice;
+
+      frenchUtterance.onend = function() {
+        window.speechSynthesis.speak(spanishUtterance);
+      };
+
+      window.speechSynthesis.speak(frenchUtterance);
+    }
+  </script>
+
+</body>
+</html>

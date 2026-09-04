@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aprende Francés - Les Nombres (0 - 100)</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      background-color: #f9f8fc;
+      color: #333;
+    }
+
+    nav {
+      background-color: #e6e6fa;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    ul.menu {
+      display: flex;
+      flex-wrap: wrap;
+      list-style: none;
+      padding: 0 10px;
+    }
+
+    ul.menu > li {
+      position: relative;
+    }
+
+    ul.menu a {
+      display: block;
+      padding: 14px 18px;
+      color: #4a3b52;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 14px;
+    }
+
+    ul.menu a:hover {
+      background-color: #d8cdfa;
+    }
+
+    ul.submenu {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background-color: #efe8ff;
+      min-width: 160px;
+      list-style: none;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+      z-index: 1000;
+    }
+
+    ul.menu > li:hover ul.submenu {
+      display: block;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: 30px auto;
+      padding: 25px;
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    }
+
+    h1 {
+      color: #5c4b6e;
+      margin-bottom: 10px;
+    }
+
+    h2 {
+      color: #7b6298;
+      margin-top: 30px;
+      margin-bottom: 10px;
+      border-bottom: 2px solid #e6e6fa;
+      padding-bottom: 5px;
+    }
+
+    p.intro {
+      color: #555;
+      margin-bottom: 15px;
+      line-height: 1.5;
+    }
+
+    .destacado {
+      background-color: #f5f0ff;
+      border-left: 4px solid #b39ddb;
+      padding: 12px 15px;
+      border-radius: 4px;
+      margin-bottom: 15px;
+    }
+
+    .grid-numeros {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+      gap: 12px;
+      margin-top: 15px;
+      margin-bottom: 25px;
+    }
+
+    .card-numero {
+      background-color: #fcfaff;
+      border: 1px solid #ece4fb;
+      border-radius: 8px;
+      padding: 10px 14px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    .card-numero:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+      border-color: #d8cdfa;
+    }
+
+    .num-digit {
+      font-size: 1.2em;
+      font-weight: bold;
+      color: #7b6298;
+      min-width: 35px;
+    }
+
+    .num-text {
+      flex: 1;
+      margin: 0 8px;
+    }
+
+    .french-text, .spanish-text {
+      cursor: pointer;
+    }
+
+    .french-text {
+      color: #5c4b6e;
+      font-weight: 600;
+      display: block;
+    }
+
+    .spanish-text {
+      color: #777;
+      font-size: 0.85em;
+      display: block;
+    }
+
+    .french-text:hover, .spanish-text:hover {
+      color: #9575cd;
+      text-decoration: underline;
+    }
+
+    .btn-audio {
+      background-color: #b39ddb;
+      border: none;
+      color: white;
+      padding: 6px 10px;
+      border-radius: 50%;
+      cursor: pointer;
+      font-size: 12px;
+      font-weight: bold;
+      transition: background 0.3s;
+    }
+
+    .btn-audio:hover {
+      background-color: #9575cd;
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <ul class="menu">
+      <li>
+        <a href="#">Artículos ▼</a>
+        <ul class="submenu">
+          <li><a href="definidos.html">Definidos</a></li>
+          <li><a href="#">Indefinidos</a></li>
+          <li><a href="#">Partitivos</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#">Adjetivos ▼</a>
+        <ul class="submenu">
+          <li><a href="#">Demostrativos</a></li>
+          <li><a href="#">Posesivos</a></li>
+        </ul>
+      </li>
+      <li><a href="negacion.html">Negación Básica</a></li>
+      <li><a href="#">Interrogativa</a></li>
+      <li><a href="#">Sustantivos</a></li>
+      <li><a href="#">Conectores</a></li>
+      <li><a href="#">Preposiciones</a></li>
+      <li><a href="nacionalidades.html">Nacionalidades</a></li>
+      <li><a href="#">Verbos</a></li>
+      <li><a href="numeros.html">Números</a></li>
+      <li><a href="#">Horas</a></li>
+      <li><a href="#">Días</a></li>
+      <li><a href="#">Meses</a></li>
+      <li><a href="saludos.html">Saludos</a></li>
+      <li><a href="#">Indicadores Temporales</a></li>
+    </ul>
+  </nav>
+
+  <div class="container">
+    <h1>Les Nombres de 0 à 100 (Los Números del 0 al 100)</h1>
+    <p class="intro">Haz clic sobre cualquier número o el botón 🔊 para escuchar la pronunciación en francés seguida de la traducción en español por **Microsoft Elena**.</p>
+
+    <div class="destacado">
+      <strong>Reglas importantes a recordar:</strong><br>
+      • El número 21, 31, 41, 51 y 61 llevan la palabra <em>"et"</em> (ejemplo: <em>vingt-et-un</em>).<br>
+      • Del 70 al 79 se cuenta base 60 + 10 (ejemplo: 70 = <em>soixante-dix</em>, 71 = <em>soixante-et-onze</em>).<br>
+      • Del 80 al 99 se cuenta base "cuatro veintes" (ejemplo: 80 = <em>quatre-vingts</em>, 90 = <em>quatre-vingt-dix</em>).
+    </div>
+
+    <!-- SECCIÓN 0 - 19 -->
+    <h2>1. De 0 à 19</h2>
+    <div class="grid-numeros" id="grid-0-19"></div>
+
+    <!-- SECCIÓN 20 - 39 -->
+    <h2>2. De 20 à 39</h2>
+    <div class="grid-numeros" id="grid-20-39"></div>
+
+    <!-- SECCIÓN 40 - 59 -->
+    <h2>3. De 40 à 59</h2>
+    <div class="grid-numeros" id="grid-40-59"></div>
+
+    <!-- SECCIÓN 60 - 79 -->
+    <h2>4. De 60 à 79</h2>
+    <div class="grid-numeros" id="grid-60-79"></div>
+
+    <!-- SECCIÓN 80 - 100 -->
+    <h2>5. De 80 à 100</h2>
+    <div class="grid-numeros" id="grid-80-100"></div>
+  </div>
+
+  <script>
+    const numerosData = [
+      { num: 0, fr: "zéro", es: "cero" },
+      { num: 1, fr: "un", es: "uno" },
+      { num: 2, fr: "deux", es: "dos" },
+      { num: 3, fr: "trois", es: "tres" },
+      { num: 4, fr: "quatre", es: "cuatro" },
+      { num: 5, fr: "cinq", es: "cinco" },
+      { num: 6, fr: "six", es: "seis" },
+      { num: 7, fr: "sept", es: "siete" },
+      { num: 8, fr: "huit", es: "ocho" },
+      { num: 9, fr: "neuf", es: "nueve" },
+      { num: 10, fr: "dix", es: "diez" },
+      { num: 11, fr: "onze", es: "once" },
+      { num: 12, fr: "douze", es: "doce" },
+      { num: 13, fr: "treize", es: "trece" },
+      { num: 14, fr: "quatorze", es: "catorce" },
+      { num: 15, fr: "quinze", es: "quince" },
+      { num: 16, fr: "seize", es: "dieciséis" },
+      { num: 17, fr: "dix-sept", es: "diecisiete" },
+      { num: 18, fr: "dix-huit", es: "dieciocho" },
+      { num: 19, fr: "dix-neuf", es: "diecinueve" },
+      { num: 20, fr: "vingt", es: "veinte" },
+      { num: 21, fr: "vingt-et-un", es: "veintiuno" },
+      { num: 22, fr: "vingt-deux", es: "veintidós" },
+      { num: 23, fr: "vingt-trois", es: "veintitrés" },
+      { num: 24, fr: "vingt-quatre", es: "veinticuatro" },
+      { num: 25, fr: "vingt-cinq", es: "veinticinco" },
+      { num: 26, fr: "vingt-six", es: "veintiséis" },
+      { num: 27, fr: "vingt-sept", es: "veintisiete" },
+      { num: 28, fr: "vingt-huit", es: "veintiocho" },
+      { num: 29, fr: "vingt-neuf", es: "veintinueve" },
+      { num: 30, fr: "trente", es: "treinta" },
+      { num: 31, fr: "trente-et-un", es: "treinta y uno" },
+      { num: 32, fr: "trente-deux", es: "treinta y dos" },
+      { num: 33, fr: "trente-trois", es: "treinta y tres" },
+      { num: 34, fr: "trente-quatre", es: "treinta y cuatro" },
+      { num: 35, fr: "trente-cinq", es: "treinta y cinco" },
+      { num: 36, fr: "trente-six", es: "treinta y seis" },
+      { num: 37, fr: "trente-sept", es: "treinta y siete" },
+      { num: 38, fr: "trente-huit", es: "treinta y ocho" },
+      { num: 39, fr: "trente-neuf", es: "treinta y nueve" },
+      { num: 40, fr: "quarante", es: "cuarenta" },
+      { num: 41, fr: "quarante-et-un", es: "cuarenta y uno" },
+      { num: 42, fr: "quarante-deux", es: "cuarenta y dos" },
+      { num: 43, fr: "quarante-trois", es: "cuarenta y tres" },
+      { num: 44, fr: "quarante-quatre", es: "cuarenta y cuatro" },
+      { num: 45, fr: "quarante-cinq", es: "cuarenta y cinco" },
+      { num: 46, fr: "quarante-six", es: "cuarenta y seis" },
+      { num: 47, fr: "quarante-sept", es: "cuarenta y siete" },
+      { num: 48, fr: "quarante-huit", es: "cuarenta y ocho" },
+      { num: 49, fr: "quarante-neuf", es: "cuarenta y nueve" },
+      { num: 50, fr: "cinquante", es: "cincuenta" },
+      { num: 51, fr: "cinquante-et-un", es: "cincuenta y uno" },
+      { num: 52, fr: "cinquante-deux", es: "cincuenta y dos" },
+      { num: 53, fr: "cinquante-trois", es: "cincuenta y tres" },
+      { num: 54, fr: "cinquante-quatre", es: "cincuenta y cuatro" },
+      { num: 55, fr: "cinquante-cinq", es: "cincuenta y cinco" },
+      { num: 56, fr: "cinquante-six", es: "cincuenta y seis" },
+      { num: 57, fr: "cinquante-sept", es: "cincuenta y siete" },
+      { num: 58, fr: "cinquante-huit", es: "cincuenta y ocho" },
+      { num: 59, fr: "cinquante-neuf", es: "cincuenta y nueve" },
+      { num: 60, fr: "soixante", es: "sesenta" },
+      { num: 61, fr: "soixante-et-un", es: "sesenta y uno" },
+      { num: 62, fr: "soixante-deux", es: "sesenta y dos" },
+      { num: 63, fr: "soixante-trois", es: "sesenta y tres" },
+      { num: 64, fr: "soixante-quatre", es: "sesenta y cuatro" },
+      { num: 65, fr: "soixante-cinq", es: "sesenta y cinco" },
+      { num: 66, fr: "soixante-six", es: "sesenta y seis" },
+      { num: 67, fr: "soixante-sept", es: "sesenta y siete" },
+      { num: 68, fr: "soixante-huit", es: "sesenta y ocho" },
+      { num: 69, fr: "soixante-neuf", es: "sesenta y nueve" },
+      { num: 70, fr: "soixante-dix", es: "setenta" },
+      { num: 71, fr: "soixante-et-onze", es: "setenta y uno" },
+      { num: 72, fr: "soixante-douze", es: "setenta y dos" },
+      { num: 73, fr: "soixante-treize", es: "setenta y tres" },
+      { num: 74, fr: "soixante-quatorze", es: "setenta y cuatro" },
+      { num: 75, fr: "soixante-quinze", es: "setenta y cinco" },
+      { num: 76, fr: "soixante-seize", es: "setenta y seis" },
+      { num: 77, fr: "soixante-dix-sept", es: "setenta y siete" },
+      { num: 78, fr: "soixante-dix-huit", es: "setenta y ocho" },
+      { num: 79, fr: "soixante-dix-neuf", es: "setenta y nueve" },
+      { num: 80, fr: "quatre-vingts", es: "ochenta" },
+      { num: 81, fr: "quatre-vingt-un", es: "ochenta y uno" },
+      { num: 82, fr: "quatre-vingt-deux", es: "ochenta y dos" },
+      { num: 83, fr: "quatre-vingt-trois", es: "ochenta y tres" },
+      { num: 84, fr: "quatre-vingt-quatre", es: "ochenta y cuatro" },
+      { num: 85, fr: "quatre-vingt-cinq", es: "ochenta y cinco" },
+      { num: 86, fr: "quatre-vingt-six", es: "ochenta y seis" },
+      { num: 87, fr: "quatre-vingt-sept", es: "ochenta y siete" },
+      { num: 88, fr: "quatre-vingt-huit", es: "ochenta y ocho" },
+      { num: 89, fr: "quatre-vingt-neuf", es: "ochenta y nueve" },
+      { num: 90, fr: "quatre-vingt-dix", es: "noventa" },
+      { num: 91, fr: "quatre-vingt-onze", es: "noventa y uno" },
+      { num: 92, fr: "quatre-vingt-douze", es: "noventa y dos" },
+      { num: 93, fr: "quatre-vingt-treize", es: "noventa y tres" },
+      { num: 94, fr: "quatre-vingt-quatorze", es: "noventa y cuatro" },
+      { num: 95, fr: "quatre-vingt-quinze", es: "noventa y cinco" },
+      { num: 96, fr: "quatre-vingt-seize", es: "noventa y seis" },
+      { num: 97, fr: "quatre-vingt-dix-sept", es: "noventa y siete" },
+      { num: 98, fr: "quatre-vingt-dix-huit", es: "noventa y ocho" },
+      { num: 99, fr: "quatre-vingt-dix-neuf", es: "noventa y nueve" },
+      { num: 100, fr: "cent", es: "cien" }
+    ];
+
+    function renderNumeros() {
+      numerosData.forEach(item => {
+        let containerId = "grid-0-19";
+        if (item.num >= 20 && item.num <= 39) containerId = "grid-20-39";
+        else if (item.num >= 40 && item.num <= 59) containerId = "grid-40-59";
+        else if (item.num >= 60 && item.num <= 79) containerId = "grid-60-79";
+        else if (item.num >= 80) containerId = "grid-80-100";
+
+        const container = document.getElementById(containerId);
+        if (container) {
+          const card = document.createElement("div");
+          card.className = "card-numero";
+          card.innerHTML = `
+            <span class="num-digit">${item.num}</span>
+            <div class="num-text">
+              <span class="french-text" onclick="playAudio('${item.fr}', '${item.es}')">${item.fr}</span>
+              <span class="spanish-text" onclick="playAudio('${item.fr}', '${item.es}')">${item.es}</span>
+            </div>
+            <button class="btn-audio" onclick="playAudio('${item.fr}', '${item.es}')">🔊</button>
+          `;
+          container.appendChild(card);
+        }
+      });
+    }
+
+    let voices = [];
+
+    function loadVoices() {
+      if ('speechSynthesis' in window) {
+        voices = window.speechSynthesis.getVoices();
+      }
+    }
+
+    if ('speechSynthesis' in window) {
+      loadVoices();
+      if (speechSynthesis.onvoiceschanged !== undefined) {
+        speechSynthesis.onvoiceschanged = loadVoices;
+      }
+    }
+
+    function getElenaSpanishVoice() {
+      let elena = voices.find(v => 
+        v.name.includes("Elena") || 
+        (v.lang.toLowerCase().includes("es-ar") && v.name.toLowerCase().includes("microsoft"))
+      );
+
+      if (!elena) {
+        elena = voices.find(v => v.lang.toLowerCase().includes("es-ar")) || 
+                voices.find(v => v.lang.toLowerCase().startsWith("es"));
+      }
+
+      return elena;
+    }
+
+    function getFrenchVoice() {
+      const frVoices = voices.filter(v => v.lang.toLowerCase().startsWith("fr"));
+      const femaleFrench = frVoices.find(v => 
+        v.name.toLowerCase().includes("hortense") || 
+        v.name.toLowerCase().includes("celeste") || 
+        v.name.toLowerCase().includes("julie") ||
+        v.name.toLowerCase().includes("google")
+      );
+
+      return femaleFrench || frVoices[0] || null;
+    }
+
+    function playAudio(frenchText, spanishText) {
+      if (!('speechSynthesis' in window)) {
+        alert("Tu navegador no soporta síntesis de voz.");
+        return;
+      }
+
+      window.speechSynthesis.cancel();
+
+      const frenchUtterance = new SpeechSynthesisUtterance(frenchText);
+      frenchUtterance.lang = 'fr-FR';
+      frenchUtterance.pitch = 1.25;
+      frenchUtterance.rate = 0.9;
+
+      const frVoice = getFrenchVoice();
+      if (frVoice) frenchUtterance.voice = frVoice;
+
+      const spanishUtterance = new SpeechSynthesisUtterance(spanishText);
+      spanishUtterance.lang = 'es-AR';
+      spanishUtterance.pitch = 1.25;
+      spanishUtterance.rate = 1.0;
+
+      const esVoice = getElenaSpanishVoice();
+      if (esVoice) spanishUtterance.voice = esVoice;
+
+      frenchUtterance.onend = function() {
+        window.speechSynthesis.speak(spanishUtterance);
+      };
+
+      window.speechSynthesis.speak(frenchUtterance);
+    }
+
+    document.addEventListener("DOMContentLoaded", renderNumeros);
+  </script>
+
+</body>
+</html>

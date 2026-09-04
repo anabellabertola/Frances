@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aprende Francés - Artículos Definidos</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      background-color: #f9f8fc;
+      color: #333;
+    }
+
+    /* Estilos del Menú Navegación */
+    nav {
+      background-color: #e6e6fa; /* Lila pastel */
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    ul.menu {
+      display: flex;
+      flex-wrap: wrap;
+      list-style: none;
+      padding: 0 10px;
+    }
+
+    ul.menu > li {
+      position: relative;
+    }
+
+    ul.menu a {
+      display: block;
+      padding: 14px 18px;
+      color: #4a3b52;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 14px;
+    }
+
+    ul.menu a:hover {
+      background-color: #d8cdfa;
+    }
+
+    /* Menú desplegable */
+    ul.submenu {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background-color: #efe8ff;
+      min-width: 160px;
+      list-style: none;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+      z-index: 1000;
+    }
+
+    ul.menu > li:hover ul.submenu {
+      display: block;
+    }
+
+    /* Estilos del Contenido */
+    .container {
+      max-width: 1000px;
+      margin: 30px auto;
+      padding: 25px;
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    }
+
+    h1 {
+      color: #5c4b6e;
+      margin-bottom: 10px;
+    }
+
+    h2 {
+      color: #7b6298;
+      margin-top: 30px;
+      margin-bottom: 10px;
+      border-bottom: 2px solid #e6e6fa;
+      padding-bottom: 5px;
+    }
+
+    p.intro, p.explicacion {
+      color: #555;
+      margin-bottom: 15px;
+      line-height: 1.5;
+    }
+
+    .destacado {
+      background-color: #f5f0ff;
+      border-left: 4px solid #b39ddb;
+      padding: 12px 15px;
+      border-radius: 4px;
+      margin-bottom: 15px;
+    }
+
+    /* Panel de Selección de Voz */
+    .selector-voz {
+      background-color: #f2edfe;
+      padding: 12px 18px;
+      border-radius: 8px;
+      margin-bottom: 20px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-weight: bold;
+      color: #4a3b52;
+    }
+
+    .selector-voz select {
+      padding: 6px 12px;
+      border-radius: 6px;
+      border: 1px solid #b39ddb;
+      outline: none;
+      font-size: 14px;
+      background-color: white;
+      color: #333;
+      cursor: pointer;
+    }
+
+    /* Tabla de Vocabulario */
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 10px;
+      margin-bottom: 20px;
+    }
+
+    th, td {
+      padding: 12px;
+      border-bottom: 1px solid #eee;
+      text-align: left;
+    }
+
+    th {
+      background-color: #f2edfe;
+      color: #4a3b52;
+    }
+
+    .btn-audio {
+      background-color: #b39ddb;
+      border: none;
+      color: white;
+      padding: 8px 16px;
+      border-radius: 20px;
+      cursor: pointer;
+      font-size: 14px;
+      font-weight: bold;
+      transition: background 0.3s;
+    }
+
+    .btn-audio:hover {
+      background-color: #9575cd;
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <ul class="menu">
+      <li>
+        <a href="#">Artículos ▼</a>
+        <ul class="submenu">
+          <li><a href="definidos.html">Definidos</a></li>
+          <li><a href="#">Indefinidos</a></li>
+          <li><a href="#">Partitivos</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#">Adjetivos ▼</a>
+        <ul class="submenu">
+          <li><a href="#">Demostrativos</a></li>
+          <li><a href="#">Posesivos</a></li>
+        </ul>
+      </li>
+      <li><a href="#">Negación Básica</a></li>
+      <li><a href="#">Interrogativa</a></li>
+      <li><a href="#">Sustantivos</a></li>
+      <li><a href="#">Conectores</a></li>
+      <li><a href="#">Preposiciones</a></li>
+      <li><a href="#">Nacionalidades</a></li>
+      <li><a href="#">Verbos</a></li>
+      <li><a href="#">Números</a></li>
+      <li><a href="#">Horas</a></li>
+      <li><a href="#">Días</a></li>
+      <li><a href="#">Meses</a></li>
+      <li><a href="#">Saludos</a></li>
+      <li><a href="#">Indicadores Temporales</a></li>
+    </ul>
+  </nav>
+
+  <div class="container">
+    <h1>Artículos Definidos (Articles Définis)</h1>
+    
+    <div class="destacado">
+      <p class="explicacion">Los <strong>artículos definidos</strong> se usan para referirse a personas, animales o cosas específicas e identificadas (equivalen a <em>el, la, los, las</em> en español). En francés cambian según el género y número del sustantivo, y se contraen a <strong>L'</strong> cuando la palabra siguiente empieza con vocal o 'h' muda.</p>
+    </div>
+
+    <div class="selector-voz">
+      <label for="selectVozES">Voz en español:</label>
+      <select id="selectVozES"></select>
+    </div>
+
+    <h2>Tabla de Artículos Definidos</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Artículo (FR)</th>
+          <th>Uso / Género</th>
+          <th>Español</th>
+          <th>Ejemplo (FR)</th>
+          <th>Ejemplo (ES)</th>
+          <th>Audio Completo</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Le</td>
+          <td>Masculino singular</td>
+          <td>El</td>
+          <td>Le livre est sur la table</td>
+          <td>El libro está sobre la mesa</td>
+          <td><button class="btn-audio" onclick="reproducirSecuencia('Le', 'El', 'Le livre est sur la table', 'El libro está sobre la mesa')">🔊 Escuchar</button></td>
+        </tr>
+        <tr>
+          <td>La</td>
+          <td>Femenino singular</td>
+          <td>La</td>
+          <td>La maison est grande</td>
+          <td>La casa es grande</td>
+          <td><button class="btn-audio" onclick="reproducirSecuencia('La', 'La', 'La maison est grande', 'La casa es grande')">🔊 Escuchar</button></td>
+        </tr>
+        <tr>
+          <td>L'</td>
+          <td>Singular (ante vocal o 'h')</td>
+          <td>El / La</td>
+          <td>L'école est ouverte</td>
+          <td>La escuela está abierta</td>
+          <td><button class="btn-audio" onclick="reproducirSecuencia('L\'', 'El o La', 'L\'école est ouverte', 'La escuela está abierta')">🔊 Escuchar</button></td>
+        </tr>
+        <tr>
+          <td>Les</td>
+          <td>Plural (masculino y femenino)</td>
+          <td>Los / Las</td>
+          <td>Les enfants jouent dehors</td>
+          <td>Los niños juegan afuera</td>
+          <td><button class="btn-audio" onclick="reproducirSecuencia('Les', 'Los o Las', 'Les enfants jouent dehors', 'Los niños juegan afuera')">🔊 Escuchar</button></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <script>
+    let vocesDisponibles = [];
+    const selectVozES = document.getElementById('selectVozES');
+
+    function cargarVoces() {
+      vocesDisponibles = window.speechSynthesis.getVoices();
+      selectVozES.innerHTML = '';
+
+      const vocesES = vocesDisponibles.filter(v => v.lang.includes('es'));
+
+      vocesES.forEach((voz) => {
+        const option = document.createElement('option');
+        option.value = voz.name;
+        option.textContent = `${voz.name} (${voz.lang})`;
+        
+        if (voz.name.includes('Elena') || (voz.lang.includes('es-AR') && voz.name.includes('Microsoft'))) {
+          option.selected = true;
+        }
+        selectVozES.appendChild(option);
+      });
+    }
+
+    if (speechSynthesis.onvoiceschanged !== undefined) {
+      speechSynthesis.onvoiceschanged = cargarVoces;
+    }
+    cargarVoces();
+
+    function reproducirSecuencia(palabraFR, palabraES, ejemploFR, ejemploES) {
+      window.speechSynthesis.cancel();
+
+      const vozSeleccionadaNombre = selectVozES.value;
+      const vozES = vocesDisponibles.find(v => v.name === vozSeleccionadaNombre);
+
+      const vozFR = vocesDisponibles.find(v => 
+        v.lang.includes('fr') && (v.name.includes('Natural') || v.name.includes('Denise') || v.name.includes('Hortense') || v.name.includes('Google'))
+      ) || vocesDisponibles.find(v => v.lang.includes('fr'));
+
+      // 1. Artículo en Francés
+      const audioPalabraFR = new SpeechSynthesisUtterance(palabraFR);
+      if (vozFR) audioPalabraFR.voice = vozFR;
+      audioPalabraFR.lang = 'fr-FR';
+      audioPalabraFR.rate = 0.9;
+
+      // 2. Traducción en Español
+      const audioPalabraES = new SpeechSynthesisUtterance(palabraES);
+      if (vozES) audioPalabraES.voice = vozES;
+      audioPalabraES.lang = vozES ? vozES.lang : 'es-AR';
+      audioPalabraES.rate = 0.95;
+
+      // 3. Oración de ejemplo en Francés
+      const audioEjemploFR = new SpeechSynthesisUtterance(ejemploFR);
+      if (vozFR) audioEjemploFR.voice = vozFR;
+      audioEjemploFR.lang = 'fr-FR';
+      audioEjemploFR.rate = 0.85;
+
+      // 4. Oración de ejemplo en Español
+      const audioEjemploES = new SpeechSynthesisUtterance(ejemploES);
+      if (vozES) audioEjemploES.voice = vozES;
+      audioEjemploES.lang = vozES ? vozES.lang : 'es-AR';
+      audioEjemploES.rate = 0.95;
+
+      // Secuencia de reproducción de audios
+      audioPalabraFR.onend = () => setTimeout(() => window.speechSynthesis.speak(audioPalabraES), 200);
+      audioPalabraES.onend = () => setTimeout(() => window.speechSynthesis.speak(audioEjemploFR), 300);
+      audioEjemploFR.onend = () => setTimeout(() => window.speechSynthesis.speak(audioEjemploES), 200);
+
+      window.speechSynthesis.speak(audioPalabraFR);
+    }
+  </script>
+
+</body>
+</html>

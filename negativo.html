@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aprende Francés - La Negación</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      background-color: #f9f8fc;
+      color: #333;
+    }
+
+    /* Estilos del Menú Navegación */
+    nav {
+      background-color: #e6e6fa; /* Lila pastel */
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    ul.menu {
+      display: flex;
+      flex-wrap: wrap;
+      list-style: none;
+      padding: 0 10px;
+    }
+
+    ul.menu > li {
+      position: relative;
+    }
+
+    ul.menu a {
+      display: block;
+      padding: 14px 18px;
+      color: #4a3b52;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 14px;
+    }
+
+    ul.menu a:hover {
+      background-color: #d8cdfa;
+    }
+
+    /* Menú desplegable */
+    ul.submenu {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background-color: #efe8ff;
+      min-width: 160px;
+      list-style: none;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+      z-index: 1000;
+    }
+
+    ul.menu > li:hover ul.submenu {
+      display: block;
+    }
+
+    /* Estilos del Contenido */
+    .container {
+      max-width: 1000px;
+      margin: 30px auto;
+      padding: 25px;
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    }
+
+    h1 {
+      color: #5c4b6e;
+      margin-bottom: 10px;
+    }
+
+    h2 {
+      color: #7b6298;
+      margin-top: 30px;
+      margin-bottom: 10px;
+      border-bottom: 2px solid #e6e6fa;
+      padding-bottom: 5px;
+    }
+
+    p.intro, p.explicacion {
+      color: #555;
+      margin-bottom: 15px;
+      line-height: 1.5;
+    }
+
+    .destacado {
+      background-color: #f5f0ff;
+      border-left: 4px solid #b39ddb;
+      padding: 12px 15px;
+      border-radius: 4px;
+      margin-bottom: 15px;
+    }
+
+    .highlight-negation {
+      color: #d9534f;
+      font-weight: bold;
+    }
+
+    /* Tabla de Vocabulario y Conjugación */
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 10px;
+      margin-bottom: 20px;
+    }
+
+    th, td {
+      padding: 12px;
+      border-bottom: 1px solid #eee;
+      text-align: left;
+    }
+
+    th {
+      background-color: #f2edfe;
+      color: #4a3b52;
+    }
+
+    td small {
+      display: block;
+      color: #666;
+      font-size: 0.85em;
+      margin-top: 2px;
+    }
+
+    .french-text {
+      cursor: pointer;
+      color: #5c4b6e;
+      font-weight: 600;
+    }
+
+    .french-text:hover {
+      text-decoration: underline;
+      color: #7b6298;
+    }
+
+    .btn-audio {
+      background-color: #b39ddb;
+      border: none;
+      color: white;
+      padding: 6px 12px;
+      border-radius: 20px;
+      cursor: pointer;
+      font-size: 13px;
+      font-weight: bold;
+      margin-left: 6px;
+      transition: background 0.3s;
+    }
+
+    .btn-audio:hover {
+      background-color: #9575cd;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navegación General -->
+  <nav>
+    <ul class="menu">
+      <li>
+        <a href="#">Artículos ▼</a>
+        <ul class="submenu">
+          <li><a href="definidos.html">Definidos</a></li>
+          <li><a href="#">Indefinidos</a></li>
+          <li><a href="#">Partitivos</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#">Adjetivos ▼</a>
+        <ul class="submenu">
+          <li><a href="#">Demostrativos</a></li>
+          <li><a href="#">Posesivos</a></li>
+        </ul>
+      </li>
+      <li><a href="#">Negación Básica</a></li>
+      <li><a href="#">Interrogativa</a></li>
+      <li><a href="#">Sustantivos</a></li>
+      <li><a href="#">Conectores</a></li>
+      <li><a href="#">Preposiciones</a></li>
+      <li><a href="#">Nacionalidades</a></li>
+      <li><a href="#">Verbos</a></li>
+      <li><a href="#">Números</a></li>
+      <li><a href="#">Horas</a></li>
+      <li><a href="#">Días</a></li>
+      <li><a href="#">Meses</a></li>
+      <li><a href="#">Saludos</a></li>
+      <li><a href="#">Indicadores Temporales</a></li>
+    </ul>
+  </nav>
+
+  <!-- Contenido Principal -->
+  <div class="container">
+    <h1>La Négation (La Negación)</h1>
+    <p class="intro">En francés, la negación básica se forma rodeando al verbo conjugado con las partículas <span class="highlight-negation">ne</span> y <span class="highlight-negation">pas</span>.</p>
+
+    <div class="destacado">
+      <strong>Règle Grammaticale:</strong> <br>
+      • Consonante: <strong>ne + verbo + pas</strong><br>
+      • Vocal o H muda: <strong>n' + verbo + pas</strong>
+    </div>
+
+    <h2>Conjugación con Pronombres Sujetos</h2>
+    <p class="explicacion">Haz clic en el texto en francés o en el botón para escuchar la pronunciación seguida de su traducción al español.</p>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Pronombre</th>
+          <th>Ejemplo con Consonante (parler)</th>
+          <th>Ejemplo con Vocal (aimer)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Je / J' -->
+        <tr>
+          <td><strong>Je / J'</strong><small>Yo</small></td>
+          <td>
+            <span class="french-text" onclick="playAudio('Je ne parle pas', 'Yo no hablo')">Je ne parle pas</span>
+            <button class="btn-audio" onclick="playAudio('Je ne parle pas', 'Yo no hablo')">🔊</button>
+            <small>Yo no hablo</small>
+          </td>
+          <td>
+            <span class="french-text" onclick="playAudio('Je n\'aime pas', 'Yo no amo')">Je n'aime pas</span>
+            <button class="btn-audio" onclick="playAudio('Je n\'aime pas', 'Yo no amo')">🔊</button>
+            <small>Yo no amo</small>
+          </td>
+        </tr>
+
+        <!-- Tu -->
+        <tr>
+          <td><strong>Tu</strong><small>Tú</small></td>
+          <td>
+            <span class="french-text" onclick="playAudio('Tu ne parles pas', 'Tú no hablas')">Tu ne parles pas</span>
+            <button class="btn-audio" onclick="playAudio('Tu ne parles pas', 'Tú no hablas')">🔊</button>
+            <small>Tú no hablas</small>
+          </td>
+          <td>
+            <span class="french-text" onclick="playAudio('Tu n\'aimes pas', 'Tú no amas')">Tu n'aimes pas</span>
+            <button class="btn-audio" onclick="playAudio('Tu n\'aimes pas', 'Tú no amas')">🔊</button>
+            <small>Tú no amas</small>
+          </td>
+        </tr>
+
+        <!-- Il -->
+        <tr>
+          <td><strong>Il</strong><small>Él</small></td>
+          <td>
+            <span class="french-text" onclick="playAudio('Il ne parle pas', 'Él no habla')">Il ne parle pas</span>
+            <button class="btn-audio" onclick="playAudio('Il ne parle pas', 'Él no habla')">🔊</button>
+            <small>Él no habla</small>
+          </td>
+          <td>
+            <span class="french-text" onclick="playAudio('Il n\'aime pas', 'Él no ama')">Il n'aime pas</span>
+            <button class="btn-audio" onclick="playAudio('Il n\'aime pas', 'Él no ama')">🔊</button>
+            <small>Él no ama</small>
+          </td>
+        </tr>
+
+        <!-- Elle -->
+        <tr>
+          <td><strong>Elle</strong><small>Ella</small></td>
+          <td>
+            <span class="french-text" onclick="playAudio('Elle ne parle pas', 'Ella no habla')">Elle ne parle pas</span>
+            <button class="btn-audio" onclick="playAudio('Elle ne parle pas', 'Ella no habla')">🔊</button>
+            <small>Ella no habla</small>
+          </td>
+          <td>
+            <span class="french-text" onclick="playAudio('Elle n\'aime pas', 'Ella no ama')">Elle n'aime pas</span>
+            <button class="btn-audio" onclick="playAudio('Elle n\'aime pas', 'Ella no ama')">🔊</button>
+            <small>Ella no ama</small>
+          </td>
+        </tr>
+
+        <!-- On -->
+        <tr>
+          <td><strong>On</strong><small>Nosotros / Se</small></td>
+          <td>
+            <span class="french-text" onclick="playAudio('On ne parle pas', 'No se habla')">On ne parle pas</span>
+            <button class="btn-audio" onclick="playAudio('On ne parle pas', 'No se habla')">🔊</button>
+            <small>No se habla / No hablamos</small>
+          </td>
+          <td>
+            <span class="french-text" onclick="playAudio('On n\'aime pas', 'No se ama')">On n'aime pas</span>
+            <button class="btn-audio" onclick="playAudio('On n\'aime pas', 'No se ama')">🔊</button>
+            <small>No se ama / No amamos</small>
+          </td>
+        </tr>
+
+        <!-- Nous -->
+        <tr>
+          <td><strong>Nous</strong><small>Nosotros / Nosotras</small></td>
+          <td>
+            <span class="french-text" onclick="playAudio('Nous ne parlons pas', 'Nosotros no hablamos')">Nous ne parlons pas</span>
+            <button class="btn-audio" onclick="playAudio('Nous ne parlons pas', 'Nosotros no hablamos')">🔊</button>
+            <small>Nosotros no hablamos</small>
+          </td>
+          <td>
+            <span class="french-text" onclick="playAudio('Nous n\'aimons pas', 'Nosotros no amamos')">Nous n'aimons pas</span>
+            <button class="btn-audio" onclick="playAudio('Nous n\'aimons pas', 'Nosotros no amamos')">🔊</button>
+            <small>Nosotros no amamos</small>
+          </td>
+        </tr>
+
+        <!-- Vous -->
+        <tr>
+          <td><strong>Vous</strong><small>Usted / Ustedes</small></td>
+          <td>
+            <span class="french-text" onclick="playAudio('Vous ne parlez pas', 'Ustedes no hablan')">Vous ne parlez pas</span>
+            <button class="btn-audio" onclick="playAudio('Vous ne parlez pas', 'Ustedes no hablan')">🔊</button>
+            <small>Ustedes no hablan</small>
+          </td>
+          <td>
+            <span class="french-text" onclick="playAudio('Vous n\'aimez pas', 'Ustedes no aman')">Vous n'aimez pas</span>
+            <button class="btn-audio" onclick="playAudio('Vous n\'aimez pas', 'Ustedes no aman')">🔊</button>
+            <small>Ustedes no aman</small>
+          </td>
+        </tr>
+
+        <!-- Ils -->
+        <tr>
+          <td><strong>Ils</strong><small>Ellos</small></td>
+          <td>
+            <span class="french-text" onclick="playAudio('Ils ne parlent pas', 'Ellos no hablan')">Ils ne parlent pas</span>
+            <button class="btn-audio" onclick="playAudio('Ils ne parlent pas', 'Ellos no hablan')">🔊</button>
+            <small>Ellos no hablan</small>
+          </td>
+          <td>
+            <span class="french-text" onclick="playAudio('Ils n\'aiment pas', 'Ellos no aman')">Ils n'aiment pas</span>
+            <button class="btn-audio" onclick="playAudio('Ils n\'aiment pas', 'Ellos no aman')">🔊</button>
+            <small>Ellos no aman</small>
+          </td>
+        </tr>
+
+        <!-- Elles -->
+        <tr>
+          <td><strong>Elles</strong><small>Ellas</small></td>
+          <td>
+            <span class="french-text" onclick="playAudio('Elles ne parlent pas', 'Ellas no hablan')">Elles ne parlent pas</span>
+            <button class="btn-audio" onclick="playAudio('Elles ne parlent pas', 'Ellas no hablan')">🔊</button>
+            <small>Ellas no hablan</small>
+          </td>
+          <td>
+            <span class="french-text" onclick="playAudio('Elles n\'aiment pas', 'Ellas no aman')">Elles n'aiment pas</span>
+            <button class="btn-audio" onclick="playAudio('Elles n\'aiment pas', 'Ellas no aman')">🔊</button>
+            <small>Ellas no aman</small>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <script>
+    let voices = [];
+
+    function loadVoices() {
+      if ('speechSynthesis' in window) {
+        voices = window.speechSynthesis.getVoices();
+      }
+    }
+
+    if ('speechSynthesis' in window) {
+      loadVoices();
+      if (speechSynthesis.onvoiceschanged !== undefined) {
+        speechSynthesis.onvoiceschanged = loadVoices;
+      }
+    }
+
+    // Busca la voz de Microsoft Elena (Argentina) en español
+    function getElenaSpanishVoice() {
+      // Buscar coincidencia exacta por Elena o AR (Argentina)
+      let elena = voices.find(v => 
+        v.name.includes("Elena") || 
+        (v.lang.toLowerCase().includes("es-ar") && v.name.toLowerCase().includes("microsoft"))
+      );
+
+      // Si se ejecuta en un navegador sin la voz de Microsoft instalada, cae a cualquier voz en español de Argentina/Latam
+      if (!elena) {
+        elena = voices.find(v => v.lang.toLowerCase().includes("es-ar")) || 
+                voices.find(v => v.lang.toLowerCase().startsWith("es"));
+      }
+
+      return elena;
+    }
+
+    // Busca la voz femenina de francés
+    function getFrenchVoice() {
+      const frVoices = voices.filter(v => v.lang.toLowerCase().startsWith("fr"));
+      const femaleFrench = frVoices.find(v => 
+        v.name.toLowerCase().includes("hortense") || 
+        v.name.toLowerCase().includes("celeste") || 
+        v.name.toLowerCase().includes("julie") ||
+        v.name.toLowerCase().includes("google")
+      );
+
+      return femaleFrench || frVoices[0] || null;
+    }
+
+    function playAudio(frenchText, spanishText) {
+      if (!('speechSynthesis' in window)) {
+        alert("Tu navegador no soporta síntesis de voz.");
+        return;
+      }
+
+      window.speechSynthesis.cancel();
+
+      // Audio Francés
+      const frenchUtterance = new SpeechSynthesisUtterance(frenchText);
+      frenchUtterance.lang = 'fr-FR';
+      frenchUtterance.pitch = 1.25;
+      frenchUtterance.rate = 0.95;
+
+      const frVoice = getFrenchVoice();
+      if (frVoice) frenchUtterance.voice = frVoice;
+
+      // Audio Español - Microsoft Elena
+      const spanishUtterance = new SpeechSynthesisUtterance(spanishText);
+      spanishUtterance.lang = 'es-AR';
+      spanishUtterance.pitch = 1.25; // Tono fresco
+      spanishUtterance.rate = 1.0;  // Velocidad ágil
+
+      const esVoice = getElenaSpanishVoice();
+      if (esVoice) spanishUtterance.voice = esVoice;
+
+      // Reproducción secuencial
+      frenchUtterance.onend = function() {
+        window.speechSynthesis.speak(spanishUtterance);
+      };
+
+      window.speechSynthesis.speak(frenchUtterance);
+    }
+  </script>
+
+</body>
+</html>

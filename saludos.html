@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aprende Francés - Saludos y Modales</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      background-color: #f9f8fc;
+      color: #333;
+    }
+
+    nav {
+      background-color: #e6e6fa;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    ul.menu {
+      display: flex;
+      flex-wrap: wrap;
+      list-style: none;
+      padding: 0 10px;
+    }
+
+    ul.menu > li {
+      position: relative;
+    }
+
+    ul.menu a {
+      display: block;
+      padding: 14px 18px;
+      color: #4a3b52;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 14px;
+    }
+
+    ul.menu a:hover {
+      background-color: #d8cdfa;
+    }
+
+    ul.submenu {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background-color: #efe8ff;
+      min-width: 160px;
+      list-style: none;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+      z-index: 1000;
+    }
+
+    ul.menu > li:hover ul.submenu {
+      display: block;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: 30px auto;
+      padding: 25px;
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    }
+
+    h1 {
+      color: #5c4b6e;
+      margin-bottom: 10px;
+    }
+
+    h2 {
+      color: #7b6298;
+      margin-top: 30px;
+      margin-bottom: 10px;
+      border-bottom: 2px solid #e6e6fa;
+      padding-bottom: 5px;
+    }
+
+    p.intro, p.explicacion {
+      color: #555;
+      margin-bottom: 15px;
+      line-height: 1.5;
+    }
+
+    .destacado {
+      background-color: #f5f0ff;
+      border-left: 4px solid #b39ddb;
+      padding: 12px 15px;
+      border-radius: 4px;
+      margin-bottom: 15px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 10px;
+      margin-bottom: 20px;
+    }
+
+    th, td {
+      padding: 12px;
+      border-bottom: 1px solid #eee;
+      text-align: left;
+    }
+
+    th {
+      background-color: #f2edfe;
+      color: #4a3b52;
+    }
+
+    td small {
+      display: block;
+      color: #666;
+      font-size: 0.85em;
+      margin-top: 2px;
+    }
+
+    .french-text, .spanish-text {
+      cursor: pointer;
+      color: #5c4b6e;
+      font-weight: 600;
+    }
+
+    .french-text:hover, .spanish-text:hover {
+      text-decoration: underline;
+      color: #7b6298;
+    }
+
+    .btn-audio {
+      background-color: #b39ddb;
+      border: none;
+      color: white;
+      padding: 5px 10px;
+      border-radius: 20px;
+      cursor: pointer;
+      font-size: 12px;
+      font-weight: bold;
+      margin-left: 6px;
+      transition: background 0.3s;
+    }
+
+    .btn-audio:hover {
+      background-color: #9575cd;
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <ul class="menu">
+      <li>
+        <a href="#">Artículos ▼</a>
+        <ul class="submenu">
+          <li><a href="definidos.html">Definidos</a></li>
+          <li><a href="#">Indefinidos</a></li>
+          <li><a href="#">Partitivos</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#">Adjetivos ▼</a>
+        <ul class="submenu">
+          <li><a href="#">Demostrativos</a></li>
+          <li><a href="#">Posesivos</a></li>
+        </ul>
+      </li>
+      <li><a href="negacion.html">Negación Básica</a></li>
+      <li><a href="#">Interrogativa</a></li>
+      <li><a href="#">Sustantivos</a></li>
+      <li><a href="#">Conectores</a></li>
+      <li><a href="#">Preposiciones</a></li>
+      <li><a href="nacionalidades.html">Nacionalidades</a></li>
+      <li><a href="#">Verbos</a></li>
+      <li><a href="#">Números</a></li>
+      <li><a href="#">Horas</a></li>
+      <li><a href="#">Días</a></li>
+      <li><a href="#">Meses</a></li>
+      <li><a href="saludos.html">Saludos</a></li>
+      <li><a href="#">Indicadores Temporales</a></li>
+    </ul>
+  </nav>
+
+  <div class="container">
+    <h1>Les Salutations et la Politesse (Saludos y Modales)</h1>
+    <p class="intro">Haz clic sobre cualquier texto o botón 🔊 para escuchar el audio encadenado (francés primero y luego español con la voz de Microsoft Elena).</p>
+
+    <!-- SECCIÓN 1: SALUDOS -->
+    <h2>1. Les Salutations (Saludos)</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Expresión en Francés</th>
+          <th>Uso / Contexto</th>
+          <th>Traducción</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>
+            <span class="french-text" onclick="playAudio('Bonjour', 'Buenos días o hola')">Bonjour</span>
+            <button class="btn-audio" onclick="playAudio('Bonjour', 'Buenos días o hola')">🔊</button>
+          </td>
+          <td>Formal e informal (de día)</td>
+          <td>
+            <span class="spanish-text" onclick="playAudio('Bonjour', 'Buenos días o hola')">Buenos días / Hola</span>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="french-text" onclick="playAudio('Bonsoir', 'Buenas tardes o buenas noches')">Bonsoir</span>
+            <button class="btn-audio" onclick="playAudio('Bonsoir', 'Buenas tardes o buenas noches')">🔊</button>
+          </td>
+          <td>Formal e informal (de tarde/noche)</td>
+          <td>
+            <span class="spanish-text" onclick="playAudio('Bonsoir', 'Buenas tardes o buenas noches')">Buenas tardes / Buenas noches</span>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="french-text" onclick="playAudio('Salut', 'Hola informal')">Salut</span>
+            <button class="btn-audio" onclick="playAudio('Salut', 'Hola informal')">🔊</button>
+          </td>
+          <td>Informal (amigos o familia)</td>
+          <td>
+            <span class="spanish-text" onclick="playAudio('Salut', 'Hola informal')">Hola / Chau</span>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="french-text" onclick="playAudio('Coucou', 'Holita')">Coucou</span>
+            <button class="btn-audio" onclick="playAudio('Coucou', 'Holita')">🔊</button>
+          </td>
+          <td>Muy informal / Cariñoso</td>
+          <td>
+            <span class="spanish-text" onclick="playAudio('Coucou', 'Holita')">Holita / ¿Qué tal?</span>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="french-text" onclick="playAudio('Comment allez-vous ?', '¿Cómo está usted?')">Comment allez-vous ?</span>
+            <button class="btn-audio" onclick="playAudio('Comment allez-vous ?', '¿Cómo está usted?')">🔊</button>
+          </td>
+          <td>Formal (Usted)</td>
+          <td>
+            <span class="spanish-text" onclick="playAudio('Comment allez-vous ?', '¿Cómo está usted?')">¿Cómo está usted? / ¿Cómo están?</span>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="french-text" onclick="playAudio('Comment vas-tu ?', '¿Cómo estás?')">Comment vas-tu ?</span>
+            <button class="btn-audio" onclick="playAudio('Comment vas-tu ?', '¿Cómo estás?')">🔊</button>
+          </td>
+          <td>Informal (Tú)</td>
+          <td>
+            <span class="spanish-text" onclick="playAudio('Comment vas-tu ?', '¿Cómo estás?')">¿Cómo estás?</span>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="french-text" onclick="playAudio('Ça va ?', '¿Todo bien?')">Ça va ?</span>
+            <button class="btn-audio" onclick="playAudio('Ça va ?', '¿Todo bien?')">🔊</button>
+          </td>
+          <td>Informal y cotidiano</td>
+          <td>
+            <span class="spanish-text" onclick="playAudio('Ça va ?', '¿Todo bien?')">¿Cómo va? / ¿Todo bien?</span>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="french-text" onclick="playAudio('Ça va très bien, merci', 'Muy bien, gracias')">Ça va très bien, merci</span>
+            <button class="btn-audio" onclick="playAudio('Ça va très bien, merci', 'Muy bien, gracias')">🔊</button>
+          </td>
+          <td>Respuesta estándar</td>
+          <td>
+            <span class="spanish-text" onclick="playAudio('Ça va très bien, merci', 'Muy bien, gracias')">Va muy bien, gracias</span>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+    <!-- SECCIÓN 2: DESPEDIDAS -->
+    <h2>2. Les Au Revoir (Despedidas)</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Expresión en Francés</th>
+          <th>Uso / Contexto</th>
+          <th>Traducción</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>
+            <span class="french-text" onclick="playAudio('Au revoir', 'Hasta luego')">Au revoir</span>
+            <button class="btn-audio" onclick="playAudio('Au revoir', 'Hasta luego')">🔊</button>
+          </td>
+          <td>Estándar y formal</td>
+          <td>
+            <span class="spanish-text" onclick="playAudio('Au revoir', 'Hasta luego')">Hasta luego / Adiós</span>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="french-text" onclick="playAudio('À bientôt', 'Hasta pronto')">À bientôt</span>
+            <button class="btn-audio" onclick="playAudio('À bientôt', 'Hasta pronto')">🔊</button>
+          </td>
+          <td>General</td>
+          <td>
+            <span class="spanish-text" onclick="playAudio('À bientôt', 'Hasta pronto')">Hasta pronto</span>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="french-text" onclick="playAudio('À tout à l\'heure', 'Hasta dentro de un rato')">À tout à l'heure</span>
+            <button class="btn-audio" onclick="playAudio('À tout à l\'heure', 'Hasta dentro de un rato')">🔊</button>
+          </td>
+          <td>Para verse el mismo día</td>
+          <td>
+            <span class="spanish-text" onclick="playAudio('À tout à l\'heure', 'Hasta dentro de un rato')">Hasta luego / Nos vemos al rato</span>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="french-text" onclick="playAudio('À demain', 'Hasta mañana')">À demain</span>
+            <button class="btn-audio" onclick="playAudio('À demain', 'Hasta mañana')">🔊</button>
+          </td>
+          <td>Para verse al día siguiente</td>
+          <td>
+            <span class="spanish-text" onclick="playAudio('À demain', 'Hasta mañana')">Hasta mañana</span>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="french-text" onclick="playAudio('Bonne journée', 'Que tengas un buen día')">Bonne journée</span>
+            <button class="btn-audio" onclick="playAudio('Bonne journée', 'Que tengas un buen día')">🔊</button>
+          </td>
+          <td>Deseo al despedirse de día</td>
+          <td>
+            <span class="spanish-text" onclick="playAudio('Bonne journée', 'Que tengas un buen día')">¡Que tengas un buen día!</span>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="french-text" onclick="playAudio('Bonne soirée', 'Que tengas una buena tarde noche')">Bonne soirée</span>
+            <button class="btn-audio" onclick="playAudio('Bonne soirée', 'Que tengas una buena tarde noche')">🔊</button>
+          </td>
+          <td>Deseo al despedirse de tarde/noche</td>
+          <td>
+            <span class="spanish-text" onclick="playAudio('Bonne soirée', 'Que tengas una buena tarde noche')">¡Que tengas una buena noche!</span>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="french-text" onclick="playAudio('Bonne nuit', 'Buenas noches antes de dormir')">Bonne nuit</span>
+            <button class="btn-audio" onclick="playAudio('Bonne nuit', 'Buenas noches antes de dormir')">🔊</button>
+          </td>
+          <td>Antes de ir a dormir</td>
+          <td>
+            <span class="spanish-text" onclick="playAudio('Bonne nuit', 'Buenas noches antes de dormir')">Buenas noches / Que descanses</span>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="french-text" onclick="playAudio('Bon week-end', 'Buen fin de semana')">Bon week-end</span>
+            <button class="btn-audio" onclick="playAudio('Bon week-end', 'Buen fin de semana')">🔊</button>
+          </td>
+          <td>Al despedirse un viernes o sábado</td>
+          <td>
+            <span class="spanish-text" onclick="playAudio('Bon week-end', 'Buen fin de semana')">Buen fin de semana</span>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+    <!-- SECCIÓN 3: MODALES Y CORTESÍA -->
+    <h2>3. La Politesse (Modales y Cortesía)</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Expresión en Francés</th>
+          <th>Uso / Contexto</th>
+          <th>Traducción</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>
+            <span class="french-text" onclick="playAudio('S\'il vous plaît', 'Por favor formal')">S'il vous plaît</span>
+            <button class="btn-audio" onclick="playAudio('S\'il vous plaît', 'Por favor formal')">🔊</button>
+          </td>
+          <td>Formal (Usted)</td>
+          <td>
+            <span class="spanish-text" onclick="playAudio('S\'il vous plaît', 'Por favor formal')">Por favor</span>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="french-text" onclick="playAudio('S\'il te plaît', 'Por favor informal')">S'il te plaît</span>
+            <button class="btn-audio" onclick="playAudio('S\'il te plaît', 'Por favor informal')">🔊</button>
+          </td>
+          <td>Informal (Tú)</td>
+          <td>
+            <span class="spanish-text" onclick="playAudio('S\'il te plaît', 'Por favor informal')">Por favor</span>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="french-text" onclick="playAudio('Merci beaucoup', 'Muchas gracias')">Merci beaucoup</span>
+            <button class="btn-audio" onclick="playAudio('Merci beaucoup', 'Muchas gracias')">🔊</button>
+          </td>
+          <td>Agradecimiento fuerte</td>
+          <td>
+            <span class="spanish-text" onclick="playAudio('Merci beaucoup', 'Muchas gracias')">Muchas gracias</span>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="french-text" onclick="playAudio('De rien', 'De nada')">De rien</span>
+            <button class="btn-audio" onclick="playAudio('De rien', 'De nada')">🔊</button>
+          </td>
+          <td>Informal / Estándar</td>
+          <td>
+            <span class="spanish-text" onclick="playAudio('De rien', 'De nada')">De nada</span>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="french-text" onclick="playAudio('Je vous en prie', 'De nada o no hay de qué formal')">Je vous en prie</span>
+            <button class="btn-audio" onclick="playAudio('Je vous en prie', 'De nada o no hay de qué formal')">🔊</button>
+          </td>
+          <td>Formal (Usted)</td>
+          <td>
+            <span class="spanish-text" onclick="playAudio('Je vous en prie', 'De nada o no hay de qué formal')">No hay de qué / De nada</span>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="french-text" onclick="playAudio('Pardon', 'Perdón')">Pardon</span>
+            <button class="btn-audio" onclick="playAudio('Pardon', 'Perdón')">🔊</button>
+          </td>
+          <td>Para disculparse o pedir paso</td>
+          <td>
+            <span class="spanish-text" onclick="playAudio('Pardon', 'Perdón')">Perdón / Disculpe</span>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="french-text" onclick="playAudio('Excusez-moi', 'Disculpeme')">Excusez-moi</span>
+            <button class="btn-audio" onclick="playAudio('Excusez-moi', 'Disculpeme')">🔊</button>
+          </td>
+          <td>Formal (Usted)</td>
+          <td>
+            <span class="spanish-text" onclick="playAudio('Excusez-moi', 'Disculpeme')">Disculpe / Con permiso</span>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="french-text" onclick="playAudio('Enchanté', 'Mucho gusto masculino')">Enchanté</span>
+            <button class="btn-audio" onclick="playAudio('Enchanté', 'Mucho gusto masculino')">🔊</button>
+          </td>
+          <td>Si quien habla es hombre</td>
+          <td>
+            <span class="spanish-text" onclick="playAudio('Enchanté', 'Mucho gusto masculino')">Encantado / Mucho gusto</span>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="french-text" onclick="playAudio('Enchantée', 'Mucho gusto femenino')">Enchantée</span>
+            <button class="btn-audio" onclick="playAudio('Enchantée', 'Mucho gusto femenino')">🔊</button>
+          </td>
+          <td>Si quien habla es mujer</td>
+          <td>
+            <span class="spanish-text" onclick="playAudio('Enchantée', 'Mucho gusto femenino')">Encantada / Mucho gusto</span>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <script>
+    let voices = [];
+
+    function loadVoices() {
+      if ('speechSynthesis' in window) {
+        voices = window.speechSynthesis.getVoices();
+      }
+    }
+
+    if ('speechSynthesis' in window) {
+      loadVoices();
+      if (speechSynthesis.onvoiceschanged !== undefined) {
+        speechSynthesis.onvoiceschanged = loadVoices;
+      }
+    }
+
+    // Busca la voz de Microsoft Elena (Argentina)
+    function getElenaSpanishVoice() {
+      let elena = voices.find(v => 
+        v.name.includes("Elena") || 
+        (v.lang.toLowerCase().includes("es-ar") && v.name.toLowerCase().includes("microsoft"))
+      );
+
+      if (!elena) {
+        elena = voices.find(v => v.lang.toLowerCase().includes("es-ar")) || 
+                voices.find(v => v.lang.toLowerCase().startsWith("es"));
+      }
+
+      return elena;
+    }
+
+    // Busca la voz femenina en francés
+    function getFrenchVoice() {
+      const frVoices = voices.filter(v => v.lang.toLowerCase().startsWith("fr"));
+      const femaleFrench = frVoices.find(v => 
+        v.name.toLowerCase().includes("hortense") || 
+        v.name.toLowerCase().includes("celeste") || 
+        v.name.toLowerCase().includes("julie") ||
+        v.name.toLowerCase().includes("google")
+      );
+
+      return femaleFrench || frVoices[0] || null;
+    }
+
+    function playAudio(frenchText, spanishText) {
+      if (!('speechSynthesis' in window)) {
+        alert("Tu navegador no soporta síntesis de voz.");
+        return;
+      }
+
+      window.speechSynthesis.cancel();
+
+      // Audio Francés
+      const frenchUtterance = new SpeechSynthesisUtterance(frenchText);
+      frenchUtterance.lang = 'fr-FR';
+      frenchUtterance.pitch = 1.25;
+      frenchUtterance.rate = 0.95;
+
+      const frVoice = getFrenchVoice();
+      if (frVoice) frenchUtterance.voice = frVoice;
+
+      // Audio Español - Microsoft Elena
+      const spanishUtterance = new SpeechSynthesisUtterance(spanishText);
+      spanishUtterance.lang = 'es-AR';
+      spanishUtterance.pitch = 1.25;
+      spanishUtterance.rate = 1.0;
+
+      const esVoice = getElenaSpanishVoice();
+      if (esVoice) spanishUtterance.voice = esVoice;
+
+      // Reproducción encadenada
+      frenchUtterance.onend = function() {
+        window.speechSynthesis.speak(spanishUtterance);
+      };
+
+      window.speechSynthesis.speak(frenchUtterance);
+    }
+  </script>
+
+</body>
+</html>

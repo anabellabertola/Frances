@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aprende Francés - Les Nationalités</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      background-color: #f9f8fc;
+      color: #333;
+    }
+
+    nav {
+      background-color: #e6e6fa;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    ul.menu {
+      display: flex;
+      flex-wrap: wrap;
+      list-style: none;
+      padding: 0 10px;
+    }
+
+    ul.menu > li {
+      position: relative;
+    }
+
+    ul.menu a {
+      display: block;
+      padding: 14px 18px;
+      color: #4a3b52;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 14px;
+    }
+
+    ul.menu a:hover {
+      background-color: #d8cdfa;
+    }
+
+    ul.submenu {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background-color: #efe8ff;
+      min-width: 160px;
+      list-style: none;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+      z-index: 1000;
+    }
+
+    ul.menu > li:hover ul.submenu {
+      display: block;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: 30px auto;
+      padding: 25px;
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    }
+
+    h1 {
+      color: #5c4b6e;
+      margin-bottom: 10px;
+    }
+
+    h2 {
+      color: #7b6298;
+      margin-top: 30px;
+      margin-bottom: 10px;
+      border-bottom: 2px solid #e6e6fa;
+      padding-bottom: 5px;
+    }
+
+    p.intro, p.explicacion {
+      color: #555;
+      margin-bottom: 15px;
+      line-height: 1.5;
+    }
+
+    .destacado {
+      background-color: #f5f0ff;
+      border-left: 4px solid #b39ddb;
+      padding: 12px 15px;
+      border-radius: 4px;
+      margin-bottom: 15px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 10px;
+      margin-bottom: 20px;
+    }
+
+    th, td {
+      padding: 12px;
+      border-bottom: 1px solid #eee;
+      text-align: left;
+    }
+
+    th {
+      background-color: #f2edfe;
+      color: #4a3b52;
+    }
+
+    td small {
+      display: block;
+      color: #666;
+      font-size: 0.85em;
+      margin-top: 2px;
+    }
+
+    .french-text {
+      cursor: pointer;
+      color: #5c4b6e;
+      font-weight: 600;
+    }
+
+    .french-text:hover {
+      text-decoration: underline;
+      color: #7b6298;
+    }
+
+    .btn-audio {
+      background-color: #b39ddb;
+      border: none;
+      color: white;
+      padding: 5px 10px;
+      border-radius: 20px;
+      cursor: pointer;
+      font-size: 12px;
+      font-weight: bold;
+      margin-left: 4px;
+      transition: background 0.3s;
+    }
+
+    .btn-audio:hover {
+      background-color: #9575cd;
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <ul class="menu">
+      <li>
+        <a href="#">Artículos ▼</a>
+        <ul class="submenu">
+          <li><a href="definidos.html">Definidos</a></li>
+          <li><a href="#">Indefinidos</a></li>
+          <li><a href="#">Partitivos</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#">Adjetivos ▼</a>
+        <ul class="submenu">
+          <li><a href="#">Demostrativos</a></li>
+          <li><a href="#">Posesivos</a></li>
+        </ul>
+      </li>
+      <li><a href="negacion.html">Negación Básica</a></li>
+      <li><a href="#">Interrogativa</a></li>
+      <li><a href="#">Sustantivos</a></li>
+      <li><a href="#">Conectores</a></li>
+      <li><a href="#">Preposiciones</a></li>
+      <li><a href="nacionalidades.html">Nacionalidades</a></li>
+      <li><a href="#">Verbos</a></li>
+      <li><a href="#">Números</a></li>
+      <li><a href="#">Horas</a></li>
+      <li><a href="#">Días</a></li>
+      <li><a href="#">Meses</a></li>
+      <li><a href="#">Saludos</a></li>
+      <li><a href="#">Indicadores Temporales</a></li>
+    </ul>
+  </nav>
+
+  <div class="container">
+    <h1>Les Pays et les Nationalités (Países y Nacionalidades)</h1>
+    <p class="intro">Haz clic en cualquier texto o botón 🔊 para escuchar la frase completa en francés pronunciada por la voz femenina y luego su traducción explicada en español por **Microsoft Elena**.</p>
+
+    <div class="destacado">
+      <strong>Estructura para decir de dónde eres:</strong><br>
+      • País: <em>Je viens de... / Je viens du...</em> (Yo vengo de...)<br>
+      • Nacionalidad (Masculino): <em>Il est...</em> (Él es...)<br>
+      • Nacionalidad (Femenino): <em>Elle est...</em> (Ella es...)
+    </div>
+
+    <table>
+      <thead>
+        <tr>
+          <th>País (Origen)</th>
+          <th>Masculino (Él es...)</th>
+          <th>Femenino (Ella es...)</th>
+        </tr>
+      </thead>
+      <tbody>
+
+        <!-- AMÉRICA -->
+        <tr>
+          <td>
+            <span class="french-text" onclick="playAudio('Je viens d\'Argentine', 'Yo vengo de Argentina')">L'Argentine</span>
+            <button class="btn-audio" onclick="playAudio('Je viens d\'Argentine', 'Yo vengo de Argentina')">🔊</button>
+            <small>Argentina</small>
+          </td>
+          <td>
+            <span class="french-text" onclick="playAudio('Il est argentin', 'Él es argentino')">Il est argentin</span>
+            <button class="btn-audio" onclick="playAudio('Il est argentin', 'Él es argentino')">🔊</button>
+            <small>Argentino</small>
+          </td>
+          <td>
+            <span class="french-text" onclick="playAudio('Elle est argentine', 'Ella es argentina')">Elle est argentine</span>
+            <button class="btn-audio" onclick="playAudio('Elle est argentine', 'Ella es argentina')">🔊</button>
+            <small>Argentina</small>
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            <span class="french-text" onclick="playAudio('Je viens du Mexique', 'Yo vengo de México')">Le Mexique</span>
+            <button class="btn-audio" onclick="playAudio('Je viens du Mexique', 'Yo vengo de México')">🔊</button>
+            <small>México</small>
+          </td>
+          <td>
+            <span class="french-text" onclick="playAudio('Il est mexicain', 'Él es mexicano')">Il est mexicain</span>
+            <button class="btn-audio" onclick="playAudio('Il est mexicain', 'Él es mexicano')">🔊</button>
+            <small>Mexicano</small>
+          </td>
+          <td>
+            <span class="french-text" onclick="playAudio('Elle est mexicaine', 'Ella es mexicana')">Elle est mexicaine</span>
+            <button class="btn-audio" onclick="playAudio('Elle est mexicaine', 'Ella es mexicana')">🔊</button>
+            <small>Mexicana</small>
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            <span class="french-text" onclick="playAudio('Je viens des États-Unis', 'Yo vengo de Estados Unidos')">Les États-Unis</span>
+            <button class="btn-audio" onclick="playAudio('Je viens des États-Unis', 'Yo vengo de Estados Unidos')">🔊</button>
+            <small>Estados Unidos</small>
+          </td>
+          <td>
+            <span class="french-text" onclick="playAudio('Il est américain', 'Él es estadounidense')">Il est américain</span>
+            <button class="btn-audio" onclick="playAudio('Il est américain', 'Él es estadounidense')">🔊</button>
+            <small>Estadounidense</small>
+          </td>
+          <td>
+            <span class="french-text" onclick="playAudio('Elle est américaine', 'Ella es estadounidense')">Elle est américaine</span>
+            <button class="btn-audio" onclick="playAudio('Elle est américaine', 'Ella es estadounidense')">🔊</button>
+            <small>Estadounidense</small>
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            <span class="french-text" onclick="playAudio('Je viens du Brésil', 'Yo vengo de Brasil')">Le Brésil</span>
+            <button class="btn-audio" onclick="playAudio('Je viens du Brésil', 'Yo vengo de Brasil')">🔊</button>
+            <small>Brasil</small>
+          </td>
+          <td>
+            <span class="french-text" onclick="playAudio('Il est brésilien', 'Él es brasileño')">Il est brésilien</span>
+            <button class="btn-audio" onclick="playAudio('Il est brésilien', 'Él es brasileño')">🔊</button>
+            <small>Brasileño</small>
+          </td>
+          <td>
+            <span class="french-text" onclick="playAudio('Elle est brésilienne', 'Ella es brasileña')">Elle est brésilienne</span>
+            <button class="btn-audio" onclick="playAudio('Elle est brésilienne', 'Ella es brasileña')">🔊</button>
+            <small>Brasileña</small>
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            <span class="french-text" onclick="playAudio('Je viens du Canada', 'Yo vengo de Canadá')">Le Canada</span>
+            <button class="btn-audio" onclick="playAudio('Je viens du Canada', 'Yo vengo de Canadá')">🔊</button>
+            <small>Canadá</small>
+          </td>
+          <td>
+            <span class="french-text" onclick="playAudio('Il est canadien', 'Él es canadiense')">Il est canadien</span>
+            <button class="btn-audio" onclick="playAudio('Il est canadien', 'Él es canadiense')">🔊</button>
+            <small>Canadiense</small>
+          </td>
+          <td>
+            <span class="french-text" onclick="playAudio('Elle est canadienne', 'Ella es canadiense')">Elle est canadienne</span>
+            <button class="btn-audio" onclick="playAudio('Elle est canadienne', 'Ella es canadiense')">🔊</button>
+            <small>Canadiense</small>
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            <span class="french-text" onclick="playAudio('Je viens de Colombie', 'Yo vengo de Colombia')">La Colombie</span>
+            <button class="btn-audio" onclick="playAudio('Je viens de Colombie', 'Yo vengo de Colombia')">🔊</button>
+            <small>Colombia</small>
+          </td>
+          <td>
+            <span class="french-text" onclick="playAudio('Il est colombien', 'Él es colombiano')">Il est colombien</span>
+            <button class="btn-audio" onclick="playAudio('Il est colombien', 'Él es colombiano')">🔊</button>
+            <small>Colombiano</small>
+          </td>
+          <td>
+            <span class="french-text" onclick="playAudio('Elle est colombienne', 'Ella es colombiana')">Elle est colombienne</span>
+            <button class="btn-audio" onclick="playAudio('Elle est colombienne', 'Ella es colombiana')">🔊</button>
+            <small>Colombiana</small>
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            <span class="french-text" onclick="playAudio('Je viens du Chili', 'Yo vengo de Chile')">Le Chili</span>
+            <button class="btn-audio" onclick="playAudio('Je viens du Chili', 'Yo vengo de Chile')">🔊</button>
+            <small>Chile</small>
+          </td>
+          <td>
+            <span class="french-text" onclick="playAudio('Il est chilien', 'Él es chileno')">Il est chilien</span>
+            <button class="btn-audio" onclick="playAudio('Il est chilien', 'Él es chileno')">🔊</button>
+            <small>Chileno</small>
+          </td>
+          <td>
+            <span class="french-text" onclick="playAudio('Elle est chilienne', 'Ella es chilena')">Elle est chilienne</span>
+            <button class="btn-audio" onclick="playAudio('Elle est chilienne', 'Ella es chilena')">🔊</button>
+            <small>Chilena</small>
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            <span class="french-text" onclick="playAudio('Je viens du Pérou', 'Yo vengo de Perú')">Le Pérou</span>
+            <button class="btn-audio" onclick="playAudio('Je viens du Pérou', 'Yo vengo de Perú')">🔊</button>
+            <small>Perú</small>
+          </td>
+          <td>
+            <span class="french-text" onclick="playAudio('Il est péruvien', 'Él es peruano')">Il est péruvien</span>
+            <button class="btn-audio" onclick="playAudio('Il est péruvien', 'Él es peruano')">🔊</button>
+            <small>Peruano</small>
+          </td>
+          <td>
+            <span class="french-text" onclick="playAudio('Elle est péruvienne', 'Ella es peruana')">Elle est péruvienne</span>
+            <button class="btn-audio" onclick="playAudio('Elle est péruvienne', 'Ella es peruana')">🔊</button>
+            <small>Peruana</small>
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            <span class="french-text" onclick="playAudio('Je viens d\'Uruguay', 'Yo vengo de Uruguay')">L'Uruguay</span>
+            <button class="btn-audio" onclick="playAudio('Je viens d\'Uruguay', 'Yo vengo de Uruguay')">🔊</button>
+            <small>Uruguay</small>
+          </td>
+          <td>
+            <span class="french-text" onclick="playAudio('Il est uruguayen', 'Él es uruguayo')">Il est uruguayen</span>
+            <button class="btn-audio" onclick="playAudio('Il est uruguayen', 'Él es uruguayo')">🔊</button>
+            <small>Uruguayo</small>
+          </td>
+          <td>
+            <span class="french-text" onclick="playAudio('Elle est uruguayenne', 'Ella es uruguaya')">Elle est uruguayenne</span>
+            <button class="btn-audio" onclick="playAudio('Elle est uruguayenne', 'Ella es uruguaya')">🔊</button>
+            <small>Uruguaya</small>
+          </td>
+        </tr>
+
+        <!-- EUROPA -->
+        <tr>
+          <td>
+            <span class="french-text" onclick="playAudio('Je viens de France', 'Yo vengo de Francia')">La France</span>
+            <button class="btn-audio" onclick="playAudio('Je viens de France', 'Yo vengo de Francia')">🔊</button>
+            <small>Francia</small>
+          </td>
+          <td>
+            <span class="french-text" onclick="playAudio('Il est français', 'Él es francés')">Il est français</span>
+            <button class="btn-audio" onclick="playAudio('Il est français', 'Él es francés')">🔊</button>
+            <small>Francés</small>
+          </td>
+          <td>
+            <span class="french-text" onclick="playAudio('Elle est française', 'Ella es francesa')">Elle est française</span>
+            <button class="btn-audio" onclick="playAudio('Elle est française', 'Ella es francesa')">🔊</button>
+            <small>Francesa</small>
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            <span class="french-text" onclick="playAudio('Je viens d\'Espagne', 'Yo vengo de España')">L'Espagne</span>
+            <button class="btn-audio" onclick="playAudio('Je viens d\'Espagne', 'Yo vengo de España')">🔊</button>
+            <small>España</small>
+          </td>
+          <td>
+            <span class="french-text" onclick="playAudio('Il est espagnol', 'Él es español')">Il est espagnol</span>
+            <button class="btn-audio" onclick="playAudio('Il est espagnol', 'Él es español')">🔊</button>
+            <small>Español</small>
+          </td>
+          <td>
+            <span class="french-text" onclick="playAudio('Elle est espagnole', 'Ella es española')">Elle est espagnole</span>
+            <button class="btn-audio" onclick="playAudio('Elle est espagnole', 'Ella es española')">🔊</button>
+            <small>Española</small>
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            <span class="french-text" onclick="playAudio('Je viens d\'Italie', 'Yo vengo de Italia')">L'Italie</span>
+            <button class="btn-audio" onclick="playAudio('Je viens d\'Italie', 'Yo vengo de Italia')">🔊</button>
+            <small>Italia</small>
+          </td>
+          <td>
+            <span class="french-text" onclick="playAudio('Il est italien', 'Él es italiano')">Il est italien</span>
+            <button class="btn-audio" onclick="playAudio('Il est italien', 'Él es italiano')">🔊</button>
+            <small>Italiano</small>
+          </td>
+          <td>
+            <span class="french-text" onclick="playAudio('Elle est italienne', 'Ella es italiana')">Elle est italienne</span>
+            <button class="btn-audio" onclick="playAudio('Elle est italienne', 'Ella es italiana')">🔊</button>
+            <small>Italiana</small>
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            <span class="french-text" onclick="playAudio('Je viens d\'Allemagne', 'Yo vengo de Alemania')">L'Allemagne</span>
+            <button class="btn-audio" onclick="playAudio('Je viens d\'Allemagne', 'Yo vengo de Alemania')">🔊</button>
+            <small>Alemania</small>
+          </td>
+          <td>
+            <span class="french-text" onclick="playAudio('Il est allemand', 'Él es alemán')">Il est allemand</span>
+            <button class="btn-audio" onclick="playAudio('Il est allemand', 'Él es alemán')">🔊</button>
+            <small>Alemán</small>
+          </td>
+          <td>
+            <span class="french-text" onclick="playAudio('Elle est allemande', 'Ella es alemana')">Elle est allemande</span>
+            <button class="btn-audio" onclick="playAudio('Elle est allemande', 'Ella es alemana')">🔊</button>
+            <small>Alemana</small>
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            <span class="french-text" onclick="playAudio('Je viens d\'Angleterre', 'Yo vengo de Inglaterra')">L'Angleterre</span>
+            <button class="btn-audio" onclick="playAudio('Je viens d\'Angleterre', 'Yo vengo de Inglaterra')">🔊</button>
+            <small>Inglaterra</small>
+          </td>
+          <td>
+            <span class="french-text" onclick="playAudio('Il est anglais', 'Él es inglés')">Il est anglais</span>
+            <button class="btn-audio" onclick="playAudio('Il est anglais', 'Él es inglés')">🔊</button>
+            <small>Inglés</small>
+          </td>
+          <td>
+            <span class="french-text" onclick="playAudio('Elle est anglaise', 'Ella es inglesa')">Elle est anglaise</span>
+            <button class="btn-audio" onclick="playAudio('Elle est anglaise', 'Ella es inglesa')">🔊</button>
+            <small>Inglesa</small>
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            <span class="french-text" onclick="playAudio('Je viens de Suisse', 'Yo vengo de Suiza')">La Suisse</span>
+            <button class="btn-audio" onclick="playAudio('Je viens de Suisse', 'Yo vengo de Suiza')">🔊</button>
+            <small>Suiza</small>
+          </td>
+          <td>
+            <span class="french-text" onclick="playAudio('Il est suisse', 'Él es suizo')">Il est suisse</span>
+            <button class="btn-audio" onclick="playAudio('Il est suisse', 'Él es suizo')">🔊</button>
+            <small>Suizo</small>
+          </td>
+          <td>
+            <span class="french-text" onclick="playAudio('Elle est suisse', 'Ella es suiza')">Elle est suisse</span>
+            <button class="btn-audio" onclick="playAudio('Elle est suisse', 'Ella es suiza')">🔊</button>
+            <small>Suiza</small>
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            <span class="french-text" onclick="playAudio('Je viens du Portugal', 'Yo vengo de Portugal')">Le Portugal</span>
+            <button class="btn-audio" onclick="playAudio('Je viens du Portugal', 'Yo vengo de Portugal')">🔊</button>
+            <small>Portugal</small>
+          </td>
+          <td>
+            <span class="french-text" onclick="playAudio('Il est portuguais', 'Él es portugués')">Il est portuguais</span>
+            <button class="btn-audio" onclick="playAudio('Il est portuguais', 'Él es portugués')">🔊</button>
+            <small>Portugués</small>
+          </td>
+          <td>
+            <span class="french-text" onclick="playAudio('Elle est portugaise', 'Ella es portuguesa')">Elle est portugaise</span>
+            <button class="btn-audio" onclick="playAudio('Elle est portugaise', 'Ella es portuguesa')">🔊</button>
+            <small>Portuguesa</small>
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            <span class="french-text" onclick="playAudio('Je viens de Belgique', 'Yo vengo de Bélgica')">La Belgique</span>
+            <button class="btn-audio" onclick="playAudio('Je viens de Belgique', 'Yo vengo de Bélgica')">🔊</button>
+            <small>Bélgica</small>
+          </td>
+          <td>
+            <span class="french-text" onclick="playAudio('Il est belge', 'Él es belga')">Il est belge</span>
+            <button class="btn-audio" onclick="playAudio('Il est belge', 'Él es belga')">🔊</button>
+            <small>Belga</small>
+          </td>
+          <td>
+            <span class="french-text" onclick="playAudio('Elle est belge', 'Ella es belga')">Elle est belge</span>
+            <button class="btn-audio" onclick="playAudio('Elle est belge', 'Ella es belga')">🔊</button>
+            <small>Belga</small>
+          </td>
+        </tr>
+
+        <!-- ASIA / ÁFRICA / OTROS -->
+        <tr>
+          <td>
+            <span class="french-text" onclick="playAudio('Je viens de Chine', 'Yo vengo de China')">La Chine</span>
+            <button class="btn-audio" onclick="playAudio('Je viens de Chine', 'Yo vengo de China')">🔊</button>
+            <small>China</small>
+          </td>
+          <td>
+            <span class="french-text" onclick="playAudio('Il est chinois', 'Él es chino')">Il est chinois</span>
+            <button class="btn-audio" onclick="playAudio('Il est chinois', 'Él es chino')">🔊</button>
+            <small>Chino</small>
+          </td>
+          <td>
+            <span class="french-text" onclick="playAudio('Elle est chinoise', 'Ella es china')">Elle est chinoise</span>
+            <button class="btn-audio" onclick="playAudio('Elle est chinoise', 'Ella es china')">🔊</button>
+            <small>China</small>
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            <span class="french-text" onclick="playAudio('Je viens du Japon', 'Yo vengo de Japón')">Le Japon</span>
+            <button class="btn-audio" onclick="playAudio('Je viens du Japon', 'Yo vengo de Japón')">🔊</button>
+            <small>Japón</small>
+          </td>
+          <td>
+            <span class="french-text" onclick="playAudio('Il est japonais', 'Él es japonés')">Il est japonais</span>
+            <button class="btn-audio" onclick="playAudio('Il est japonais', 'Él es japonés')">🔊</button>
+            <small>Japonés</small>
+          </td>
+          <td>
+            <span class="french-text" onclick="playAudio('Elle est japonaise', 'Ella es japonesa')">Elle est japonaise</span>
+            <button class="btn-audio" onclick="playAudio('Elle est japonaise', 'Ella es japonesa')">🔊</button>
+            <small>Japonesa</small>
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            <span class="french-text" onclick="playAudio('Je viens du Maroc', 'Yo vengo de Marruecos')">Le Maroc</span>
+            <button class="btn-audio" onclick="playAudio('Je viens du Maroc', 'Yo vengo de Marruecos')">🔊</button>
+            <small>Marruecos</small>
+          </td>
+          <td>
+            <span class="french-text" onclick="playAudio('Il est marocain', 'Él es marroquí')">Il est marocain</span>
+            <button class="btn-audio" onclick="playAudio('Il est marocain', 'Él es marroquí')">🔊</button>
+            <small>Marroquí</small>
+          </td>
+          <td>
+            <span class="french-text" onclick="playAudio('Elle est marocaine', 'Ella es marroquí')">Elle est marocaine</span>
+            <button class="btn-audio" onclick="playAudio('Elle est marocaine', 'Ella es marroquí')">🔊</button>
+            <small>Marroquí</small>
+          </td>
+        </tr>
+
+      </tbody>
+    </table>
+  </div>
+
+  <script>
+    let voices = [];
+
+    function loadVoices() {
+      if ('speechSynthesis' in window) {
+        voices = window.speechSynthesis.getVoices();
+      }
+    }
+
+    if ('speechSynthesis' in window) {
+      loadVoices();
+      if (speechSynthesis.onvoiceschanged !== undefined) {
+        speechSynthesis.onvoiceschanged = loadVoices;
+      }
+    }
+
+    // Busca la voz de Microsoft Elena (Argentina)
+    function getElenaSpanishVoice() {
+      let elena = voices.find(v => 
+        v.name.includes("Elena") || 
+        (v.lang.toLowerCase().includes("es-ar") && v.name.toLowerCase().includes("microsoft"))
+      );
+
+      if (!elena) {
+        elena = voices.find(v => v.lang.toLowerCase().includes("es-ar")) || 
+                voices.find(v => v.lang.toLowerCase().startsWith("es"));
+      }
+
+      return elena;
+    }
+
+    // Busca la voz femenina en francés
+    function getFrenchVoice() {
+      const frVoices = voices.filter(v => v.lang.toLowerCase().startsWith("fr"));
+      const femaleFrench = frVoices.find(v => 
+        v.name.toLowerCase().includes("hortense") || 
+        v.name.toLowerCase().includes("celeste") || 
+        v.name.toLowerCase().includes("julie") ||
+        v.name.toLowerCase().includes("google")
+      );
+
+      return femaleFrench || frVoices[0] || null;
+    }
+
+    function playAudio(frenchText, spanishText) {
+      if (!('speechSynthesis' in window)) {
+        alert("Tu navegador no soporta síntesis de voz.");
+        return;
+      }
+
+      window.speechSynthesis.cancel();
+
+      // Audio Francés
+      const frenchUtterance = new SpeechSynthesisUtterance(frenchText);
+      frenchUtterance.lang = 'fr-FR';
+      frenchUtterance.pitch = 1.25;
+      frenchUtterance.rate = 0.95;
+
+      const frVoice = getFrenchVoice();
+      if (frVoice) frenchUtterance.voice = frVoice;
+
+      // Audio Español - Microsoft Elena
+      const spanishUtterance = new SpeechSynthesisUtterance(spanishText);
+      spanishUtterance.lang = 'es-AR';
+      spanishUtterance.pitch = 1.25;
+      spanishUtterance.rate = 1.0;
+
+      const esVoice = getElenaSpanishVoice();
+      if (esVoice) spanishUtterance.voice = esVoice;
+
+      // Reproducción encadenada
+      frenchUtterance.onend = function() {
+        window.speechSynthesis.speak(spanishUtterance);
+      };
+
+      window.speechSynthesis.speak(frenchUtterance);
+    }
+  </script>
+
+</body>
+</html>
