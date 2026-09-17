@@ -1,0 +1,841 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Guía de Pronunciación en Francés</title>
+<!-- Tipografía Roboto -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+<!-- Hoja de estilos -->
+<link rel="stylesheet" href="css/verbos.css">
+<style>
+.intro-box, .outro-box {
+    margin: 15px 0 25px 0;
+    padding: 15px;
+    background-color: #f8f9fa;
+    border-left: 4px solid #e91e63;
+    border-radius: 4px;
+}
+.outro-box {
+    margin-top: 25px;
+    margin-bottom: 0;
+}
+.intro-box h2, .outro-box h2 {
+    margin-top: 0;
+    margin-bottom: 6px;
+    font-size: 1.1em;
+    color: #333;
+}
+.intro-box p, .outro-box p {
+    margin: 0 0 12px 0;
+    font-size: 0.95em;
+    color: #555;
+    line-height: 1.4;
+}
+.intro-box ul {
+    margin: 0;
+    padding-left: 20px;
+    color: #555;
+    font-size: 0.95em;
+    line-height: 1.5;
+}
+.intro-box li {
+    margin-bottom: 8px;
+}
+.audio-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 0.9em;
+    padding: 0;
+    margin-left: 4px;
+}
+.audio-btn::before {
+    content: "🔊";
+}
+.section-title {
+    font-size: 1.4em;
+    color: #e91e63;
+    margin: 30px 0 15px 0;
+    font-weight: 700;
+}
+.french-text {
+    cursor: pointer;
+    color: #0056b3;
+    font-weight: 500;
+}
+.french-text:hover {
+    text-decoration: underline;
+}
+.table-container {
+    overflow-x: auto;
+    margin-bottom: 20px;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+th, td {
+    padding: 10px 12px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+th {
+    background-color: #f2f2f2;
+    font-weight: 700;
+}
+td small {
+    display: block;
+    color: #666;
+    font-size: 0.85em;
+    margin-top: 2px;
+}
+</style>
+</head>
+<body>
+
+<!-- Header Rosa Chicle -->
+<header class="site-header">
+<div class="header-container">
+<a href="index.html" class="logo">Français</a>
+<nav class="nav-container">
+<ul class="nav-menu">
+<li><a href="pronunciacion.html" class="nav-link active">Prononciation</a></li>
+<li><a href="sentimientos.html" class="nav-link">Sentiments</a></li>
+<li><a href="lenguas.html" class="nav-link">Les Langues</a></li>
+<li><a href="verbos-regulares.html" class="nav-link">Verbes Réguliers</a></li>
+<li><a href="verbos-irregulares.html" class="nav-link">Verbes Irréguliers</a></li>
+</ul>
+</nav>
+</div>
+</header>
+
+<main class="main-container" style="padding: 20px; max-width: 1200px; margin: 0 auto;">
+
+<h1 class="section-title">🗣️ Guía Rápida de Pronunciación en Francés</h1>
+
+<div class="intro-box">
+<h2>Règles de Phonétique de Base (Reglas de Fonética Básica)</h2>
+<p>Ahora las combinaciones de letras también cuentan con su propio botón de audio para escuchar exactamente cómo suena cada combinación y su explicación fonética.</p>
+</div>
+
+<!-- Tabla: Reglas de Fonética Básica -->
+<div class="table-container">
+<table>
+<thead>
+<tr>
+<th>Se escribe</th>
+<th>Se pronuncia como...</th>
+<th>Ejemplo</th>
+<th>Significado</th>
+</tr>
+</thead>
+<tbody>
+
+<tr>
+<td>
+<span class="french-text" onclick="playAudio('au, eau', this)">au / eau</span>
+<button class="audio-btn" onclick="playAudio('au, eau', this)"></button>
+<small>combinación o</small>
+</td>
+<td>
+<span class="french-text" onclick="playAudio('o', this)">O (cerrada)</span>
+<button class="audio-btn" onclick="playAudio('o', this)"></button>
+<small>sonido o cerrada</small>
+</td>
+<td>
+<span class="french-text" onclick="playAudio('Chapeau', this)">Chapeau</span>
+<button class="audio-btn" onclick="playAudio('Chapeau', this)"></button>
+<small>Sombrero</small>
+</td>
+<td>Sombrero</td>
+</tr>
+
+<tr>
+<td>
+<span class="french-text" onclick="playAudio('eu, oeu', this)">eu / oeu</span>
+<button class="audio-btn" onclick="playAudio('eu, oeu', this)"></button>
+<small>combinación eu</small>
+</td>
+<td>
+<span class="french-text" onclick="playAudio('eu', this)">E (cerrada francesa)</span>
+<button class="audio-btn" onclick="playAudio('eu', this)"></button>
+<small>sonido e cerrada</small>
+</td>
+<td>
+<span class="french-text" onclick="playAudio('Deux', this)">Deux</span>
+<button class="audio-btn" onclick="playAudio('Deux', this)"></button>
+<small>Dos</small>
+<br>
+<span class="french-text" onclick="playAudio('Œuf', this)">Œuf</span>
+<button class="audio-btn" onclick="playAudio('Œuf', this)"></button>
+<small>Huevo</small>
+</td>
+<td>Dos / Huevo</td>
+</tr>
+
+<tr>
+<td>
+<span class="french-text" onclick="playAudio('ai', this)">ai</span>
+<button class="audio-btn" onclick="playAudio('ai', this)"></button>
+<small>combinación ai</small>
+</td>
+<td>
+<span class="french-text" onclick="playAudio('è', this)">E (española)</span>
+<button class="audio-btn" onclick="playAudio('è', this)"></button>
+<small>sonido e</small>
+</td>
+<td>
+<span class="french-text" onclick="playAudio('Français', this)">Français</span>
+<button class="audio-btn" onclick="playAudio('Français', this)"></button>
+<small>Francés</small>
+</td>
+<td>Francés</td>
+</tr>
+
+<tr>
+<td>
+<span class="french-text" onclick="playAudio('ou', this)">ou</span>
+<button class="audio-btn" onclick="playAudio('ou', this)"></button>
+<small>combinación ou</small>
+</td>
+<td>
+<span class="french-text" onclick="playAudio('ou', this)">U (española)</span>
+<button class="audio-btn" onclick="playAudio('ou', this)"></button>
+<small>sonido u</small>
+</td>
+<td>
+<span class="french-text" onclick="playAudio('Tout', this)">Tout</span>
+<button class="audio-btn" onclick="playAudio('Tout', this)"></button>
+<small>Todo</small>
+</td>
+<td>Todo</td>
+</tr>
+
+<tr>
+<td>
+<span class="french-text" onclick="playAudio('u', this)">u</span>
+<button class="audio-btn" onclick="playAudio('u', this)"></button>
+<small>letra u francesa</small>
+</td>
+<td>
+<span class="french-text" onclick="playAudio('u', this)">U (cerrada francesa)</span>
+<button class="audio-btn" onclick="playAudio('u', this)"></button>
+<small>sonido u francesa</small>
+</td>
+<td>
+<span class="french-text" onclick="playAudio('Tu', this)">Tu</span>
+<button class="audio-btn" onclick="playAudio('Tu', this)"></button>
+<small>Tú</small>
+</td>
+<td>Tú</td>
+</tr>
+
+<tr>
+<td>
+<span class="french-text" onclick="playAudio('oi', this)">oi</span>
+<button class="audio-btn" onclick="playAudio('oi', this)"></button>
+<small>combinación oi</small>
+</td>
+<td>
+<span class="french-text" onclick="playAudio('oi', this)">UA</span>
+<button class="audio-btn" onclick="playAudio('oi', this)"></button>
+<small>sonido ua</small>
+</td>
+<td>
+<span class="french-text" onclick="playAudio('Croix', this)">Croix</span>
+<button class="audio-btn" onclick="playAudio('Croix', this)"></button>
+<small>Cruz</small>
+</td>
+<td>Cruz</td>
+</tr>
+
+<tr>
+<td>
+<span class="french-text" onclick="playAudio('ph', this)">ph</span>
+<button class="audio-btn" onclick="playAudio('ph', this)"></button>
+<small>combinación ph</small>
+</td>
+<td>
+<span class="french-text" onclick="playAudio('f', this)">F</span>
+<button class="audio-btn" onclick="playAudio('f', this)"></button>
+<small>sonido f</small>
+</td>
+<td>
+<span class="french-text" onclick="playAudio('Photo', this)">Photo</span>
+<button class="audio-btn" onclick="playAudio('Photo', this)"></button>
+<small>Foto</small>
+</td>
+<td>Foto</td>
+</tr>
+
+<tr>
+<td>
+<span class="french-text" onclick="playAudio('ail', this)">ail</span>
+<button class="audio-btn" onclick="playAudio('ail', this)"></button>
+<small>combinación ail</small>
+</td>
+<td>
+<span class="french-text" onclick="playAudio('ail', this)">AY</span>
+<button class="audio-btn" onclick="playAudio('ail', this)"></button>
+<small>sonido ay</small>
+</td>
+<td>
+<span class="french-text" onclick="playAudio('Travail', this)">Travail</span>
+<button class="audio-btn" onclick="playAudio('Travail', this)"></button>
+<small>Trabajo</small>
+</td>
+<td>Trabajo</td>
+</tr>
+
+<tr>
+<td>
+<span class="french-text" onclick="playAudio('eil', this)">eil</span>
+<button class="audio-btn" onclick="playAudio('eil', this)"></button>
+<small>combinación eil</small>
+</td>
+<td>
+<span class="french-text" onclick="playAudio('eil', this)">EY</span>
+<button class="audio-btn" onclick="playAudio('eil', this)"></button>
+<small>sonido ey</small>
+</td>
+<td>
+<span class="french-text" onclick="playAudio('Soleil', this)">Soleil</span>
+<button class="audio-btn" onclick="playAudio('Soleil', this)"></button>
+<small>Sol</small>
+</td>
+<td>Sol</td>
+</tr>
+
+<tr>
+<td>
+<span class="french-text" onclick="playAudio('gn', this)">gn</span>
+<button class="audio-btn" onclick="playAudio('gn', this)"></button>
+<small>combinación gn</small>
+</td>
+<td>
+<span class="french-text" onclick="playAudio('gn', this)">Ñ</span>
+<button class="audio-btn" onclick="playAudio('gn', this)"></button>
+<small>sonido ñ</small>
+</td>
+<td>
+<span class="french-text" onclick="playAudio('Gagner', this)">Gagner</span>
+<button class="audio-btn" onclick="playAudio('Gagner', this)"></button>
+<small>Ganar</small>
+</td>
+<td>Ganar</td>
+</tr>
+
+</tbody>
+</table>
+</div>
+
+<!-- Sección: Casos Especiales -->
+<h1 class="section-title">⚠️ Casos Especiales</h1>
+
+<div class="intro-box">
+<h2>Separación de Letras y Sonidos Nasales</h2>
+<ul>
+<li><strong>ie / ui:</strong> Se pronuncia cada letra por separado.</li>
+<li><strong>en, em, in, im, un, um, ein, ain, aim, yn, ym:</strong> Sonidos nasales (similares a "an / am").</li>
+</ul>
+</div>
+
+<div class="table-container">
+<table>
+<thead>
+<tr>
+<th>Regla</th>
+<th>Sonido</th>
+<th>Ejemplo en Francés</th>
+<th>Significado</th>
+</tr>
+</thead>
+<tbody>
+
+<tr>
+<td><strong>ie (separadas)</strong></td>
+<td>
+<span class="french-text" onclick="playAudio('i, e', this)">i - e</span>
+<button class="audio-btn" onclick="playAudio('i, e', this)"></button>
+<small>i y e separadas</small>
+</td>
+<td>
+<span class="french-text" onclick="playAudio('Cahier', this)">Cahier</span>
+<button class="audio-btn" onclick="playAudio('Cahier', this)"></button>
+<small>Cuaderno</small>
+</td>
+<td>Cuaderno</td>
+</tr>
+
+<tr>
+<td><strong>ui (separadas)</strong></td>
+<td>
+<span class="french-text" onclick="playAudio('u, i', this)">u - i</span>
+<button class="audio-btn" onclick="playAudio('u, i', this)"></button>
+<small>u e i separadas</small>
+</td>
+<td>
+<span class="french-text" onclick="playAudio('Gratuite', this)">Gratuite</span>
+<button class="audio-btn" onclick="playAudio('Gratuite', this)"></button>
+<small>Gratis</small>
+</td>
+<td>Gratis</td>
+</tr>
+
+<tr>
+<td><strong>in / im (nasal)</strong></td>
+<td>
+<span class="french-text" onclick="playAudio('in', this)">in</span>
+<button class="audio-btn" onclick="playAudio('in', this)"></button>
+<small>sonido nasal in</small>
+</td>
+<td>
+<span class="french-text" onclick="playAudio('Matin', this)">Matin</span>
+<button class="audio-btn" onclick="playAudio('Matin', this)"></button>
+<small>Mañana</small>
+</td>
+<td>Mañana</td>
+</tr>
+
+<tr>
+<td><strong>aim / ain (nasal)</strong></td>
+<td>
+<span class="french-text" onclick="playAudio('ain', this)">ain</span>
+<button class="audio-btn" onclick="playAudio('ain', this)"></button>
+<small>sonido nasal ain</small>
+</td>
+<td>
+<span class="french-text" onclick="playAudio('Faim', this)">Faim</span>
+<button class="audio-btn" onclick="playAudio('Faim', this)"></button>
+<small>Hambre</small>
+</td>
+<td>Hambre</td>
+</tr>
+
+</tbody>
+</table>
+</div>
+
+<!-- Sección: Cuidado con la V y la B -->
+<h1 class="section-title">👂 ¡Cuidado con la V y la B!</h1>
+
+<div class="intro-box">
+<p>En francés, la <strong>V</strong> y la <strong>B</strong> no suenan igual. La <strong>V</strong> se pronuncia apoyando los dientes superiores en el labio inferior (como un zumbido), mientras que la <strong>B</strong> junta ambos labios.</p>
+</div>
+
+<div class="table-container">
+<table>
+<thead>
+<tr>
+<th>Sonido con B</th>
+<th>Significado</th>
+<th>Sonido con V</th>
+<th>Significado</th>
+</tr>
+</thead>
+<tbody>
+
+<tr>
+<td>
+<span class="french-text" onclick="playAudio('Bâche', this)">Bâche</span>
+<button class="audio-btn" onclick="playAudio('Bâche', this)"></button>
+<small>Toldo</small>
+</td>
+<td>Toldo</td>
+<td>
+<span class="french-text" onclick="playAudio('Vache', this)">Vache</span>
+<button class="audio-btn" onclick="playAudio('Vache', this)"></button>
+<small>Vaca</small>
+</td>
+<td>Vaca</td>
+</tr>
+
+<tr>
+<td>
+<span class="french-text" onclick="playAudio('Bien', this)">Bien</span>
+<button class="audio-btn" onclick="playAudio('Bien', this)"></button>
+<small>Bien</small>
+</td>
+<td>Bien</td>
+<td>
+<span class="french-text" onclick="playAudio('Viens', this)">Viens</span>
+<button class="audio-btn" onclick="playAudio('Viens', this)"></button>
+<small>Vení</small>
+</td>
+<td>Vení / Ven</td>
+</tr>
+
+<tr>
+<td>
+<span class="french-text" onclick="playAudio('Bague', this)">Bague</span>
+<button class="audio-btn" onclick="playAudio('Bague', this)"></button>
+<small>Anillo</small>
+</td>
+<td>Anillo</td>
+<td>
+<span class="french-text" onclick="playAudio('Vague', this)">Vague</span>
+<button class="audio-btn" onclick="playAudio('Vague', this)"></button>
+<small>Ola</small>
+</td>
+<td>Ola</td>
+</tr>
+
+</tbody>
+</table>
+</div>
+
+<!-- Ejercicio 1: La -e final muda -->
+<h1 class="section-title">Ejercicio 1: La "-e" final muda</h1>
+
+<div class="intro-box">
+<p>La <strong>-e</strong> al final de las palabras no se pronuncia (a menos que tenga un acento como -é). La palabra termina en el sonido de la consonante anterior.</p>
+</div>
+
+<div class="table-container">
+<table>
+<thead>
+<tr>
+<th>Lisez (Francés)</th>
+<th>Español</th>
+</tr>
+</thead>
+<tbody>
+
+<tr>
+<td>
+<span class="french-text" onclick="playAudio('Pomme', this)">Pomme</span>
+<button class="audio-btn" onclick="playAudio('Pomme', this)"></button>
+<small>Manzana</small>
+</td>
+<td>Manzana</td>
+</tr>
+
+<tr>
+<td>
+<span class="french-text" onclick="playAudio('Pomme de terre', this)">Pomme de terre</span>
+<button class="audio-btn" onclick="playAudio('Pomme de terre', this)"></button>
+<small>Papas</small>
+</td>
+<td>Papas / Patatas</td>
+</tr>
+
+<tr>
+<td>
+<span class="french-text" onclick="playAudio('Table', this)">Table</span>
+<button class="audio-btn" onclick="playAudio('Table', this)"></button>
+<small>Mesa</small>
+</td>
+<td>Mesa</td>
+</tr>
+
+<tr>
+<td>
+<span class="french-text" onclick="playAudio('Porte', this)">Porte</span>
+<button class="audio-btn" onclick="playAudio('Porte', this)"></button>
+<small>Puerta</small>
+</td>
+<td>Puerta</td>
+</tr>
+
+</tbody>
+</table>
+</div>
+
+<!-- Ejercicio 2: Consonantes finales mudas -->
+<h1 class="section-title">Ejercicio 2: Consonantes finales mudas (Regla general)</h1>
+
+<div class="intro-box">
+<p>Por lo general, las consonantes <strong>-d, -p, -s, -t, -x, -z</strong> al final de una palabra no se pronuncian.<br>
+<em>Nota útil:</em> Las consonantes finales que sí suelen sonar son <strong>C, R, F, L</strong> (regla memo "CaReFuL").</p>
+</div>
+
+<div class="table-container">
+<table>
+<thead>
+<tr>
+<th>Francés</th>
+<th>Español</th>
+</tr>
+</thead>
+<tbody>
+
+<tr>
+<td>
+<span class="french-text" onclick="playAudio('Parler', this)">Parler</span>
+<button class="audio-btn" onclick="playAudio('Parler', this)"></button>
+<small>Hablar</small>
+</td>
+<td>Hablar (la R final suena como -é)</td>
+</tr>
+
+<tr>
+<td>
+<span class="french-text" onclick="playAudio('Froid', this)">Froid</span>
+<button class="audio-btn" onclick="playAudio('Froid', this)"></button>
+<small>Frío</small>
+</td>
+<td>Frío (la D final no suena)</td>
+</tr>
+
+<tr>
+<td>
+<span class="french-text" onclick="playAudio('Temps', this)">Temps</span>
+<button class="audio-btn" onclick="playAudio('Temps', this)"></button>
+<small>Tiempo</small>
+</td>
+<td>Tiempo (P y S no suenan)</td>
+</tr>
+
+<tr>
+<td>
+<span class="french-text" onclick="playAudio('Petit', this)">Petit</span>
+<button class="audio-btn" onclick="playAudio('Petit', this)"></button>
+<small>Pequeño</small>
+</td>
+<td>Pequeño (la T final no suena)</td>
+</tr>
+
+<tr>
+<td>
+<span class="french-text" onclick="playAudio('Heureux', this)">Heureux</span>
+<button class="audio-btn" onclick="playAudio('Heureux', this)"></button>
+<small>Feliz</small>
+</td>
+<td>Feliz (la X final no suena)</td>
+</tr>
+
+<tr>
+<td>
+<span class="french-text" onclick="playAudio('Sac', this)">Sac</span>
+<button class="audio-btn" onclick="playAudio('Sac', this)"></button>
+<small>Bolso</small>
+</td>
+<td>Bolso / Bolsa (C suena)</td>
+</tr>
+
+<tr>
+<td>
+<span class="french-text" onclick="playAudio('Avec', this)">Avec</span>
+<button class="audio-btn" onclick="playAudio('Avec', this)"></button>
+<small>Con</small>
+</td>
+<td>Con (C suena)</td>
+</tr>
+
+<tr>
+<td>
+<span class="french-text" onclick="playAudio('Cher', this)">Cher</span>
+<button class="audio-btn" onclick="playAudio('Cher', this)"></button>
+<small>Querido</small>
+</td>
+<td>Querido / Caro</td>
+</tr>
+
+<tr>
+<td>
+<span class="french-text" onclick="playAudio('Chère', this)">Chère</span>
+<button class="audio-btn" onclick="playAudio('Chère', this)"></button>
+<small>Querida</small>
+</td>
+<td>Querida / Cara</td>
+</tr>
+
+<tr>
+<td>
+<span class="french-text" onclick="playAudio('Un', this)">Un</span>
+<button class="audio-btn" onclick="playAudio('Un', this)"></button>
+<small>Un</small>
+</td>
+<td>Un (masculino)</td>
+</tr>
+
+<tr>
+<td>
+<span class="french-text" onclick="playAudio('Une', this)">Une</span>
+<button class="audio-btn" onclick="playAudio('Une', this)"></button>
+<small>Una</small>
+</td>
+<td>Una (femenino)</td>
+</tr>
+
+<tr>
+<td>
+<span class="french-text" onclick="playAudio('Pour', this)">Pour</span>
+<button class="audio-btn" onclick="playAudio('Pour', this)"></button>
+<small>Por</small>
+</td>
+<td>Por / Para</td>
+</tr>
+
+<tr>
+<td>
+<span class="french-text" onclick="playAudio('Par', this)">Par</span>
+<button class="audio-btn" onclick="playAudio('Par', this)"></button>
+<small>Por</small>
+</td>
+<td>Por / A través de</td>
+</tr>
+
+<tr>
+<td>
+<span class="french-text" onclick="playAudio('Journal', this)">Journal</span>
+<button class="audio-btn" onclick="playAudio('Journal', this)"></button>
+<small>Diario</small>
+</td>
+<td>Diario / Periódico (L suena)</td>
+</tr>
+
+<tr>
+<td>
+<span class="french-text" onclick="playAudio('Soif', this)">Soif</span>
+<button class="audio-btn" onclick="playAudio('Soif', this)"></button>
+<small>Sed</small>
+</td>
+<td>Sed (F suena)</td>
+</tr>
+
+</tbody>
+</table>
+</div>
+
+<!-- Sección: Exercice de lecture -->
+<h1 class="section-title">📖 Exercice de Lecture (Ejercicio de lectura)</h1>
+
+<div class="intro-box">
+<p>Frases completas para poner en práctica las reglas anteriores en contexto.</p>
+</div>
+
+<div class="table-container">
+<table>
+<thead>
+<tr>
+<th>Phrase (Français)</th>
+<th>Traduction (Español)</th>
+</tr>
+</thead>
+<tbody>
+
+<tr>
+<td>
+<span class="french-text" onclick="playAudio('Thomas parle français.', this)">Thomas parle français.</span>
+<button class="audio-btn" onclick="playAudio('Thomas parle français.', this)"></button>
+<small>Tomás habla francés.</small>
+</td>
+<td>Tomás habla francés.</td>
+</tr>
+
+<tr>
+<td>
+<span class="french-text" onclick="playAudio('Il habite dans une grande maison.', this)">Il habite dans une grande maison.</span>
+<button class="audio-btn" onclick="playAudio('Il habite dans une grande maison.', this)"></button>
+<small>Él vive en una casa grande.</small>
+</td>
+<td>Él vive en una casa grande.</td>
+</tr>
+
+<tr>
+<td>
+<span class="french-text" onclick="playAudio('Nous mangeons un gâteau chez Sonia.', this)">Nous mangeons un gâteau chez Sonia.</span>
+<button class="audio-btn" onclick="playAudio('Nous mangeons un gâteau chez Sonia.', this)"></button>
+<small>Comemos un pastel en casa de Sonia.</small>
+</td>
+<td>Comemos un pastel en casa de Sonia.</td>
+</tr>
+
+<tr>
+<td>
+<span class="french-text" onclick="playAudio('C\'est trois euros, s\'il vous plaît.', this)">C'est trois euros, s'il vous plaît.</span>
+<button class="audio-btn" onclick="playAudio('C\'est trois euros, s\'il vous plaît.', this)"></button>
+<small>Son tres euros, por favor.</small>
+</td>
+<td>Son tres euros, por favor.</td>
+</tr>
+
+</tbody>
+</table>
+</div>
+
+<div class="outro-box">
+<h2>Astuce de Prononciation</h2>
+<p>Recordá la regla de enlace o <em>liaison</em>: cuando una palabra termina en consonante muda y la siguiente empieza con vocal o hache muda, esa consonante se pronuncia unida a la siguiente (por ejemplo: <em>trois euros</em> se pronuncia «troi-zeuros»).</p>
+</div>
+
+</main>
+
+<script>
+window.colaAudios = [];
+
+function playAudio(frenchText, element) {
+    window.speechSynthesis.cancel();
+    window.speechSynthesis.resume();
+
+    let spanishText = '';
+    if (element) {
+        const cell = element.closest('td');
+        if (cell) {
+            const smallTag = cell.querySelector('small');
+            if (smallTag) {
+                spanishText = smallTag.textContent;
+            } else if (cell.nextElementSibling) {
+                spanishText = cell.nextElementSibling.textContent;
+            }
+        }
+    }
+    if (spanishText) {
+        spanishText = spanishText.replace(/\(.*?\)/g, '').replace(/[/]/g, ' ').trim();
+    }
+
+    const uFr = new SpeechSynthesisUtterance(frenchText);
+    uFr.lang = 'fr-FR';
+    uFr.rate = 0.85;
+
+    let uEs = null;
+    if (spanishText) {
+        uEs = new SpeechSynthesisUtterance(spanishText);
+        uEs.lang = 'es-AR';
+        uEs.rate = 0.95;
+    }
+
+    const voices = window.speechSynthesis.getVoices();
+    if (voices && voices.length > 0) {
+        const frVoice = voices.find(v => v.lang.startsWith('fr') && (v.name.includes('Google') || v.name.includes('Natural') || v.name.includes('Paul') || v.name.includes('Hortense') || v.name.includes('Denise')))
+                     || voices.find(v => v.lang.startsWith('fr'));
+        if (frVoice) uFr.voice = frVoice;
+
+        if (uEs) {
+            const esVoice = voices.find(v => v.name.includes('Elena') || v.lang === 'es-AR' || v.lang === 'es_AR')
+                         || voices.find(v => v.lang.startsWith('es') && (v.name.includes('Google') || v.name.includes('Natural') || v.name.includes('Sabina') || v.name.includes('Laura') || v.name.includes('Helena')))
+                         || voices.find(v => v.lang.startsWith('es'));
+            if (esVoice) uEs.voice = esVoice;
+        }
+    }
+
+    window.colaAudios = [uFr, uEs];
+
+    if (uEs) {
+        uFr.onend = function() {
+            window.speechSynthesis.resume();
+            window.speechSynthesis.speak(uEs);
+        };
+        uEs.onend = function() { window.colaAudios = []; };
+        uFr.onerror = function() { window.colaAudios = []; };
+        uEs.onerror = function() { window.colaAudios = []; };
+    } else {
+        uFr.onend = function() { window.colaAudios = []; };
+        uFr.onerror = function() { window.colaAudios = []; };
+    }
+
+    window.speechSynthesis.speak(uFr);
+}
+
+if (window.speechSynthesis.onvoiceschanged !== undefined) {
+    window.speechSynthesis.onvoiceschanged = () => window.speechSynthesis.getVoices();
+}
+</script>
+
+</body>
+</html>

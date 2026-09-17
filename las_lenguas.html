@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Les Langues en Français</title>
+<!-- Tipografía Roboto -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+<!-- Hoja de estilos -->
+<link rel="stylesheet" href="css/verbos.css">
+<style>
+.intro-box, .outro-box {
+    margin: 15px 0 25px 0;
+    padding: 15px;
+    background-color: #f8f9fa;
+    border-left: 4px solid #e91e63;
+    border-radius: 4px;
+}
+.outro-box {
+    margin-top: 25px;
+    margin-bottom: 0;
+}
+.intro-box h2, .outro-box h2 {
+    margin-top: 0;
+    margin-bottom: 6px;
+    font-size: 1.1em;
+    color: #333;
+}
+.intro-box p, .outro-box p {
+    margin: 0 0 12px 0;
+    font-size: 0.95em;
+    color: #555;
+    line-height: 1.4;
+}
+.intro-box ul {
+    margin: 0;
+    padding-left: 20px;
+    color: #555;
+    font-size: 0.95em;
+    line-height: 1.5;
+}
+.intro-box li {
+    margin-bottom: 8px;
+}
+.audio-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 0.9em;
+    padding: 0;
+    margin-left: 4px;
+}
+.audio-btn::before {
+    content: "🔊";
+}
+.section-title {
+    font-size: 1.4em;
+    color: #e91e63;
+    margin: 30px 0 15px 0;
+    font-weight: 700;
+}
+.french-text {
+    cursor: pointer;
+    color: #0056b3;
+    font-weight: 500;
+}
+.french-text:hover {
+    text-decoration: underline;
+}
+.table-container {
+    overflow-x: auto;
+    margin-bottom: 20px;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+th, td {
+    padding: 10px 12px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+th {
+    background-color: #f2f2f2;
+    font-weight: 700;
+}
+td small {
+    display: block;
+    color: #666;
+    font-size: 0.85em;
+    margin-top: 2px;
+}
+</style>
+</head>
+<body>
+
+<!-- Header Rosa Chicle -->
+<header class="site-header">
+<div class="header-container">
+<a href="index.html" class="logo">Français</a>
+<nav class="nav-container">
+<ul class="nav-menu">
+<li><a href="lenguas.html" class="nav-link active">Les Langues</a></li>
+<li><a href="verbos-regulares.html" class="nav-link">Verbes Réguliers</a></li>
+<li><a href="verbos-irregulares.html" class="nav-link">Verbes Irréguliers</a></li>
+</ul>
+</nav>
+</div>
+</header>
+
+<main class="main-container" style="padding: 20px; max-width: 1200px; margin: 0 auto;">
+
+<h1 class="section-title">Vocabulaire des Langues</h1>
+
+<div class="intro-box">
+<h2>Les Noms des Langues (Los nombres de los idiomas)</h2>
+<p>En francés, los nombres de los idiomas son siempre masculinos (llevan el artículo <strong>le</strong> o <strong>l'</strong> ante vocal) y se escriben en minúscula. Al presionar sobre el texto o el parlante se reproduce el término en francés y seguidamente su traducción en español.</p>
+</div>
+
+<!-- Tabla 1: Lista de Idiomas -->
+<div class="table-container">
+<table>
+<thead>
+<tr>
+<th>Français</th>
+<th>Español</th>
+</tr>
+</thead>
+<tbody>
+
+<tr>
+<td>
+<span class="french-text" onclick="playAudio('Le français', this)">Le français</span>
+<button class="audio-btn" onclick="playAudio('Le français', this)"></button>
+<small>El francés</small>
+</td>
+<td>El francés</td>
+</tr>
+
+<tr>
+<td>
+<span class="french-text" onclick="playAudio('L\'italien', this)">L'italien</span>
+<button class="audio-btn" onclick="playAudio('L\'italien', this)"></button>
+<small>El italiano</small>
+</td>
+<td>El italiano</td>
+</tr>
+
+<tr>
+<td>
+<span class="french-text" onclick="playAudio('L\'espagnol', this)">L'espagnol</span>
+<button class="audio-btn" onclick="playAudio('L\'espagnol', this)"></button>
+<small>El español</small>
+</td>
+<td>El español</td>
+</tr>
+
+<tr>
+<td>
+<span class="french-text" onclick="playAudio('L\'allemand', this)">L'allemand</span>
+<button class="audio-btn" onclick="playAudio('L\'allemand', this)"></button>
+<small>El alemán</small>
+</td>
+<td>El alemán</td>
+</tr>
+
+<tr>
+<td>
+<span class="french-text" onclick="playAudio('L\'anglais', this)">L'anglais</span>
+<button class="audio-btn" onclick="playAudio('L\'anglais', this)"></button>
+<small>El inglés</small>
+</td>
+<td>El inglés</td>
+</tr>
+
+<tr>
+<td>
+<span class="french-text" onclick="playAudio('Le portugais', this)">Le portugais</span>
+<button class="audio-btn" onclick="playAudio('Le portugais', this)"></button>
+<small>El portugués</small>
+</td>
+<td>El portugués</td>
+</tr>
+
+<tr>
+<td>
+<span class="french-text" onclick="playAudio('Le russe', this)">Le russe</span>
+<button class="audio-btn" onclick="playAudio('Le russe', this)"></button>
+<small>El ruso</small>
+</td>
+<td>El ruso</td>
+</tr>
+
+<tr>
+<td>
+<span class="french-text" onclick="playAudio('Le chinois', this)">Le chinois</span>
+<button class="audio-btn" onclick="playAudio('Le chinois', this)"></button>
+<small>El chino</small>
+</td>
+<td>El chino</td>
+</tr>
+
+<tr>
+<td>
+<span class="french-text" onclick="playAudio('Le japonais', this)">Le japonais</span>
+<button class="audio-btn" onclick="playAudio('Le japonais', this)"></button>
+<small>El japonés</small>
+</td>
+<td>El japonés</td>
+</tr>
+
+<tr>
+<td>
+<span class="french-text" onclick="playAudio('L\'arabe', this)">L'arabe</span>
+<button class="audio-btn" onclick="playAudio('L\'arabe', this)"></button>
+<small>El árabe</small>
+</td>
+<td>El árabe</td>
+</tr>
+
+<tr>
+<td>
+<span class="french-text" onclick="playAudio('Le néerlandais', this)">Le néerlandais</span>
+<button class="audio-btn" onclick="playAudio('Le néerlandais', this)"></button>
+<small>El neerlandés</small>
+</td>
+<td>El neerlandés</td>
+</tr>
+
+<tr>
+<td>
+<span class="french-text" onclick="playAudio('Le grec', this)">Le grec</span>
+<button class="audio-btn" onclick="playAudio('Le grec', this)"></button>
+<small>El griego</small>
+</td>
+<td>El griego</td>
+</tr>
+
+<tr>
+<td>
+<span class="french-text" onclick="playAudio('Le polonais', this)">Le polonais</span>
+<button class="audio-btn" onclick="playAudio('Le polonais', this)"></button>
+<small>El polaco</small>
+</td>
+<td>El polaco</td>
+</tr>
+
+<tr>
+<td>
+<span class="french-text" onclick="playAudio('Le suédois', this)">Le suédois</span>
+<button class="audio-btn" onclick="playAudio('Le suédois', this)"></button>
+<small>El sueco</small>
+</td>
+<td>El sueco</td>
+</tr>
+
+<tr>
+<td>
+<span class="french-text" onclick="playAudio('Le turc', this)">Le turc</span>
+<button class="audio-btn" onclick="playAudio('Le turc', this)"></button>
+<small>El turco</small>
+</td>
+<td>El turco</td>
+</tr>
+
+</tbody>
+</table>
+</div>
+
+<!-- Sección 2: Frases útiles -->
+<h1 class="section-title">Phrases Utiles (Frases útiles)</h1>
+
+<div class="intro-box">
+<h2>Parler des Langues (Hablar sobre idiomas)</h2>
+<p>Estructuras frecuentes para preguntar y responder qué idiomas dominás o estás aprendiendo.</p>
+</div>
+
+<div class="table-container">
+<table>
+<thead>
+<tr>
+<th>Français</th>
+<th>Español</th>
+</tr>
+</thead>
+<tbody>
+
+<tr>
+<td>
+<span class="french-text" onclick="playAudio('Quelle langue parles-tu ?', this)">Quelle langue parles-tu ?</span>
+<button class="audio-btn" onclick="playAudio('Quelle langue parles-tu ?', this)"></button>
+<small>¿Qué idioma hablas?</small>
+</td>
+<td>¿Qué idioma hablas?</td>
+</tr>
+
+<tr>
+<td>
+<span class="french-text" onclick="playAudio('Parlez-vous français ?', this)">Parlez-vous français ?</span>
+<button class="audio-btn" onclick="playAudio('Parlez-vous français ?', this)"></button>
+<small>¿Habla usted francés?</small>
+</td>
+<td>¿Habla usted francés?</td>
+</tr>
+
+<tr>
+<td>
+<span class="french-text" onclick="playAudio('Je parle espagnol et italien', this)">Je parle espagnol et italien</span>
+<button class="audio-btn" onclick="playAudio('Je parle espagnol et italien', this)"></button>
+<small>Hablo español e italiano</small>
+</td>
+<td>Hablo español e italiano</td>
+</tr>
+
+<tr>
+<td>
+<span class="french-text" onclick="playAudio('J\'apprends le français', this)">J'apprends le français</span>
+<button class="audio-btn" onclick="playAudio('J\'apprends le français', this)"></button>
+<small>Estoy aprendiendo francés</small>
+</td>
+<td>Estoy aprendiendo francés</td>
+</tr>
+
+<tr>
+<td>
+<span class="french-text" onclick="playAudio('Je parle un peu d\'allemand', this)">Je parle un peu d'allemand</span>
+<button class="audio-btn" onclick="playAudio('Je parle un peu d\'allemand', this)"></button>
+<small>Hablo un poco de alemán</small>
+</td>
+<td>Hablo un poco de alemán</td>
+</tr>
+
+<tr>
+<td>
+<span class="french-text" onclick="playAudio('Comment dit-on cela en français ?', this)">Comment dit-on cela en français ?</span>
+<button class="audio-btn" onclick="playAudio('Comment dit-on cela en français ?', this)"></button>
+<small>¿Cómo se dice eso en francés?</small>
+</td>
+<td>¿Cómo se dice eso en francés?</td>
+</tr>
+
+</tbody>
+</table>
+</div>
+
+<div class="outro-box">
+<h2>Règle Grammaticale</h2>
+<p>Con el verbo <strong>parler</strong> el artículo se omite habitualmente: <em>« Je parle français »</em>. Sin embargo, con verbos como <strong>apprendre</strong> o <strong>aimer</strong>, el artículo definido es obligatorio: <em>« J'apprends le français »</em>.</p>
+</div>
+
+</main>
+
+<script>
+// Almacén global para blindar los audios contra el recolector de basura
+window.colaAudios = [];
+
+function playAudio(frenchText, element) {
+    // Reactivar el sintetizador si estuviera en pausa o trabado
+    window.speechSynthesis.cancel();
+    window.speechSynthesis.resume();
+
+    // 1. Extraer traducción al español
+    let spanishText = '';
+    if (element) {
+        const cell = element.closest('td');
+        if (cell) {
+            const smallTag = cell.querySelector('small');
+            if (smallTag) {
+                spanishText = smallTag.textContent;
+            } else if (cell.nextElementSibling) {
+                spanishText = cell.nextElementSibling.textContent;
+            }
+        }
+    }
+    if (spanishText) {
+        spanishText = spanishText.replace(/\(.*?\)/g, '').replace(/[/]/g, ' ').trim();
+    }
+
+    // 2. Crear objetos de audio
+    const uFr = new SpeechSynthesisUtterance(frenchText);
+    uFr.lang = 'fr-FR';
+    uFr.rate = 0.85;
+
+    let uEs = null;
+    if (spanishText) {
+        uEs = new SpeechSynthesisUtterance(spanishText);
+        uEs.lang = 'es-AR';
+        uEs.rate = 0.95;
+    }
+
+    // 3. Obtener y asociar voces disponibles
+    const voices = window.speechSynthesis.getVoices();
+    if (voices && voices.length > 0) {
+        const frVoice = voices.find(v => v.lang.startsWith('fr') && (v.name.includes('Google') || v.name.includes('Natural') || v.name.includes('Paul') || v.name.includes('Hortense') || v.name.includes('Denise')))
+                     || voices.find(v => v.lang.startsWith('fr'));
+        if (frVoice) uFr.voice = frVoice;
+
+        if (uEs) {
+            const esVoice = voices.find(v => v.name.includes('Elena') || v.lang === 'es-AR' || v.lang === 'es_AR')
+                         || voices.find(v => v.lang.startsWith('es') && (v.name.includes('Google') || v.name.includes('Natural') || v.name.includes('Sabina') || v.name.includes('Laura') || v.name.includes('Helena')))
+                         || voices.find(v => v.lang.startsWith('es'));
+            if (esVoice) uEs.voice = esVoice;
+        }
+    }
+
+    // 4. Anclar ambos objetos al contexto global de la ventana
+    window.colaAudios = [uFr, uEs];
+
+    // 5. Encadenar: al finalizar el francés, arranca el español
+    if (uEs) {
+        uFr.onend = function() {
+            window.speechSynthesis.resume();
+            window.speechSynthesis.speak(uEs);
+        };
+        uEs.onend = function() {
+            window.colaAudios = [];
+        };
+        uFr.onerror = function() {
+            window.colaAudios = [];
+        };
+        uEs.onerror = function() {
+            window.colaAudios = [];
+        };
+    } else {
+        uFr.onend = function() {
+            window.colaAudios = [];
+        };
+        uFr.onerror = function() {
+            window.colaAudios = [];
+        };
+    }
+
+    // 6. Iniciar la reproducción dentro del evento de clic
+    window.speechSynthesis.speak(uFr);
+}
+
+// Inicializar lista de voces en el navegador
+if (window.speechSynthesis.onvoiceschanged !== undefined) {
+    window.speechSynthesis.onvoiceschanged = () => window.speechSynthesis.getVoices();
+}
+</script>
+
+</body>
+</html>

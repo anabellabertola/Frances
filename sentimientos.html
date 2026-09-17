@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Les Sentiments et Émotions en Français</title>
+<!-- Tipografía Roboto -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+<!-- Hoja de estilos -->
+<link rel="stylesheet" href="css/verbos.css">
+<style>
+.intro-box, .outro-box {
+    margin: 15px 0 25px 0;
+    padding: 15px;
+    background-color: #f8f9fa;
+    border-left: 4px solid #e91e63;
+    border-radius: 4px;
+}
+.outro-box {
+    margin-top: 25px;
+    margin-bottom: 0;
+}
+.intro-box h2, .outro-box h2 {
+    margin-top: 0;
+    margin-bottom: 6px;
+    font-size: 1.1em;
+    color: #333;
+}
+.intro-box p, .outro-box p {
+    margin: 0 0 12px 0;
+    font-size: 0.95em;
+    color: #555;
+    line-height: 1.4;
+}
+.intro-box ul {
+    margin: 0;
+    padding-left: 20px;
+    color: #555;
+    font-size: 0.95em;
+    line-height: 1.5;
+}
+.intro-box li {
+    margin-bottom: 8px;
+}
+.audio-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 0.9em;
+    padding: 0;
+    margin-left: 4px;
+}
+.audio-btn::before {
+    content: "🔊";
+}
+.section-title {
+    font-size: 1.4em;
+    color: #e91e63;
+    margin: 30px 0 15px 0;
+    font-weight: 700;
+}
+.french-text {
+    cursor: pointer;
+    color: #0056b3;
+    font-weight: 500;
+}
+.french-text:hover {
+    text-decoration: underline;
+}
+.table-container {
+    overflow-x: auto;
+    margin-bottom: 20px;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+th, td {
+    padding: 10px 12px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+th {
+    background-color: #f2f2f2;
+    font-weight: 700;
+}
+td small {
+    display: block;
+    color: #666;
+    font-size: 0.85em;
+    margin-top: 2px;
+}
+</style>
+</head>
+<body>
+
+<!-- Header Rosa Chicle -->
+<header class="site-header">
+<div class="header-container">
+<a href="index.html" class="logo">Français</a>
+<nav class="nav-container">
+<ul class="nav-menu">
+<li><a href="sentimientos.html" class="nav-link active">Sentiments & Émotions</a></li>
+<li><a href="lenguas.html" class="nav-link">Les Langues</a></li>
+<li><a href="verbos-regulares.html" class="nav-link">Verbes Réguliers</a></li>
+<li><a href="verbos-irregulares.html" class="nav-link">Verbes Irréguliers</a></li>
+</ul>
+</nav>
+</div>
+</header>
+
+<main class="main-container" style="padding: 20px; max-width: 1200px; margin: 0 auto;">
+
+<h1 class="section-title">Les Émotions et Sentiments avec ÊTRE (Estar / Ser)</h1>
+
+<div class="intro-box">
+<h2>Exprimer ses Sentiments avec le Verbe Être</h2>
+<p>En francés, para decir cómo nos sentimos o en qué estado anímico estamos, usamos el verbo <strong>Être</strong> (ser / estar) seguido del adjetivo correspondiente. Recordá que los adjetivos concuerdan en género agregando generalmente una <strong>-e</strong> para el femenino.</p>
+</div>
+
+<!-- Tabla 1: Sentimientos con Être -->
+<div class="table-container">
+<table>
+<thead>
+<tr>
+<th>Français (Être + Sentiment)</th>
+<th>Español</th>
+</tr>
+</thead>
+<tbody>
+
+<tr>
+<td>
+<span class="french-text" onclick="playAudio('Je suis content', this)">Je suis content</span>
+<button class="audio-btn" onclick="playAudio('Je suis content', this)"></button>
+<small>Estoy contento</small>
+</td>
+<td>Estoy contento</td>
+</tr>
+
+<tr>
+<td>
+<span class="french-text" onclick="playAudio('Je suis contente', this)">Je suis contente</span>
+<button class="audio-btn" onclick="playAudio('Je suis contente', this)"></button>
+<small>Estoy contenta</small>
+</td>
+<td>Estoy contenta</td>
+</tr>
+
+<tr>
+<td>
+<span class="french-text" onclick="playAudio('Je suis heureux', this)">Je suis heureux</span>
+<button class="audio-btn" onclick="playAudio('Je suis heureux', this)"></button>
+<small>Estoy feliz</small>
+</td>
+<td>Estoy feliz</td>
+</tr>
+
+<tr>
+<td>
+<span class="french-text" onclick="playAudio('Je suis heureuse', this)">Je suis heureuse</span>
+<button class="audio-btn" onclick="playAudio('Je suis heureuse', this)"></button>
+<small>Estoy feliz</small>
+</td>
+<td>Estoy feliz (femenino)</td>
+</tr>
+
+<tr>
+<td>
+<span class="french-text" onclick="playAudio('Je suis triste', this)">Je suis triste</span>
+<button class="audio-btn" onclick="playAudio('Je suis triste', this)"></button>
+<small>Estoy triste</small>
+</td>
+<td>Estoy triste</td>
+</tr>
+
+<tr>
+<td>
+<span class="french-text" onclick="playAudio('Je suis fatigué', this)">Je suis fatigué</span>
+<button class="audio-btn" onclick="playAudio('Je suis fatigué', this)"></button>
+<small>Estoy cansado</small>
+</td>
+<td>Estoy cansado</td>
+</tr>
+
+<tr>
+<td>
+<span class="french-text" onclick="playAudio('Je suis fatiguée', this)">Je suis fatiguée</span>
+<button class="audio-btn" onclick="playAudio('Je suis fatiguée', this)"></button>
+<small>Estoy cansada</small>
+</td>
+<td>Estoy cansada</td>
+</tr>
+
+<tr>
+<td>
+<span class="french-text" onclick="playAudio('Je suis en colère', this)">Je suis en colère</span>
+<button class="audio-btn" onclick="playAudio('Je suis en colère', this)"></button>
+<small>Estoy enojado</small>
+</td>
+<td>Estoy enojado / con rabia</td>
+</tr>
+
+<tr>
+<td>
+<span class="french-text" onclick="playAudio('Je suis calme', this)">Je suis calme</span>
+<button class="audio-btn" onclick="playAudio('Je suis calme', this)"></button>
+<small>Estoy tranquilo</small>
+</td>
+<td>Estoy tranquilo / en calma</td>
+</tr>
+
+<tr>
+<td>
+<span class="french-text" onclick="playAudio('Je suis stressé', this)">Je suis stressé</span>
+<button class="audio-btn" onclick="playAudio('Je suis stressé', this)"></button>
+<small>Estoy estresado</small>
+</td>
+<td>Estoy estresado</td>
+</tr>
+
+<tr>
+<td>
+<span class="french-text" onclick="playAudio('Je suis stressée', this)">Je suis stressée</span>
+<button class="audio-btn" onclick="playAudio('Je suis stressée', this)"></button>
+<small>Estoy estresada</small>
+</td>
+<td>Estoy estresada</td>
+</tr>
+
+<tr>
+<td>
+<span class="french-text" onclick="playAudio('Je suis inquiet', this)">Je suis inquiet</span>
+<button class="audio-btn" onclick="playAudio('Je suis inquiet', this)"></button>
+<small>Estoy preocupado</small>
+</td>
+<td>Estoy preocupado</td>
+</tr>
+
+<tr>
+<td>
+<span class="french-text" onclick="playAudio('Je suis inquiète', this)">Je suis inquiète</span>
+<button class="audio-btn" onclick="playAudio('Je suis inquiète', this)"></button>
+<small>Estoy preocupada</small>
+</td>
+<td>Estoy preocupada</td>
+</tr>
+
+<tr>
+<td>
+<span class="french-text" onclick="playAudio('Je suis surpris', this)">Je suis surpris</span>
+<button class="audio-btn" onclick="playAudio('Je suis surpris', this)"></button>
+<small>Estoy sorprendido</small>
+</td>
+<td>Estoy sorprendido</td>
+</tr>
+
+<tr>
+<td>
+<span class="french-text" onclick="playAudio('Je suis surprise', this)">Je suis surprise</span>
+<button class="audio-btn" onclick="playAudio('Je suis surprise', this)"></button>
+<small>Estoy sorprendida</small>
+</td>
+<td>Estoy sorprendida</td>
+</tr>
+
+<tr>
+<td>
+<span class="french-text" onclick="playAudio('Je suis amoureux', this)">Je suis amoureux</span>
+<button class="audio-btn" onclick="playAudio('Je suis amoureux', this)"></button>
+<small>Estoy enamorado</small>
+</td>
+<td>Estoy enamorado</td>
+</tr>
+
+<tr>
+<td>
+<span class="french-text" onclick="playAudio('Je suis amoureuse', this)">Je suis amoureuse</span>
+<button class="audio-btn" onclick="playAudio('Je suis amoureuse', this)"></button>
+<small>Estoy enamorada</small>
+</td>
+<td>Estoy enamorada</td>
+</tr>
+
+<tr>
+<td>
+<span class="french-text" onclick="playAudio('Je suis fier', this)">Je suis fier</span>
+<button class="audio-btn" onclick="playAudio('Je suis fier', this)"></button>
+<small>Estoy orgulloso</small>
+</td>
+<td>Estoy orgulloso</td>
+</tr>
+
+<tr>
+<td>
+<span class="french-text" onclick="playAudio('Je suis fière', this)">Je suis fière</span>
+<button class="audio-btn" onclick="playAudio('Je suis fière', this)"></button>
+<small>Estoy orgullosa</small>
+</td>
+<td>Estoy orgullosa</td>
+</tr>
+
+<tr>
+<td>
+<span class="french-text" onclick="playAudio('Je suis déçu', this)">Je suis déçu</span>
+<button class="audio-btn" onclick="playAudio('Je suis déçu', this)"></button>
+<small>Estoy decepcionado</small>
+</td>
+<td>Estoy decepcionado</td>
+</tr>
+
+<tr>
+<td>
+<span class="french-text" onclick="playAudio('Je suis déçue', this)">Je suis déçue</span>
+<button class="audio-btn" onclick="playAudio('Je suis déçue', this)"></button>
+<small>Estoy decepcionada</small>
+</td>
+<td>Estoy decepcionada</td>
+</tr>
+
+<tr>
+<td>
+<span class="french-text" onclick="playAudio('Je suis timide', this)">Je suis timide</span>
+<button class="audio-btn" onclick="playAudio('Je suis timide', this)"></button>
+<small>Soy tímido</small>
+</td>
+<td>Soy tímido / tímida</td>
+</tr>
+
+</tbody>
+</table>
+</div>
+
+<!-- Sección 2: Sensaciones y estados con AVOIR -->
+<h1 class="section-title">Sensations et États avec AVOIR (Tener / Estar con...)</h1>
+
+<div class="intro-box">
+<h2>Attention ! États Exprimés avec le Verbe Avoir</h2>
+<p>En francés, muchas sensaciones físicas o anímicas que en español a veces decimos con "estar", se construyen con el verbo <strong>Avoir</strong> (Tener): por ejemplo, no se dice <em>*je suis peur*</em>, sino <strong>J'ai peur</strong> (Tengo miedo / Estoy asustado).</p>
+</div>
+
+<div class="table-container">
+<table>
+<thead>
+<tr>
+<th>Français (Avoir + Sensation)</th>
+<th>Español</th>
+</tr>
+</thead>
+<tbody>
+
+<tr>
+<td>
+<span class="french-text" onclick="playAudio('J\'ai peur', this)">J'ai peur</span>
+<button class="audio-btn" onclick="playAudio('J\'ai peur', this)"></button>
+<small>Tengo miedo</small>
+</td>
+<td>Tengo miedo / Estoy asustado</td>
+</tr>
+
+<tr>
+<td>
+<span class="french-text" onclick="playAudio('J\'ai faim', this)">J'ai faim</span>
+<button class="audio-btn" onclick="playAudio('J\'ai faim', this)"></button>
+<small>Tengo hambre</small>
+</td>
+<td>Tengo hambre</td>
+</tr>
+
+<tr>
+<td>
+<span class="french-text" onclick="playAudio('J\'ai soif', this)">J'ai soif</span>
+<button class="audio-btn" onclick="playAudio('J\'ai soif', this)"></button>
+<small>Tengo sed</small>
+</td>
+<td>Tengo sed</td>
+</tr>
+
+<tr>
+<td>
+<span class="french-text" onclick="playAudio('J\'ai froid', this)">J'ai froid</span>
+<button class="audio-btn" onclick="playAudio('J\'ai froid', this)"></button>
+<small>Tengo frío</small>
+</td>
+<td>Tengo frío / Estoy con frío</td>
+</tr>
+
+<tr>
+<td>
+<span class="french-text" onclick="playAudio('J\'ai chaud', this)">J'ai chaud</span>
+<button class="audio-btn" onclick="playAudio('J\'ai chaud', this)"></button>
+<small>Tengo calor</small>
+</td>
+<td>Tengo calor</td>
+</tr>
+
+<tr>
+<td>
+<span class="french-text" onclick="playAudio('J\'ai sommeil', this)">J'ai sommeil</span>
+<button class="audio-btn" onclick="playAudio('J\'ai sommeil', this)"></button>
+<small>Tengo sueño</small>
+</td>
+<td>Tengo sueño</td>
+</tr>
+
+<tr>
+<td>
+<span class="french-text" onclick="playAudio('J\'ai honte', this)">J'ai honte</span>
+<button class="audio-btn" onclick="playAudio('J\'ai honte', this)"></button>
+<small>Tengo vergüenza</small>
+</td>
+<td>Tengo vergüenza / Estoy avergonzado</td>
+</tr>
+
+<tr>
+<td>
+<span class="french-text" onclick="playAudio('J\'ai hâte', this)">J'ai hâte</span>
+<button class="audio-btn" onclick="playAudio('J\'ai hâte', this)"></button>
+<small>Tengo ganas</small>
+</td>
+<td>Tengo muchas ganas / No veo la hora</td>
+</tr>
+
+</tbody>
+</table>
+</div>
+
+<div class="outro-box">
+<h2>Règle Mémo</h2>
+<p>• Para estados de ánimo y emociones usamos <strong>ÊTRE</strong>: <em>Je suis content, Je suis triste, Je suis fatigué</em>.<br>
+• Para necesidades y sensaciones físicas o corporales usamos <strong>AVOIR</strong>: <em>J'ai faim, J'ai froid, J'ai peur, J'ai sommeil</em>.</p>
+</div>
+
+</main>
+
+<script>
+window.colaAudios = [];
+
+function playAudio(frenchText, element) {
+    window.speechSynthesis.cancel();
+    window.speechSynthesis.resume();
+
+    let spanishText = '';
+    if (element) {
+        const cell = element.closest('td');
+        if (cell) {
+            const smallTag = cell.querySelector('small');
+            if (smallTag) {
+                spanishText = smallTag.textContent;
+            } else if (cell.nextElementSibling) {
+                spanishText = cell.nextElementSibling.textContent;
+            }
+        }
+    }
+    if (spanishText) {
+        spanishText = spanishText.replace(/\(.*?\)/g, '').replace(/[/]/g, ' ').trim();
+    }
+
+    const uFr = new SpeechSynthesisUtterance(frenchText);
+    uFr.lang = 'fr-FR';
+    uFr.rate = 0.85;
+
+    let uEs = null;
+    if (spanishText) {
+        uEs = new SpeechSynthesisUtterance(spanishText);
+        uEs.lang = 'es-AR';
+        uEs.rate = 0.95;
+    }
+
+    const voices = window.speechSynthesis.getVoices();
+    if (voices && voices.length > 0) {
+        const frVoice = voices.find(v => v.lang.startsWith('fr') && (v.name.includes('Google') || v.name.includes('Natural') || v.name.includes('Paul') || v.name.includes('Hortense') || v.name.includes('Denise')))
+                     || voices.find(v => v.lang.startsWith('fr'));
+        if (frVoice) uFr.voice = frVoice;
+
+        if (uEs) {
+            const esVoice = voices.find(v => v.name.includes('Elena') || v.lang === 'es-AR' || v.lang === 'es_AR')
+                         || voices.find(v => v.lang.startsWith('es') && (v.name.includes('Google') || v.name.includes('Natural') || v.name.includes('Sabina') || v.name.includes('Laura') || v.name.includes('Helena')))
+                         || voices.find(v => v.lang.startsWith('es'));
+            if (esVoice) uEs.voice = esVoice;
+        }
+    }
+
+    window.colaAudios = [uFr, uEs];
+
+    if (uEs) {
+        uFr.onend = function() {
+            window.speechSynthesis.resume();
+            window.speechSynthesis.speak(uEs);
+        };
+        uEs.onend = function() { window.colaAudios = []; };
+        uFr.onerror = function() { window.colaAudios = []; };
+        uEs.onerror = function() { window.colaAudios = []; };
+    } else {
+        uFr.onend = function() { window.colaAudios = []; };
+        uFr.onerror = function() { window.colaAudios = []; };
+    }
+
+    window.speechSynthesis.speak(uFr);
+}
+
+if (window.speechSynthesis.onvoiceschanged !== undefined) {
+    window.speechSynthesis.onvoiceschanged = () => window.speechSynthesis.getVoices();
+}
+</script>
+
+</body>
+</html>
